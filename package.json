@@ -1,0 +1,23 @@
+{
+  "name": "suprematism-style-guide",
+  "version": "0.0.1",
+  "description": "A style guide based on ConciseCSS. The Successor to SassyPAM.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CINBCUniversal/suprematism-style-guide.git"
+  },
+  "keywords": [],
+  "author": "Zack Fantauzzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CINBCUniversal/suprematism-style-guide/issues"
+  },
+  "homepage": "https://github.com/CINBCUniversal/suprematism-style-guide#readme",
+  "dependencies": {
+    "concise.css": "^3.4.0"
+  },
+  "devDependencies": {
+    "node-sass": "^3.10.1"
+  }
+}
