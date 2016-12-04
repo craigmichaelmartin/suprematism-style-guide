@@ -1,4 +1,9 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<div grid="stretch no-gutter">
+  <div column="8">
+    <docs-main-menu></docs-main-menu>
+  </div>
+  <div column="18" class="_plxl">
+    <h1>{{title}}</h1>
+    <router-outlet></router-outlet>
+  </div>
+</div>

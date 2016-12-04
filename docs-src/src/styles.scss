@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+$num-columns: 26;
+$gutter: 0;
+// Load the real style guide styles for use on our docs (dog fooding it)
+@import "../../src/suprematism.scss";
+
+html, body {
+  height: 100%;
+}

@@ -1,0 +1,13 @@
+// the component
+:host{
+  background-color:  lightgrey;
+  display: inherit;
+  height: 100%;
+  padding-top: 24px;
+  overflow-y: scroll; 
+}
+
+// menu list items
+ul li {
+  list-style-type: none;
+}
