@@ -4,33 +4,11 @@
  *
  ******************************************************************************/ 
 
-  // Globals
-  @import '../node_modules/concise.css/src/core/globals/globals';
-  @import '../node_modules/concise.css/src/core/globals/functions';
-  @import '../node_modules/concise.css/src/core/globals/mixins';
+  // override vars
+  @import "_vars.concise.scss";
 
-  // Custom globals
-  @import '_vars.suprematism.scss';
-
-  // Natives
-  @import '../node_modules/concise.css/src/core/layout/base';
-  @import '../node_modules/concise.css/src/core/layout/blockquotes';
-  @import '../node_modules/concise.css/src/core/layout/buttons';
-  @import '../node_modules/concise.css/src/core/layout/forms';
-  @import '../node_modules/concise.css/src/core/layout/headings';
-  @import '../node_modules/concise.css/src/core/layout/lists';
-  @import '../node_modules/concise.css/src/core/layout/print';
-  @import '../node_modules/concise.css/src/core/layout/tables';
-  @import '../node_modules/concise.css/src/core/layout/type';
-
-  // Utils
-  @import '../node_modules/concise.css/src/core/utils/atgrid';
-  @import '../node_modules/concise.css/src/core/utils/colors';
-  @import '../node_modules/concise.css/src/core/utils/conditional-styling';
-  @import '../node_modules/concise.css/src/core/utils/helpers';
-
-  // Add-Ons
-  @import '../node_modules/concise.css/src/addons/concise-ui/concise-ui';
+  // main library
+  @import "../node_modules/concise.css/concise";
 
 
 
@@ -44,4 +22,4 @@
   // Vars
   @import '_vars.suprematism.scss';
 
-  // Theme
+  // Theme files here...

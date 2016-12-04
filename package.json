@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/CINBCUniversal/suprematism-style-guide#readme",
   "dependencies": {
-    "concise.css": "^3.4.0"
+    "concise.css": "^4.0.1"
   },
   "devDependencies": {
     "node-sass": "^3.10.1"
