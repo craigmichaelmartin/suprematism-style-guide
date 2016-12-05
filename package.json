@@ -20,6 +20,7 @@
   "dependencies": {},
   "devDependencies": {
     "concise-cli": "^0.4.1",
+    "concise-ui": "^0.2.0",
     "concise-utils": "^1.0.0",
     "concise.css": "^4.0.1",
     "node-sass": "^3.10.1"
