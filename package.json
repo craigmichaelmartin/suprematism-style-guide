@@ -1,7 +1,7 @@
 {
   "name": "suprematism-style-guide",
-  "version": "0.0.1",
-  "description": "A style guide based on ConciseCSS. The Successor to SassyPAM.",
+  "version": "0.0.2",
+  "description": "A style guide based on ConciseCSS.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -13,11 +13,15 @@
   "bugs": {
     "url": "https://github.com/CINBCUniversal/suprematism-style-guide/issues"
   },
-  "homepage": "https://github.com/CINBCUniversal/suprematism-style-guide#readme",
-  "dependencies": {
-    "concise.css": "^4.0.1"
+  "scripts": {
+    "build": "concisecss compile src/suprematism.scss dist/suprematism.scss"
   },
+  "homepage": "https://cinbcuniversal.github.io/suprematism-style-guide/index.html",
+  "dependencies": {},
   "devDependencies": {
+    "concise-cli": "^0.4.1",
+    "concise-utils": "^1.0.0",
+    "concise.css": "^4.0.1",
     "node-sass": "^3.10.1"
   }
 }
