@@ -1,8 +1,16 @@
-// component sty;es
-[grid]{
+// Parent for Grid
+[grid-wrapper]{
   height: 100%;
-  [column='8']{
-    height: 100%;
-  }
+  overflow-x: hidden;
 }
 
+// Grid 
+[grid]{
+  height: 100%;
+  [column='6']{
+    background: lightgrey;
+    box-shadow: -4px 0px 42px -10px black inset;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
