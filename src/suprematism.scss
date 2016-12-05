@@ -7,19 +7,9 @@
   // override vars
   @import "_vars.concise.scss";
 
+
   // main library
-  @import "../node_modules/concise.css/concise";
+  @import "../node_modules/concise.css/concise"; 
 
-
-
-
-/******************************************************************************
- *
- * Load Suprematism
- *
- ******************************************************************************/ 
-
-  // Vars
-  @import '_vars.suprematism.scss';
-
-  // Theme files here...
+  // utils
+  @import '../node_modules/concise-utils/concise-utils';
