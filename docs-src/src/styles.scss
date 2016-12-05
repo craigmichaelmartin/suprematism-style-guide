@@ -1,8 +1,7 @@
-$num-columns: 26;
-$gutter: 0;
 // Load the real style guide styles for use on our docs (dog fooding it)
-@import "../../src/suprematism.scss";
+@import "../../dist/suprematism.scss";
 
 html, body {
   height: 100%;
+  color: red;
 }
