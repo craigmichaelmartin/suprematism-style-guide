@@ -14,7 +14,8 @@
     "url": "https://github.com/CINBCUniversal/suprematism-style-guide/issues"
   },
   "scripts": {
-    "build": "concisecss compile src/suprematism.scss dist/suprematism.scss"
+    "build": "node lib/watch-src.js",
+    "build:watch": "node lib/watch-src.js watch"
   },
   "homepage": "https://cinbcuniversal.github.io/suprematism-style-guide/index.html",
   "dependencies": {},
@@ -23,6 +24,8 @@
     "concise-ui": "^0.2.0",
     "concise-utils": "^1.0.0",
     "concise.css": "^4.0.1",
-    "node-sass": "^3.10.1"
+    "fs-extra": "^2.0.0",
+    "node-sass": "^3.10.1",
+    "node-watch": "^0.4.1"
   }
 }

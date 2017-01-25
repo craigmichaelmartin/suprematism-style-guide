@@ -12,5 +12,9 @@
     box-shadow: -4px 0px 42px -10px black inset;
     height: 100%;
     overflow-y: scroll;
+    min-width: 320px;
+  }
+  [column='20']{
+    overflow-y: scroll;
   }
 }

@@ -1,0 +1,40 @@
+@import "../../../../../dist/utils/_colors.scss";
+
+@mixin font-rules($name) {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: white !important;
+  display: block;
+}
+
+:host #colors {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @each $name, $hex in $colors {
+    .color-block-#{$name} {
+      width: 90px;
+      border: 2px solid #3f3c3c;
+      margin: 36px 12px 0px 0;
+      background-color: $hex;
+      .text {
+        margin-top: 70px;
+        background-color: #3f3c3c;
+        padding: 6px;
+      }
+      .title:after {
+        content: '$#{$name}';
+        @include font-rules($name);
+      }
+      .hex:after {
+        content: '#{$hex}';
+        @include font-rules($name);
+      }
+    }
+  }
+
+}
+

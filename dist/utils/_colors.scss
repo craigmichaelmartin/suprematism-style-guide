@@ -1,0 +1,120 @@
+/**
+ * Design Reference:
+ * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
+ */
+
+/**
+ * Used for: 
+ *  - Condition Bar
+ */
+$ice: #e8ecf0;
+
+
+/**
+ * Used for:
+ *  - Data Grid columns
+ *  - Header, primary
+ */
+$off-white: #f6f6f6;
+
+
+/**
+ * Used for:
+ *  - Data Grid columns
+ *  - Header, primary
+ */
+$gray: #d5d8dd;
+
+
+/**
+ * Used for:
+ *  - hover state fill: data grid, droplists
+ *  - fill state for search boxes
+ */
+$lemon: #ffd966;
+
+
+/**
+ * Used for:
+ *  - unselected icons
+ *  - droplist unselected bold type
+ */
+$blue-gray: #9fb3c3;
+
+
+/**
+ * Used for:
+ *  - selected icons
+ *  - selected text
+ */
+$aqua: #55a0c2;
+
+
+/**
+ * Used for:
+ *  - nav bar
+ *  - active toggle
+ */
+$purple: #6460aa;
+
+
+/**
+ * Used for:
+ *  - data grid column head text
+ */
+$mid-gray: #7f8a93;
+
+
+/**
+ * Used for:
+ *  - hover state color for toolbar buttons
+ */
+$blue: #0082a9;
+
+
+/**
+ * Used for:
+ *  - hover state color for action buttons
+ */
+$green: #7f982f;
+
+
+/**
+ * Used for:
+ *  - hover state color for action buttons
+ */
+$lite-green: #a8c839;
+
+
+/**
+ * Used for:
+ *  - white
+ */
+$white: #ffffff;
+
+
+/** 
+ * Used for:
+ *  - black
+ */
+$black: #000000;
+
+
+/**
+ * Collection of the colors
+ */
+$colors: (
+  ('ice', $ice),
+  ('off-white', $off-white),
+  ('gray', $gray),
+  ('lemon', $lemon),
+  ('blue-gray', $blue-gray),
+  ('aqua', $aqua),
+  ('purple', $purple),
+  ('mid-gray', $mid-gray),
+  ('blue', $blue),
+  ('green', $green),
+  ('lite-green', $lite-green),
+  ('white', $white),
+  ('black', $black)
+);
