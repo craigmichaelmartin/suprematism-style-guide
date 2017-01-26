@@ -87,6 +87,12 @@ $lite-green: #a8c839;
 
 
 /**
+ * Holding container
+ */
+$soft-green: #eff6e1;
+
+
+/**
  * Used for:
  *  - white
  */
@@ -98,6 +104,22 @@ $white: #ffffff;
  *  - black
  */
 $black: #000000;
+
+
+/**
+ * Used for:
+ * In active text
+ */
+$lite-gray: #cccccc;
+
+
+/**
+ * Strokes
+ */
+$active-stroke: #c2cdd8;
+$disabled-stroke: #d5d8dd;
+
+
 
 
 /**
@@ -116,5 +138,34 @@ $colors: (
   ('green', $green),
   ('lite-green', $lite-green),
   ('white', $white),
-  ('black', $black)
+  ('black', $black),
+  ('lite-gray', $lite-gray),
+  ('active-stroke', $active-stroke),
+  ('disabled-stroke', $disabled-stroke),
+  ('soft-green', $soft-green)
 );
+
+
+/**
+ * Helper classes for colors
+ */
+@each $name, $hex in $colors {
+  .bg-#{$name} {
+    background-color: $hex;
+  }
+  .color-#{$name} {
+    color: $hex;
+  }
+  .border-#{name} {
+    border-color: $hex;
+  }
+  %bg-#{$name} {
+    background-color: $hex;
+  }
+  %color-#{$name} {
+    color: $hex;
+  }
+  %border-#{$name} {
+    color: $hex;
+  }
+}

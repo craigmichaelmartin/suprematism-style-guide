@@ -3,5 +3,17 @@
 
 html, body {
   height: 100%;
-  color: red;
 }
+
+
+//
+// Prisim Code Display 
+//
+@import "../node_modules/prismjs/themes/prism.css";
+pre.code-block {
+  margin: 12px 0;
+  padding: 0px;
+}
+
+
+

@@ -15,6 +15,7 @@ import { TypographyAlignmentComponent } from './sections/typography-alignment/ty
 import { TypographyTabularDataComponent } from './sections/typography-tabular-data/typography-tabular-data.component';
 import { InputElementsComponent } from './sections/input-elements/input-elements.component';
 import { InputSelectsComponent } from './sections/input-selects/input-selects.component';
+import { ButtonsComponent } from './sections/buttons/buttons.component';
 
 const routes: Routes = [
 
@@ -37,7 +38,10 @@ const routes: Routes = [
 
   // Forms and Inputs etc
   { path: 'section/forms-inputs', component: InputElementsComponent },
-  { path: 'section/forms-selects', component: InputSelectsComponent }
+  { path: 'section/forms-selects', component: InputSelectsComponent },
+
+  // Components
+  { path: 'section/buttons', component: ButtonsComponent }
 
 ];
 

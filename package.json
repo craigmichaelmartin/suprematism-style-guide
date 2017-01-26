@@ -20,12 +20,15 @@
   "homepage": "https://cinbcuniversal.github.io/suprematism-style-guide/index.html",
   "dependencies": {},
   "devDependencies": {
+    "basscss": "^8.0.3",
+    "concat-files": "^0.1.1",
     "concise-cli": "^0.4.1",
     "concise-ui": "^0.2.0",
     "concise-utils": "^1.0.0",
     "concise.css": "^4.0.1",
     "fs-extra": "^2.0.0",
     "node-sass": "^3.10.1",
-    "node-watch": "^0.4.1"
+    "node-watch": "^0.4.1",
+    "suprematism-font-icons": "github:cinbcuniversal/suprematism-font-icons"
   }
 }

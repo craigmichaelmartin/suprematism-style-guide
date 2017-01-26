@@ -5,6 +5,16 @@
 }
 
 // menu list items
-ul li {
-  list-style-type: none;
+ul {
+
+  li {
+    list-style-type: none;
+    color: darkgray;
+    a {
+      color: black;
+      &:hover {
+        color: red;
+      }
+    }
+  }
 }

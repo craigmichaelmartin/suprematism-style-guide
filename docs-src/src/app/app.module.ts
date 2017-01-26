@@ -19,6 +19,7 @@ import { TypographyAlignmentComponent } from './sections/typography-alignment/ty
 import { TypographyTabularDataComponent } from './sections/typography-tabular-data/typography-tabular-data.component';
 import { InputElementsComponent } from './sections/input-elements/input-elements.component';
 import { InputSelectsComponent } from './sections/input-selects/input-selects.component';
+import { ButtonsComponent } from './sections/buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { InputSelectsComponent } from './sections/input-selects/input-selects.co
     TypographyAlignmentComponent,
     TypographyTabularDataComponent,
     InputElementsComponent,
-    InputSelectsComponent
+    InputSelectsComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,
