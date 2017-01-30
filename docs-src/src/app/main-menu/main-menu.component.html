@@ -6,38 +6,48 @@
   </li>
   <li>
     <h5 class="_mt0 _mb0">Styles / Esthetics</h5>
-    <ul class="_mt0 _pbxs _plxs">
+    <ul class="_mt0 _pbxs _pls">
       <li><a [routerLink]="['section/colors']">Colors List</a></li>
       <li>Colors Guide</li>
       <li>Visual Rules &amp; Considerations</li>
     </ul>
   </li>
   <li>
-    <h5 class="_mt0 _mb0">Typography</h5>
-    <ul class="_mt0 _pbxs _plxs">
+    <h5 class="_mt0 _mb0 _mtm">Typography</h5>
+    <ul class="_mt0 _pbxs _pls">
       <li>Headers</li>
       <li>Links</li>
       <li>Paragraphs / Body Copy</li>
-      <li>Icons</li>
+      <li><a [routerLink]="['section/icons']" fragment="top">Icons</a></li>
       <li>Lists</li>
       <li>Alignment</li>
       <li>Tabular Data (Tables)</li>
     </ul>
   </li>
   <li>
-    <h5 class="_mt0 _mb0">Inputs</h5>
-    <ul class="_mt0 _pbxs _plxs">
+    <h5 class="_mt0 _mb0 _mtm">Inputs</h5>
+    <ul class="_mt0 _pbxs _pls">
       <li>Text, Numbers, etc</li>
       <li>Select</li>
       <li>Textarea</li>
       <li>Radio Groups</li>
-      <li>Checkboxes</li>
+      <li>
+        <a [routerLink]="['section/checkboxes']" fragment="top">Checkboxes</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/checkboxes'">
+          <li><a [routerLink]="['section/checkboxes']" fragment="checkbox-inline-active">Inline &amp; Active</a></li>
+          <li><a [routerLink]="['section/checkboxes']" fragment="checkbox-stacked-active">Stacked &amp; Active</a></li>
+          <li><a [routerLink]="['section/checkboxes']" fragment="checkbox-stacked-active-columns">Stacked, Multi-column, &amp; Active</a></li>
+          <li><a [routerLink]="['section/checkboxes']" fragment="checkbox-disabled">Disabled</a></li>
+          <li><a [routerLink]="['section/checkboxes']" fragment="checkbox-select-all-active">Select All &amp; Active</a></li>
+          <li><a [routerLink]="['section/checkboxes']" fragment="checkbox-select-all-disabled">Select All &amp; Disabled</a></li>
+        </ul>
+      </li>
       <li>Forms</li>
     </ul>
   </li>
   <li>
-    <h5 class="_mt0 _mb0">Page Layouts</h5>
-    <ul class="_mt0 _pbxs _plxs">
+    <h5 class="_mt0 _mb0 _mtm">Page Layouts</h5>
+    <ul class="_mt0 _pbxs _pls">
       <li>Grid System</li>
       <li>Layouts</li>
       <li>Breakpoints</li>
@@ -45,22 +55,46 @@
     </ul>
   </li>
   <li>
-    <h5 class="_mt0 _mb0">Components</h5>
-    <ul class="_mt0 _pbxs _plxs">
+    <h5 class="_mt0 _mb0 _mtm">Components</h5>
+    <ul class="_mt0 _pbxs _pls">
       <li>Data Grid</li>
       <li>Popover / Tooltip</li>
       <li>Modal</li>
       <li>Navigation</li>
       <li>Navigation Tiles</li>
       <li>Dialogs / User Feedback</li>
-      <li>Dropdown Menus</li>
-      <li><a [routerLink]="['section/buttons']">Buttons</a></li>
+      <li>
+        <a [routerLink]="['section/dropdowns']" fragment="top">Dropdown Menus</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/dropdowns'">
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-no-icons">With no Icons</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-icons">With Icons</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-width">Apply a Width</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-checkboxes">With Checkboxes</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-checkboxes-and-icons">With Checkboxes &amp; Icons</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-mark-item-and-checkbox-selected">Mark Item &amp; Checkbox Selected</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-select-all">With a Select All</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-partial-select-all-status">With a Select All Partially Selected</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-angular-sample">Angular Component</a></li>
+        </ul>
+      </li>
+      <li>
+        <a [routerLink]="['section/buttons']" fragment="top">Buttons</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/buttons'">
+          <li><a [routerLink]="['section/buttons']" fragment="buttons-actions">Action Buttons</a></li>
+          <li><a [routerLink]="['section/buttons']" fragment="buttons-dialog-confirm">Dialog/Confirm Buttons</a></li>
+          <li><a [routerLink]="['section/buttons']" fragment="buttons-toolbar">Toolbar Buttons</a></li>
+          <li><a [routerLink]="['section/buttons']" fragment="buttons-conditions">Condition Buttons</a></li>
+          <li><a [routerLink]="['section/buttons']" fragment="buttons-toggle">Toggle Buttons</a></li>
+          <li><a [routerLink]="['section/buttons']" fragment="buttons-toggle-actions">Toggle Action Buttons</a></li>
+          <li><a [routerLink]="['section/buttons']" fragment="buttons-cancel">Cancel Buttons</a></li>
+        </ul>
+      </li>
       <li>Breadcrumbs</li>
     </ul>
   </li>
   <li>
-    <h5 class="_mt0 _mb0">Utilities</h5>
-    <ul class="_mt0 _pbxs _plxs">
+    <h5 class="_mt0 _mb0 _mtm">Utilities</h5>
+    <ul class="_mt0 _pbxs _pls">
       <li>Borders</li>
       <li>Spacing (Padding &amp; Margins)</li>
       <li>Breakpoint Mixins</li>
@@ -68,8 +102,8 @@
     </ul>
   </li>
   <li>
-    <h5 class="_mt0 _mb0">Standards</h5>
-    <ul class="_mt0 _pbxs _plxs">
+    <h5 class="_mt0 _mb0 _mtm">Standards</h5>
+    <ul class="_mt0 _pbxs _pls">
       <li>Using SuitCSS</li>
       <li>SASS guidelines</li>
       <li>Including Third Party Libraries</li>

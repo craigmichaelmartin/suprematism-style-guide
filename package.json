@@ -14,13 +14,18 @@
     "url": "https://github.com/CINBCUniversal/suprematism-style-guide/issues"
   },
   "scripts": {
-    "build": "node lib/watch-src.js",
-    "build:watch": "node lib/watch-src.js watch"
+    "build": "npm run build:icons && npm run build:guide",
+    "build:guide": "node lib/build-style-guide.js",
+    "build:icons": "node lib/parse-icons-demo.js",
+    "build:watch": "npm run build -- watch",
+    "build:docs": "npm run build && cd docs-src && npm run build && cd ../",
+    "serve": "cd docs-src && npm run start && cd ../"
   },
   "homepage": "https://cinbcuniversal.github.io/suprematism-style-guide/index.html",
   "dependencies": {},
   "devDependencies": {
     "basscss": "^8.0.3",
+    "cheerio": "^0.22.0",
     "concat-files": "^0.1.1",
     "concise-cli": "^0.4.1",
     "concise-ui": "^0.2.0",

@@ -2,13 +2,12 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AbstractSectionComponent } from '../section.abstract';
 
-
 @Component({
-  selector: 'docs-buttons',
-  templateUrl: './buttons.component.html',
-  styleUrls: ['./buttons.component.scss']
+  selector: 'docs-icons',
+  templateUrl: './icons.component.html',
+  styleUrls: ['./icons.component.scss']
 })
-export class ButtonsComponent extends AbstractSectionComponent {
+export class IconsComponent extends AbstractSectionComponent {
 
   constructor(protected route: ActivatedRoute) {
     super(route);

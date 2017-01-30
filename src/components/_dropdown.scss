@@ -1,0 +1,163 @@
+@import '../utils/_colors.scss';
+
+$dropdown-item-horiz-padding: 10px;
+
+
+%label-icon {
+  position: absolute;
+  font-size: 16px;
+  right: 10px;
+  padding: 0px 1px;
+  font-weight: normal;
+}
+
+
+//
+// Button/Container for the dropdown
+//
+.dropdown-button {
+  width: auto;
+  position: relative;
+  
+  //
+  // 
+  //
+  &:hover, &:focus, &:active {
+
+    .dropdown-label {
+      background: $soft-green;
+      border: 1px solid $blue-gray;
+      z-index: 10;
+      &::after {
+        font-family: 'Audri-alpha' !important;
+        content: "\e903";
+      }
+      &:after {
+        @extend %label-icon;
+        color: $aqua;
+      }
+    }
+
+    .dropdown-content {
+      z-index: 9;
+    }
+
+  }
+
+  //
+  // 'Hide' the border when open
+  //
+  &:focus, &:active {
+    .dropdown-label {
+      border-bottom-color: $soft-green;
+    }
+  }
+
+
+  //
+  // Label
+  //
+  .dropdown-label {
+    border: 1px solid $gray;
+    width: auto;
+    line-height: 32px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0px 50px 0px $dropdown-item-horiz-padding;
+    position: relative;
+    color: $blue-gray;
+
+    &::after {
+      font-family: 'Audri-alpha' !important;
+      content: "\e900";
+    }
+    &:after {
+      @extend %label-icon;
+    }
+
+    &[selected=true] {
+      color: $aqua;
+      .#{$icon-class} {
+        margin-right: 6px;
+        font-size: 14px;
+        position: relative;
+        top: 2px;
+        font-weight: normal;
+      }
+    }
+
+  }
+
+
+  //
+  // Items container
+  //
+  .dropdown-content {
+    clear: both;
+    // width: inherit;
+    min-width: 100%;
+    background: $white;
+    border-bottom-left-radius: $button-radius;
+    border-bottom-right-radius: $button-radius;
+    // border-color: $gray;
+    padding: 0 0 0 0;
+    margin: -1px 0 0 0;
+    font-size: 10px;
+    box-shadow: 4px 4px 7px -4px black;
+    border: 1px solid $blue-gray;
+    // border-top: 0;
+
+
+    //
+    // Dropdown Items
+    //
+    .item {
+      width: 100%;
+      line-height: 32px;
+      border-bottom: 1px solid $gray;
+      padding: 0 $dropdown-item-horiz-padding;
+      font-weight: bold;
+      color: $blue-gray;
+      position: relative;
+
+      &:hover {
+        background: $soft-green;
+        color: $aqua;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+        border-bottom-left-radius: $button-radius;
+        border-bottom-right-radius: $button-radius;
+      }
+
+      &[selected=true] {
+        color: $aqua;
+      }
+
+      .#{$icon-class} {
+        margin-right: 10px;
+        font-size: 14px;
+        position: relative;
+        top: 2px;
+        font-weight: normal;
+      }
+
+      //
+      // Special Checkbox rules
+      //
+      .checkbox {
+        display: block;
+        .icon {
+          top: 2px;
+          left: 0px;
+          margin-right: 7px;
+          font-size: 1.4em;
+        }
+      }
+
+    }
+
+  }
+
+}

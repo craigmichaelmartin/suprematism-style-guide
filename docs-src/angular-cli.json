@@ -23,7 +23,8 @@
         "../node_modules/prismjs/themes/prism.css"
       ],
       "scripts": [
-        "../node_modules/prismjs/prism.js"
+        "../node_modules/prismjs/prism.js",
+        "../node_modules/prismjs/components/prism-typescript.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

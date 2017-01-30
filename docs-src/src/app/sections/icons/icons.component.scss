@@ -1,0 +1,17 @@
+#all-icons {
+  & > div {
+    min-width: 80px;
+    padding-left: 31px;
+    padding-top: 0;
+    line-height: 80px;
+    background-color: whitesmoke;
+    border-right: 2px dashed white;
+    border-bottom: 2px dashed white;
+  }
+}
+
+#all-icon-list {
+  & > div {
+    min-width: 50%;
+  }
+}

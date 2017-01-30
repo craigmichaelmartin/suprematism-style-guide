@@ -1,0 +1,87 @@
+@import "../utils/_colors.scss";
+
+
+//
+// Label for a checkbox
+//
+label.checkbox {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: inherit;
+  line-height: inherit;
+
+
+  //
+  // Input element checkbox
+  //
+  [type=checkbox] {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+
+    //
+    // Icon, unchecked
+    //
+    + span.icon {
+      font-family: 'Audri-alpha';
+      display: inline-block;
+      width: 15px;
+      height: 18px;
+      line-height: 20px;
+      position: relative;
+      top: 1px;
+      left: 2px;
+      &::after {
+        content: "\E922";
+        color: $active-stroke;
+      }
+    }
+
+
+    //
+    // Icon, checked
+    //
+    &:checked + span.icon {
+      &::after {
+        content: "\E920";
+        color: $aqua;
+      }
+    }
+
+
+    //
+    // Icon, change the unchecked icon to the partial check icon... 
+    //
+    &:not(:checked)[partial=true] + span.icon {
+      &::after {
+        content: "\E921";
+        color: $aqua;
+      }
+    }
+
+
+    //
+    // Disabled
+    //
+    &[disabled=true],
+    &[disabled=disabled] {
+
+      //
+      // Icon, unchecked
+      //
+      + span.icon {
+        &:after {
+          opacity: .5;
+        }
+      }
+
+    }
+
+  }
+
+}
