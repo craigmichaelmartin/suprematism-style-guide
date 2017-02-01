@@ -1,0 +1,28 @@
+@import '../_vars.suprematisim.scss';
+
+//
+// margin placeholders
+// padding placeholders
+//
+$spacing: (
+  xs: $spacing-xs,
+  s: $spacing-s,
+  m: $spacing-m,
+  l: $spacing-l, 
+  xl: $spacing-xl
+);
+$sides: (t: top, r: right, b: bottom, l: left);
+$spacing-pre-fixes: m, p;
+
+@each $spacing-prefix in $spacing-pre-fixes {
+  @each $size-prefix, $size-value in $spacing {
+    %_#{$spacing-prefix}#{$size-prefix} {
+      margin: #{$size-value};
+    }
+    @each $side-prefix, $side-long-name in $sides {
+      %_#{$spacing-prefix}#{$side-prefix}#{$size-prefix} {
+        margin-#{$side-long-name}: #{$size-value};
+      }
+    }
+  }
+}

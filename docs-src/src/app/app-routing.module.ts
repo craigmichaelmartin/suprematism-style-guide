@@ -8,6 +8,9 @@ import { ButtonsComponent } from './sections/buttons/buttons.component';
 import { DropdownsComponent } from './sections/dropdowns/dropdowns.component';
 import { IconsComponent } from './sections/icons/icons.component';
 import { CheckboxesComponent } from './sections/checkboxes/checkboxes.component';
+import { BordersComponent } from './sections/utilities/borders/borders.component';
+import { SpacingComponent } from './sections/utilities/spacing/spacing.component';
+import { ZIndexComponent } from './sections/utilities/z-index/z-index.component';
 
 const routes: Routes = [
 
@@ -23,7 +26,12 @@ const routes: Routes = [
   // Components
   { path: 'section/buttons', component: ButtonsComponent },
   { path: 'section/dropdowns', component: DropdownsComponent },
-  { path: 'section/checkboxes', component: CheckboxesComponent }
+  { path: 'section/checkboxes', component: CheckboxesComponent },
+
+  // Utilities
+  { path: 'section/utilities/borders', component: BordersComponent },
+  { path: 'section/utilities/spacing', component: SpacingComponent },
+  { path: 'section/utilities/z-indexes', component: ZIndexComponent }
 
 ];
 

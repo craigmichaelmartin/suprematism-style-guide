@@ -21,29 +21,29 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    {{'&lt;'}}!-- Basic use requires no parent containter to dictate width -->
-    {{'&lt;'}}div tabindex="0" class="dropdown-button">
-      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-      {{'&lt;'}}ul class="dropdown-content">
-        {{'&lt;'}}li class="item" selected="false">Item One{{'&lt;'}}/li>
-        {{'&lt;'}}li class="item" selected="false">Item Two{{'&lt;'}}/li>
-        {{'&lt;'}}li class="item" selected="false">Item Three{{'&lt;'}}/li>
-      {{'&lt;'}}/ul>
-    {{'&lt;'}}/div>
+  {{'&lt;'}}!-- Basic use requires no parent containter to dictate width -->
+  {{'&lt;'}}div tabindex="0" class="dropdown-button">
+    {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+    {{'&lt;'}}ul class="dropdown-content">
+      {{'&lt;'}}li class="item" selected="false">Item One{{'&lt;'}}/li>
+      {{'&lt;'}}li class="item" selected="false">Item Two{{'&lt;'}}/li>
+      {{'&lt;'}}li class="item" selected="false">Item Three{{'&lt;'}}/li>
+    {{'&lt;'}}/ul>
+  {{'&lt;'}}/div>
 
-    {{'&lt;'}}!-- 
-      When an item is selected:
-        - add the text to the dropdown-button 
-        - set selected="true" on the item
-    -->
-    {{'&lt;'}}div tabindex="0" class="dropdown-button">
-      {{'&lt;'}}div class="dropdown-label" selected="true">Item Three{{'&lt;'}}/div>
-      {{'&lt;'}}ul class="dropdown-content">
-        {{'&lt;'}}li class="item" selected="false">Item One{{'&lt;'}}/li>
-        {{'&lt;'}}li class="item" selected="false">Item Two{{'&lt;'}}/li>
-        {{'&lt;'}}li class="item" selected="true">Item Three{{'&lt;'}}/li>
-      {{'&lt;'}}/ul>
-    {{'&lt;'}}/div>
+  {{'&lt;'}}!--
+    When an item is selected:
+      - add the text to the dropdown-button 
+      - set selected="true" on the item
+  -->
+  {{'&lt;'}}div tabindex="0" class="dropdown-button">
+    {{'&lt;'}}div class="dropdown-label" selected="true">Item Three{{'&lt;'}}/div>
+    {{'&lt;'}}ul class="dropdown-content">
+      {{'&lt;'}}li class="item" selected="false">Item One{{'&lt;'}}/li>
+      {{'&lt;'}}li class="item" selected="false">Item Two{{'&lt;'}}/li>
+      {{'&lt;'}}li class="item" selected="true">Item Three{{'&lt;'}}/li>
+    {{'&lt;'}}/ul>
+  {{'&lt;'}}/div>
   </code>
 </pre>
 
@@ -68,29 +68,29 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    {{'&lt;'}}!-- Icons are added to each item -->
-    {{'&lt;'}}div tabindex="0" class="dropdown-button">
-      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-      {{'&lt;'}}ul class="dropdown-content">
-        {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>Item name that is kind of long{{'&lt;'}}/li>
-        {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>Item name that is also long{{'&lt;'}}/li>
-        {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>Item name is short{{'&lt;'}}/li>
-      {{'&lt;'}}/ul>
-    {{'&lt;'}}/div>
+  {{'&lt;'}}!-- Icons are added to each item -->
+  {{'&lt;'}}div tabindex="0" class="dropdown-button">
+    {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+    {{'&lt;'}}ul class="dropdown-content">
+      {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>Item name that is kind of long{{'&lt;'}}/li>
+      {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>Item name that is also long{{'&lt;'}}/li>
+      {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>Item name is short{{'&lt;'}}/li>
+    {{'&lt;'}}/ul>
+  {{'&lt;'}}/div>
 
-    {{'&lt;'}}!-- 
-      When an item is selected:
-        - add the icon and text to the dropdown-button 
-        - set selected="true" on the item
-    -->
-    {{'&lt;'}}div tabindex="0" class="dropdown-button _mlm">
-      {{'&lt;'}}div class="dropdown-label" selected="true">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span> Item name that is also long{{'&lt;'}}/div>
-      {{'&lt;'}}ul class="dropdown-content">
-        {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>Item name that is kind of long{{'&lt;'}}/li>
-        {{'&lt;'}}li class="item" selected="true">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>Item name that is also long{{'&lt;'}}/li>
-        {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>Item name is short{{'&lt;'}}/li>
-      {{'&lt;'}}/ul>
-    {{'&lt;'}}/div>
+  {{'&lt;'}}!-- 
+    When an item is selected:
+      - add the icon and text to the dropdown-button 
+      - set selected="true" on the item
+  -->
+  {{'&lt;'}}div tabindex="0" class="dropdown-button _mlm">
+    {{'&lt;'}}div class="dropdown-label" selected="true">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span> Item name that is also long{{'&lt;'}}/div>
+    {{'&lt;'}}ul class="dropdown-content">
+      {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>Item name that is kind of long{{'&lt;'}}/li>
+      {{'&lt;'}}li class="item" selected="true">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>Item name that is also long{{'&lt;'}}/li>
+      {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>Item name is short{{'&lt;'}}/li>
+    {{'&lt;'}}/ul>
+  {{'&lt;'}}/div>
   </code>
 </pre>
 
@@ -109,19 +109,19 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    {{'&lt;'}}!-- Create a parent container with a width (inline style used for example)-->
-    {{'&lt;'}}!-- Apply the min-fit class to the dropdown-button (min-width: 100%) -->
-    {{'&lt;'}}!-- Using the min-fit class would fill any parent container -->
-    {{'&lt;'}}div style="width: 240px;">
-      {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
-        {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-        {{'&lt;'}}ul class="dropdown-content">
-          {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>Item{{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>Item{{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>Item name that is kind of long{{'&lt;'}}/li>
-        {{'&lt;'}}/ul>
-      {{'&lt;'}}/div>
+  {{'&lt;'}}!-- Create a parent container with a width (inline style used for example)-->
+  {{'&lt;'}}!-- Apply the min-fit class to the dropdown-button (min-width: 100%) -->
+  {{'&lt;'}}!-- Using the min-fit class would fill any parent container -->
+  {{'&lt;'}}div style="width: 240px;">
+    {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
+      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>Item{{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>Item{{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>Item name that is kind of long{{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
     {{'&lt;'}}/div>
+  {{'&lt;'}}/div>
   </code>
 </pre>
 
@@ -156,32 +156,32 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    {{'&lt;'}}!-- Wrap the text into the checkbox markup -->
-    {{'&lt;'}}div style="width: 260px">
-      {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
-        {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-        {{'&lt;'}}ul class="dropdown-content">
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test">
-              {{'&lt;'}}input id="test" type="checkbox" />
-              {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test2">
-              {{'&lt;'}}input id="test2" type="checkbox" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test3">
-              {{'&lt;'}}input id="test3" type="checkbox" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>Item name that is kind of long
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-        {{'&lt;'}}/ul>
-      {{'&lt;'}}/div>
+  {{'&lt;'}}!-- Wrap the text into the checkbox markup -->
+  {{'&lt;'}}div style="width: 260px">
+    {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
+      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test">
+            {{'&lt;'}}input id="test" type="checkbox" />
+            {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test2">
+            {{'&lt;'}}input id="test2" type="checkbox" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test3">
+            {{'&lt;'}}input id="test3" type="checkbox" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>Item name that is kind of long
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
     {{'&lt;'}}/div>
+  {{'&lt;'}}/div>
   </code>
 </pre>
 
@@ -222,38 +222,38 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    {{'&lt;'}}!-- Add an icon to the checkbox markup -->
-    {{'&lt;'}}div style="width: 260px">
-      {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
-        {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-        {{'&lt;'}}ul class="dropdown-content">
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test4">
-              {{'&lt;'}}input id="test4" type="checkbox" />
-              {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
-              Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test5">
-              {{'&lt;'}}input id="test5" type="checkbox" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>
-              Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test6">
-              {{'&lt;'}}input id="test6" type="checkbox" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>
-              Item name that is kind of long
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-        {{'&lt;'}}/ul>
-      {{'&lt;'}}/div>
+  {{'&lt;'}}!-- Add an icon to the checkbox markup -->
+  {{'&lt;'}}div style="width: 260px">
+    {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
+      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test4">
+            {{'&lt;'}}input id="test4" type="checkbox" />
+            {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
+            Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test5">
+            {{'&lt;'}}input id="test5" type="checkbox" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>
+            Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test6">
+            {{'&lt;'}}input id="test6" type="checkbox" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>
+            Item name that is kind of long
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
     {{'&lt;'}}/div>
+  {{'&lt;'}}/div>
   </code>
 </pre>
 
@@ -294,44 +294,44 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    {{'&lt;'}}!-- 
-      To mark an item and its checkbox as selected apply:
-       - add selected="true" to the .item element
-       - add the checked="checked" attribute to the input element
-    -->
-    {{'&lt;'}}div style="width: 260px">
-      {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
-        {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-        {{'&lt;'}}ul class="dropdown-content">
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test7">
-              {{'&lt;'}}input id="test7" type="checkbox" />
-              {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
-              Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}!-- add selected="true" to an .item element -->
-          {{'&lt;'}}li class="item" selected="true">
-            {{'&lt;'}}label class="checkbox" for="test8">
-              {{'&lt;'}}!-- set the checked attribute on the input -->
-              {{'&lt;'}}input id="test8" type="checkbox" checked="checked" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>
-              Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test9">
-              {{'&lt;'}}input id="test9" type="checkbox" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>
-              Item name that is kind of long
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-        {{'&lt;'}}/ul>
-      {{'&lt;'}}/div>
+  {{'&lt;'}}!-- 
+    To mark an item and its checkbox as selected apply:
+      - add selected="true" to the .item element
+      - add the checked="checked" attribute to the input element
+  -->
+  {{'&lt;'}}div style="width: 260px">
+    {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
+      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test7">
+            {{'&lt;'}}input id="test7" type="checkbox" />
+            {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
+            Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}!-- add selected="true" to an .item element -->
+        {{'&lt;'}}li class="item" selected="true">
+          {{'&lt;'}}label class="checkbox" for="test8">
+            {{'&lt;'}}!-- set the checked attribute on the input -->
+            {{'&lt;'}}input id="test8" type="checkbox" checked="checked" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>
+            Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test9">
+            {{'&lt;'}}input id="test9" type="checkbox" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>
+            Item name that is kind of long
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
     {{'&lt;'}}/div>
+  {{'&lt;'}}/div>
   </code>
 </pre>
 
@@ -353,7 +353,7 @@
       </li>
       <li class="item" selected="true">
         <label class="checkbox" for="test11">
-          <input id="test11" type="checkbox" disabled="true" checked="checked" />
+          <input id="test11" type="checkbox" checked="checked" />
           <span class="icon _mrs"></span>
           <span class="u-supre-icon u-supre-icon--Auto"></span>
           Item
@@ -361,7 +361,7 @@
       </li>
       <li class="item" selected="true">
         <label class="checkbox" for="test12">
-          <input id="test12" type="checkbox" disabled="true" checked="checked" />
+          <input id="test12" type="checkbox" checked="checked" />
           <span class="icon"></span>
           <span class="u-supre-icon u-supre-icon--CPG-food"></span>
           Item
@@ -369,7 +369,7 @@
       </li>
       <li class="item" selected="true">
         <label class="checkbox" for="test13">
-          <input id="test13" type="checkbox" disabled="true" checked="checked" />
+          <input id="test13" type="checkbox" checked="checked" />
           <span class="icon"></span>
           <span class="u-supre-icon u-supre-icon--CPG-home"></span>
           Item name that is kind of long
@@ -380,46 +380,46 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    <!-- When using an all checkbox, disable all the other checkboxes when all is selected -->
-    {{'&lt;'}}div style="width: 260px">
-      {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
-        {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-        {{'&lt;'}}ul class="dropdown-content">
-          {{'&lt;'}}li class="item" selected="true">
-            {{'&lt;'}}label class="checkbox" for="test10">
-              {{'&lt;'}}input id="test10" type="checkbox" partial="false" checked="checked" />
-              {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
-              All
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="true">
-            {{'&lt;'}}label class="checkbox" for="test11">
-              {{'&lt;'}}input id="test11" type="checkbox" disabled="true" checked="checked" />
-              {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
-              Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="true">
-            {{'&lt;'}}label class="checkbox" for="test12">
-              {{'&lt;'}}input id="test12" type="checkbox" disabled="true" checked="checked" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>
-              Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="true">
-            {{'&lt;'}}label class="checkbox" for="test13">
-              {{'&lt;'}}input id="test13" type="checkbox" disabled="true" checked="checked" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>
-              Item name that is kind of long
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-        {{'&lt;'}}/ul>
-      {{'&lt;'}}/div>
+  <!-- When using an all checkbox, disable all the other checkboxes when all is selected -->
+  {{'&lt;'}}div style="width: 260px">
+    {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
+      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}li class="item" selected="true">
+          {{'&lt;'}}label class="checkbox" for="test10">
+            {{'&lt;'}}input id="test10" type="checkbox" partial="false" checked="checked" />
+            {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
+            All
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="true">
+          {{'&lt;'}}label class="checkbox" for="test11">
+            {{'&lt;'}}input id="test11" type="checkbox" checked="checked" />
+            {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
+            Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="true">
+          {{'&lt;'}}label class="checkbox" for="test12">
+            {{'&lt;'}}input id="test12" type="checkbox" checked="checked" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>
+            Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="true">
+          {{'&lt;'}}label class="checkbox" for="test13">
+            {{'&lt;'}}input id="test13" type="checkbox" checked="checked" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>
+            Item name that is kind of long
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
     {{'&lt;'}}/div>
+  {{'&lt;'}}/div>
   </code>
 </pre>
 
@@ -467,47 +467,47 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    {{'&lt;'}}div style="width: 260px">
-      {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
-        {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-        {{'&lt;'}}ul class="dropdown-content">
-          {{'&lt;'}}!-- mark the item as selected="false" -->
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test14">
-              {{'&lt;'}}!-- add the partial="true" to the input element -->
-              {{'&lt;'}}!-- note: the input is not checked -->
-              {{'&lt;'}}input id="test14" type="checkbox" partial="true" />
-              {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
-              All
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="false">
-            {{'&lt;'}}label class="checkbox" for="test15">
-              {{'&lt;'}}input id="test15" type="checkbox" />
-              {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
-              Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="true">
-            {{'&lt;'}}label class="checkbox" for="test16">
-              {{'&lt;'}}input id="test16" type="checkbox" checked="checked" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>
-              Item
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-          {{'&lt;'}}li class="item" selected="true">
-            {{'&lt;'}}label class="checkbox" for="test17">
-              {{'&lt;'}}input id="test17" type="checkbox" checked="checked" />
-              {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
-              {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>
-              Item name that is kind of long
-            {{'&lt;'}}/label>
-          {{'&lt;'}}/li>
-        {{'&lt;'}}/ul>
-      {{'&lt;'}}/div>
+  {{'&lt;'}}div style="width: 260px">
+    {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
+      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}!-- mark the item as selected="false" -->
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test14">
+            {{'&lt;'}}!-- add the partial="true" to the input element -->
+            {{'&lt;'}}!-- note: the input is not checked -->
+            {{'&lt;'}}input id="test14" type="checkbox" partial="true" />
+            {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
+            All
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">
+          {{'&lt;'}}label class="checkbox" for="test15">
+            {{'&lt;'}}input id="test15" type="checkbox" />
+            {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--Auto">{{'&lt;'}}/span>
+            Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="true">
+          {{'&lt;'}}label class="checkbox" for="test16">
+            {{'&lt;'}}input id="test16" type="checkbox" checked="checked" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-food">{{'&lt;'}}/span>
+            Item
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="true">
+          {{'&lt;'}}label class="checkbox" for="test17">
+            {{'&lt;'}}input id="test17" type="checkbox" checked="checked" />
+            {{'&lt;'}}span class="icon">{{'&lt;'}}/span>
+            {{'&lt;'}}span class="u-supre-icon u-supre-icon--CPG-home">{{'&lt;'}}/span>
+            Item name that is kind of long
+          {{'&lt;'}}/label>
+        {{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
     {{'&lt;'}}/div>
+  {{'&lt;'}}/div>
   </code>
 </pre>
 
@@ -535,182 +535,182 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-    {{'&lt;'}}!-- 
-      Component Template 
-    -->
-    {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
-      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
-      {{'&lt;'}}ul class="dropdown-content">
+  {{'&lt;'}}!-- 
+    Component Template 
+  -->
+  {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
+    {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+    {{'&lt;'}}ul class="dropdown-content">
 
-        {{'&lt;'}}li *ngFor="let item of dropdownModel" class="item" [attr.selected]="item.selected">
-          {{'&lt;'}}label class="checkbox" for="item-{{'&#123;'}}{{'&#123;'}}item.id}}">
-            {{'&lt;'}}input *ngIf="item.type === 'all'" id="item-{{'&#123;'}}{{'&#123;'}}item.id}}" type="checkbox" [attr.checked]="item.selected ? 'checked' : null" [attr.partial]="item.partial" (click)="toggleAllItem(item.id);" />
-            {{'&lt;'}}input *ngIf="item.type === 'item'" id="item-{{'&#123;'}}{{'&#123;'}}item.id}}" type="checkbox" [attr.checked]="item.selected ? 'checked' : null" (click)="toggleItem(item.id);" />
-            {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
-            {{'&lt;'}}span *ngIf="item.icon" class="u-supre-icon {{'&#123;'}}{{'&#123;'}}item.icon}}">{{'&lt;'}}/span>
-            {{'&#123;'}}{{'&#123;'}}item.label}}
-          {{'&lt;'}}/label>
-        {{'&lt;'}}/li>
+      {{'&lt;'}}li *ngFor="let item of dropdownModel" class="item" [attr.selected]="item.selected">
+        {{'&lt;'}}label class="checkbox" for="item-{{'&#123;'}}{{'&#123;'}}item.id{{'&#125;'}}{{'&#125;'}}">
+          {{'&lt;'}}input *ngIf="item.type === 'all'" id="item-{{'&#123;'}}{{'&#123;'}}item.id{{'&#125;'}}{{'&#125;'}}" type="checkbox" [attr.checked]="item.selected ? 'checked' : null" [attr.partial]="item.partial" (click)="toggleAllItem(item.id);" />
+          {{'&lt;'}}input *ngIf="item.type === 'item'" id="item-{{'&#123;'}}{{'&#123;'}}item.id{{'&#125;'}}{{'&#125;'}}" type="checkbox" [attr.checked]="item.selected ? 'checked' : null" (click)="toggleItem(item.id);" />
+          {{'&lt;'}}span class="icon _mrs">{{'&lt;'}}/span>
+          {{'&lt;'}}span *ngIf="item.icon" class="u-supre-icon {{'&#123;'}}{{'&#123;'}}item.icon{{'&#125;'}}{{'&#125;'}}">{{'&lt;'}}/span>
+          {{'&#123;'}}{{'&#123;'}}item.label{{'&#125;'}}{{'&#125;'}}
+        {{'&lt;'}}/label>
+      {{'&lt;'}}/li>
 
-      {{'&lt;'}}/ul>
-    {{'&lt;'}}/div>
+    {{'&lt;'}}/ul>
+  {{'&lt;'}}/div>
   </code>
   <code class="language-typescript">
-    /**
-     * Sample Component Code 
-     * 
-     * In a real application it is recommended that the methods and model be implemented
-     * in a service, not within the component. It is recommended that the component uses 
-     * unidirectional data flow.
-     *
-     * Also, always remember to unsubscribe all your subscriptions onDestory
-     */
-
-    // public members
-    public dropdownModel: Array{{'&lt;'}}any> = [];
-    public dropdownSelectionText: string = '';
-
-    // private members
-    private dropdown$: ReplaySubject{{'&lt;'}}any> = new ReplaySubject{{'&lt;'}}any>(1);
-    
-
-    /**
-    * Creates an instance of DropdownsComponent.
+  /**
+    * Sample Component Code 
     * 
-    * @memberOf DropdownsComponent
+    * In a real application it is recommended that the methods and model be implemented
+    * in a service, not within the component. It is recommended that the component uses 
+    * unidirectional data flow.
+    *
+    * Also, always remember to unsubscribe all your subscriptions onDestory
     */
-    constructor() {{'&#123;'}}
 
-      // init the model
-      this.dropdown$.next([
-        {{'&#123;'}}
-          id: 0,
-          label: 'All',
-          selected: false,
-          icon: null,
-          partial: false,
-          type: 'all'
-        },
-        {{'&#123;'}}
-          id: 1,
-          label: 'Auto',
-          icon: 'u-supre-icon--Auto',
-          selected: false,
-          type: 'item'
-        },
-        {{'&#123;'}}
-          id: 2,
-          label: 'Ecommerce',
-          icon: 'u-supre-icon--ecommerce',
-          selected: false,
-          type: 'item'
-        },
-        {{'&#123;'}}
-          id: 3,
-          label: 'Finance',
-          icon: 'u-supre-icon--finance',
-          selected: false,
-          type: 'item'
-        },
-        {{'&#123;'}}
-          id: 4,
-          label: 'Travel',
-          icon: 'u-supre-icon--travel',
-          selected: false,
-          type: 'item'
-        }
-      ]);
+  // public members
+  public dropdownModel: Array{{'&lt;'}}any> = [];
+  public dropdownSelectionText: string = '';
 
-    }
+  // private members
+  private dropdown$: ReplaySubject{{'&lt;'}}any> = new ReplaySubject{{'&lt;'}}any>(1);
+  
 
+  /**
+  * Creates an instance of DropdownsComponent.
+  * 
+  * @memberOf DropdownsComponent
+  */
+  constructor() {{'&#123;'}}
 
-    /**
-    * OnInit hook
-    * 
-    * 
-    * @memberOf DropdownsComponent
-    */
-    ngOnInit() {{'&#123;'}}
-      this.dropdown$.subscribe(model => {{'&#123;'}}
-        // sync the model
-        this.dropdownModel = model;
-        // make the button title human readable
-        if (model.filter(item => item.selected).length === 0) {{'&#123;'}}
-          this.dropdownSelectionText = "Select Categories";
-        } else 
-        if (model.filter(item => item.selected).length === 1) {{'&#123;'}}
-          this.dropdownSelectionText = "1 Category Selected";
-        } else
-        if (model.filter(item => item.selected).length === model.length) {{'&#123;'}}
-          this.dropdownSelectionText = `All Categories Selected`;
-        } else {{'&#123;'}}
-          this.dropdownSelectionText = `${{'&#123;'}}model.filter(item => item.selected).length} Categories Selected`;
-        }
-      });
-    }
-
-
-    /**
-    * Toggle a single item
-    * 
-    * @param {{'&#123;'}}number} itemId
-    * 
-    * @memberOf DropdownsComponent
-    */
-    toggleItem(itemId: number) {{'&#123;'}}
-      this.dropdown$
-        .take(1)
-        .subscribe(state => this.dropdown$.next(
-          update(state, Number(itemId))
-        ));
-
-      function update(state, id) {{'&#123;'}}
-        return state.slice(0)
-          .map(item => {{'&#123;'}}
-            if(item.id === id){{'&#123;'}}
-              return Object.assign({{'&#123;'}}}, item, {{'&#123;'}}selected: !item.selected});
-            }
-            return item;
-          })
-          .reduce((items, item, index, orig_collection) => {{'&#123;'}}
-            if (item.type === 'all') {{'&#123;'}}
-              let all_items = orig_collection.slice(1).every(item => item.selected),
-                  some_items = orig_collection.slice(1).some(item => item.selected);
-              if (some_items) {{'&#123;'}} item.selected = false; item.partial = true; }
-              if (all_items) {{'&#123;'}} item.selected = true; item.partial = false; }
-              if (!some_items && !all_items) {{'&#123;'}} item.selected = false; item.partial = false; }
-            }
-            return items.concat(item);
-          }, []);
+    // init the model
+    this.dropdown$.next([
+      {{'&#123;'}}
+        id: 0,
+        label: 'All',
+        selected: false,
+        icon: null,
+        partial: false,
+        type: 'all'
+      },
+      {{'&#123;'}}
+        id: 1,
+        label: 'Auto',
+        icon: 'u-supre-icon--Auto',
+        selected: false,
+        type: 'item'
+      },
+      {{'&#123;'}}
+        id: 2,
+        label: 'Ecommerce',
+        icon: 'u-supre-icon--ecommerce',
+        selected: false,
+        type: 'item'
+      },
+      {{'&#123;'}}
+        id: 3,
+        label: 'Finance',
+        icon: 'u-supre-icon--finance',
+        selected: false,
+        type: 'item'
+      },
+      {{'&#123;'}}
+        id: 4,
+        label: 'Travel',
+        icon: 'u-supre-icon--travel',
+        selected: false,
+        type: 'item'
       }
-    }
+    ]);
+
+  }
 
 
-    /**
-    * Toggle all the items
-    * 
-    * @param {{'&#123;'}}number} itemId
-    * 
-    * @memberOf DropdownsComponent
-    */
-    toggleAllItem(itemId: number) {{'&#123;'}}
-      this.dropdown$
-        .take(1)
-        .subscribe(state => this.dropdown$.next(
-          update(state, Number(itemId))
-        ));
-
-      function update(state, id) {{'&#123;'}}
-        let selected = !state[id].selected;
-        return state.slice(0)
-          .map(item => {{'&#123;'}}
-            if (item.type === 'all') {{'&#123;'}}
-              return Object.assign({{'&#123;'}}}, item, {{'&#123;'}}selected, partial: false});
-            } else {{'&#123;'}}
-              return Object.assign({{'&#123;'}}}, item, {{'&#123;'}}selected});
-            }
-          });
+  /**
+  * OnInit hook
+  * 
+  * 
+  * @memberOf DropdownsComponent
+  */
+  ngOnInit() {{'&#123;'}}
+    this.dropdown$.subscribe(model => {{'&#123;'}}
+      // sync the model
+      this.dropdownModel = model;
+      // make the button title human readable
+      if (model.filter(item => item.selected).length === 0) {{'&#123;'}}
+        this.dropdownSelectionText = "Select Categories";
+      } else 
+      if (model.filter(item => item.selected).length === 1) {{'&#123;'}}
+        this.dropdownSelectionText = "1 Category Selected";
+      } else
+      if (model.filter(item => item.selected).length === model.length) {{'&#123;'}}
+        this.dropdownSelectionText = `All Categories Selected`;
+      } else {{'&#123;'}}
+        this.dropdownSelectionText = `${{'&#123;'}}model.filter(item => item.selected).length} Categories Selected`;
       }
+    });
+  }
+
+
+  /**
+  * Toggle a single item
+  * 
+  * @param {{'&#123;'}}number} itemId
+  * 
+  * @memberOf DropdownsComponent
+  */
+  toggleItem(itemId: number) {{'&#123;'}}
+    this.dropdown$
+      .take(1)
+      .subscribe(state => this.dropdown$.next(
+        update(state, Number(itemId))
+      ));
+
+    function update(state, id) {{'&#123;'}}
+      return state.slice(0)
+        .map(item => {{'&#123;'}}
+          if(item.id === id){{'&#123;'}}
+            return Object.assign({{'&#123;'}}}, item, {{'&#123;'}}selected: !item.selected});
+          }
+          return item;
+        })
+        .reduce((items, item, index, orig_collection) => {{'&#123;'}}
+          if (item.type === 'all') {{'&#123;'}}
+            let all_items = orig_collection.slice(1).every(item => item.selected),
+                some_items = orig_collection.slice(1).some(item => item.selected);
+            if (some_items) {{'&#123;'}} item.selected = false; item.partial = true; }
+            if (all_items) {{'&#123;'}} item.selected = true; item.partial = false; }
+            if (!some_items && !all_items) {{'&#123;'}} item.selected = false; item.partial = false; }
+          }
+          return items.concat(item);
+        }, []);
     }
+  }
+
+
+  /**
+  * Toggle all the items
+  * 
+  * @param {{'&#123;'}}number} itemId
+  * 
+  * @memberOf DropdownsComponent
+  */
+  toggleAllItem(itemId: number) {{'&#123;'}}
+    this.dropdown$
+      .take(1)
+      .subscribe(state => this.dropdown$.next(
+        update(state, Number(itemId))
+      ));
+
+    function update(state, id) {{'&#123;'}}
+      let selected = !state[id].selected;
+      return state.slice(0)
+        .map(item => {{'&#123;'}}
+          if (item.type === 'all') {{'&#123;'}}
+            return Object.assign({{'&#123;'}}}, item, {{'&#123;'}}selected, partial: false});
+          } else {{'&#123;'}}
+            return Object.assign({{'&#123;'}}}, item, {{'&#123;'}}selected});
+          }
+        });
+    }
+  }
   </code>
 </pre>

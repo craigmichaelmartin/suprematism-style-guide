@@ -19,7 +19,7 @@ export abstract class AbstractSectionComponent implements AfterViewInit, OnDestr
   ngAfterViewInit() {
 
     // transform all prisimJS elements on the page
-    Array.from(document.querySelectorAll('.language-markup'))
+    Array.from(document.querySelectorAll('[class*="language-"]'))
       .forEach((el: Element) => {
         Prism.highlightElement(el, false);
       });

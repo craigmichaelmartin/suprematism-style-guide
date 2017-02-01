@@ -12,6 +12,9 @@ import { ButtonsComponent } from './sections/buttons/buttons.component';
 import { DropdownsComponent } from './sections/dropdowns/dropdowns.component';
 import { IconsComponent } from './sections/icons/icons.component';
 import { CheckboxesComponent } from './sections/checkboxes/checkboxes.component';
+import { BordersComponent } from './sections/utilities/borders/borders.component';
+import { SpacingComponent } from './sections/utilities/spacing/spacing.component';
+import { ZIndexComponent } from './sections/utilities/z-index/z-index.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CheckboxesComponent } from './sections/checkboxes/checkboxes.component'
     ButtonsComponent,
     DropdownsComponent,
     IconsComponent,
-    CheckboxesComponent
+    CheckboxesComponent,
+    BordersComponent,
+    SpacingComponent,
+    ZIndexComponent
   ],
   imports: [
     BrowserModule,

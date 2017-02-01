@@ -38,6 +38,7 @@
 
   // Helpers
   @import '_helpers.scss';
+  @import 'overrides/_borders.scss';
 
   // Components
   @import 'components/_buttons.scss';

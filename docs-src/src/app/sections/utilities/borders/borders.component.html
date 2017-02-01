@@ -1,0 +1,109 @@
+<h1><a id="top"></a>Borders</h1>
+
+<a id="borders-adding"></a>
+<h5 class="_mtxl">Applying Borders 1px borders</h5>
+<div class="flex">
+  <div class="_bt1 _mts _mrs _mbs _mls">Top Border</div>
+  <div class="_br1 _mts _mrs _mbs _mls">Right Border</div>
+  <div class="_bb1 _mts _mrs _mbs _mls">Bottom Border</div>
+  <div class="_bl1 _mts _mrs _mbs _mls">Left Border</div>
+  <div class="_b1 _mts _mrs _mbs _mls">Border All</div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- 1px borders -->
+  {{'&lt;'}}div class="_bt1">Top Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_br1">Right Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_bb1">Bottom Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_bl1">Left Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_b1">Border All{{'&lt;'}}/div>
+
+  {{'&lt;'}}!-- 2px borders -->
+  {{'&lt;'}}div class="_bt2">Top Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_br2">Right Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_bb2">Bottom Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_bl2">Left Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_b2">Border All{{'&lt;'}}/div>
+
+  {{'&lt;'}}!-- 3px borders -->
+  {{'&lt;'}}div class="_bt3">Top Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_br3">Right Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_bb3">Bottom Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_bl3">Left Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_b3">Border All{{'&lt;'}}/div>
+
+  {{'&lt;'}}!-- 4px borders -->
+  {{'&lt;'}}div class="_bt4">Top Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_br4">Right Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_bb4">Bottom Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_bl4">Left Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_b4">Border All{{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="borders-clearing"></a>
+<h5 class="_mtxl">Clearing Borders</h5>
+<div class="flex">
+  <div class="_b1 _bt0 _mts _mrs _mbs _mls">Remove Top Border</div>
+  <div class="_b1 _br0 _mts _mrs _mbs _mls">Remove Right Border</div>
+  <div class="_b1 _bb0 _mts _mrs _mbs _mls">Remove Bottom Border</div>
+  <div class="_b1 _bl0 _mts _mrs _mbs _mls">Remove Left Border</div>
+  <div class="_b1 _b0 _mts _mrs _mbs _mls">Remove All</div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- removing borders -->
+  {{'&lt;'}}div class="_b1 _bt0">Remove Top Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_b1 _br0">Remove Right Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_b1 _bb0">Remove Bottom Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_b1 _bl0">Remove Left Border{{'&lt;'}}/div>
+  {{'&lt;'}}div class="_b1 _b0">Remove All{{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="borders-placeholders"></a>
+<h5 class="_mtxl">Border Placeholders</h5>
+<p>This will add border styles to any class you use it on.<br/> 
+Border placehoders are a Utility, add it to your SCSS file from here:</p>
+<pre class="code-block">
+  <code class="language-sass">
+  @import "../node_modules/suprematism-style-guide/dist/utils/_borders.scss";
+  </code>
+</pre>
+<pre>
+  <code class="language-sass">
+  // use the @extend directive, placholders start with '%', not a '.'
+  
+  @extend %_b0;  // border: none !important;
+  @extend %_bt0; // border-top: none !important;
+  @extend %_br0; // border-right: none !important;
+  @extend %_bb0; // border-bottom: none !important;
+  @extend %_bl0; // border-left: none !important;
+  
+  @extend %_b1;  // border: 1px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bt1; // border-top: 1px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_br1; // border-right: 1px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bb1; // border-bottom: 1px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bl1; // border-left: 1px solid {{'&lt;'}}color: $active-stroke>;
+  
+  @extend %_b2;  // border: 2px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bt2; // border-top: 2px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_br2; // border-right: 2px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bb2; // border-bottom: 2px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bl2; // border-left: 2px solid {{'&lt;'}}color: $active-stroke>;
+  
+  @extend %_b3;  // border: 3px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bt3; // border-top: 3px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_br3; // border-right: 3px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bb3; // border-bottom: 3px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bl3; // border-left: 3px solid {{'&lt;'}}color: $active-stroke>;
+  
+  @extend %_b4;  // border: 4px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bt4; // border-top: 4px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_br4; // border-right: 4px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bb4; // border-bottom: 4px solid {{'&lt;'}}color: $active-stroke>;
+  @extend %_bl4; // border-left: 4px solid {{'&lt;'}}color: $active-stroke>;
+  </code>
+</pre>

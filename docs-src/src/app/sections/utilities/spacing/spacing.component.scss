@@ -1,0 +1,41 @@
+@import "../../../../../../src/_vars.concise.scss";
+
+.outer-wrapper {
+  margin: 0 48px 0 0;
+  // background: blue;
+  height: 100%;
+  display: inline-block;
+  border: 1px dashed gray;
+  > span {
+    width: 30px;
+    height: 30px;
+    background: red;
+    display: inline-block;
+  }
+}
+
+span.size-xs {
+  &:after {
+    content: ' (#{$spacing-xs})';
+  }
+}
+span.size-s {
+  &:after {
+    content: ' (#{$spacing-s})';
+  }
+}
+span.size-m {
+  &:after {
+    content: ' (#{$spacing-m})';
+  }
+}
+span.size-l {
+  &:after {
+    content: ' (#{$spacing-l})';
+  }
+}
+span.size-xl {
+  &:after {
+    content: ' (#{$spacing-xl})';
+  }
+}

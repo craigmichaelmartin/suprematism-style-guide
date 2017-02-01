@@ -1,4 +1,6 @@
 @import '../utils/_colors.scss';
+@import '../utils/_z-indexes.scss';
+
 
 $dropdown-item-horiz-padding: 10px;
 
@@ -19,15 +21,16 @@ $dropdown-item-horiz-padding: 10px;
   width: auto;
   position: relative;
   
+
   //
-  // 
+  // pseudo classes for the master button/container
   //
   &:hover, &:focus, &:active {
 
     .dropdown-label {
       background: $soft-green;
       border: 1px solid $blue-gray;
-      z-index: 10;
+      z-index: $z-index-level-1;
       &::after {
         font-family: 'Audri-alpha' !important;
         content: "\e903";
@@ -39,7 +42,7 @@ $dropdown-item-horiz-padding: 10px;
     }
 
     .dropdown-content {
-      z-index: 9;
+      z-index: $z-index-level-1 - 1;
     }
 
   }

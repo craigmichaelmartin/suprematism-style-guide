@@ -1,0 +1,9 @@
+//
+// Override the border clear style
+//
+$size: 0;
+._b#{$size} { border: none !important; }
+._bt#{$size} { border-top: none !important; }
+._br#{$size} { border-right: none !important; }
+._bb#{$size} { border-bottom: none !important; }
+._bl#{$size} { border-left: none !important; }

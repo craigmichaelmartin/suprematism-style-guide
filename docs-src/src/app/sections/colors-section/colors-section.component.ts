@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { AbstractSectionComponent } from '../section.abstract';
+
 
 @Component({
   selector: 'docs-colors-section',
   templateUrl: './colors-section.component.html',
   styleUrls: ['./colors-section.component.scss']
 })
-export class ColorsSectionComponent implements OnInit {
+export class ColorsSectionComponent extends AbstractSectionComponent {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(protected route: ActivatedRoute) {
+    super(route);
   }
 
 }

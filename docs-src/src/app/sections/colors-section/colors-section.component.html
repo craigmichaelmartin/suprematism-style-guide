@@ -1,4 +1,13 @@
-<h1>Colors List</h1>
+<h1><a id="top"></a>Colors List</h1>
+
+<a id="colors-list"></a>
+<h5 class="_mtxl">List of Colors</h5>
+<p>Colors are a Utility, add it to your SCSS file from here:</p>
+<pre class="code-block">
+  <code class="language-sass">
+  @import "../node_modules/suprematism-style-guide/dist/utils/_colors.scss";
+  </code>
+</pre>
 
 <div id="colors">
 
@@ -8,7 +17,7 @@
       <span class="hex"></span>
     </p>
   </div>
-  
+
   <div class="color-block-off-white">
     <p class="text">
       <span class="title"></span>
@@ -103,26 +112,166 @@
   <div class="color-block-black">
     <p class="text">
       <span class="title"></span>
-      <span class="hex"></span> 
+      <span class="hex"></span>
     </p>
   </div>
 
   <div class="color-block-active-stroke">
     <p class="text">
       <span class="title"></span>
-      <span class="hex"></span> 
+      <span class="hex"></span>
     </p>
   </div>
 
   <div class="color-block-disabled-stroke">
     <p class="text">
       <span class="title"></span>
-      <span class="hex"></span> 
+      <span class="hex"></span>
     </p>
   </div>
 
 </div>
 
-<div>
-  
-</div>
+
+
+<a id="colors-classes"></a>
+<h5 class="_mtxl">Color Classes</h5>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}--
+    Use to set the background color on the element
+  -->
+  {{'&lt;'}}div class="bg-ice">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-off-white">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-lemon">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-blue-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-aqua">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-purple">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-mid-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-blue">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-green">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-lite-green">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-white">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-black">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-lite-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-active-stroke">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-disabled-stroke">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-soft-green">...{{'&lt;'}}/div>
+
+  {{'&lt;'}}--
+    Use to set the color of text in an element
+  -->
+  {{'&lt;'}}div class="color-ice">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-off-white">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-lemon">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-blue-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-aqua">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-purple">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-mid-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-blue">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-green">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-lite-green">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-white">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-black">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-lite-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-active-stroke">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-disabled-stroke">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-soft-green">...{{'&lt;'}}/div>
+
+  {{'&lt;'}}--
+    Use to set the color of borders on an element
+  -->
+  {{'&lt;'}}div class="border-ice">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-off-white">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-lemon">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-blue-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-aqua">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-purple">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-mid-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-blue">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-green">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-lite-green">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-white">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-black">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-lite-gray">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-active-stroke">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-disabled-stroke">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-soft-green">...{{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="colors-placeholders"></a>
+<h5 class="_mtxl">Color Placeholders</h5>
+<pre class="code-block">
+  <code class="language-sass">
+  /**
+   * Use to add the background color in a style definition
+   */
+  @extend %bg-ice;
+  @extend %bg-off-white;
+  @extend %bg-gray;
+  @extend %bg-lemon;
+  @extend %bg-blue-gray;
+  @extend %bg-aqua;
+  @extend %bg-purple;
+  @extend %bg-mid-gray;
+  @extend %bg-blue;
+  @extend %bg-green;
+  @extend %bg-lite-green;
+  @extend %bg-white;
+  @extend %bg-black;
+  @extend %bg-lite-gray;
+  @extend %bg-active-stroke;
+  @extend %bg-disabled-stroke;
+  @extend %bg-soft-green;
+
+  /**
+   * Use to add the color of text in a style definition
+   */
+  @extend %color-ice;
+  @extend %color-off-white;
+  @extend %color-gray;
+  @extend %color-lemon;
+  @extend %color-blue-gray;
+  @extend %color-aqua;
+  @extend %color-purple;
+  @extend %color-mid-gray;
+  @extend %color-blue;
+  @extend %color-green;
+  @extend %color-lite-green;
+  @extend %color-white;
+  @extend %color-black;
+  @extend %color-lite-gray;
+  @extend %color-active-stroke;
+  @extend %color-disabled-stroke;
+  @extend %color-soft-green;
+
+  /**
+   * Use to set the color of borders in a style definition
+   */
+  @extend %border-ice;
+  @extend %border-off-white;
+  @extend %border-gray;
+  @extend %border-lemon;
+  @extend %border-blue-gray;
+  @extend %border-aqua;
+  @extend %border-purple;
+  @extend %border-mid-gray;
+  @extend %border-blue;
+  @extend %border-green;
+  @extend %border-lite-green;
+  @extend %border-white;
+  @extend %border-black;
+  @extend %border-lite-gray;
+  @extend %border-active-stroke;
+  @extend %border-disabled-stroke;
+  @extend %border-soft-green;
+  </code>
+</pre>
+
+
+

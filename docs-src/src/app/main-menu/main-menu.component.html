@@ -7,7 +7,14 @@
   <li>
     <h5 class="_mt0 _mb0">Styles / Esthetics</h5>
     <ul class="_mt0 _pbxs _pls">
-      <li><a [routerLink]="['section/colors']">Colors List</a></li>
+      <li>
+        <a [routerLink]="['section/colors']" fragment="top">Colors List</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/colors'">
+          <li><a [routerLink]="['section/colors']" fragment="colors-list">List of Colors</a></li>
+          <li><a [routerLink]="['section/colors']" fragment="colors-classes">Color Classes</a></li>
+          <li><a [routerLink]="['section/colors']" fragment="colors-placeholders">Color Place Holders</a></li>
+        </ul>
+      </li>
       <li>Colors Guide</li>
       <li>Visual Rules &amp; Considerations</li>
     </ul>
@@ -95,8 +102,33 @@
   <li>
     <h5 class="_mt0 _mb0 _mtm">Utilities</h5>
     <ul class="_mt0 _pbxs _pls">
-      <li>Borders</li>
-      <li>Spacing (Padding &amp; Margins)</li>
+      <li><a [routerLink]="['section/colors']" fragment="top">Colors</a></li>
+      <li>
+        <a [routerLink]="['section/utilities/spacing']" fragment="top">Spacing</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/utilities/spacing'">
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-margin-xs">Margin 'xs' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-margin-s">Margin 's' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-margin-m">Margin 'm' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-margin-l">Margin 'l' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-margin-xl">Margin 'xl' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-margin-placeholders">Margins SCSS Placeholders</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-padding-xs">Padding 'xs' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-padding-s">Padding 's' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-padding-m">Padding 'm' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-padding-l">Padding 'l' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-padding-xl">Padding 'xl' Classes</a></li>
+          <li><a [routerLink]="['section/utilities/spacing']" fragment="spacing-padding-placeholders">Paddings SCSS Placeholders</a></li>
+        </ul>
+      </li>
+      <li>
+        <a [routerLink]="['section/utilities/borders']" fragment="top">Borders</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/utilities/borders'">
+          <li><a [routerLink]="['section/utilities/borders']" fragment="borders-adding">Adding Borders</a></li>
+          <li><a [routerLink]="['section/utilities/borders']" fragment="borders-clearing">Clearing Borders</a></li>
+          <li><a [routerLink]="['section/utilities/borders']" fragment="borders-placeholders">Border SCSS Placeholders</a></li>
+        </ul>
+      </li>
+      <li><a [routerLink]="['section/utilities/z-indexes']" fragment="top">Z-Indexes</a></li>
       <li>Breakpoint Mixins</li>
       <li>Alignment</li>
     </ul>
