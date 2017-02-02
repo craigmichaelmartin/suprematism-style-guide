@@ -129,6 +129,18 @@
         </ul>
       </li>
       <li><a [routerLink]="['section/utilities/z-indexes']" fragment="top">Z-Indexes</a></li>
+      <li>
+        <a [routerLink]="['section/utilities/flexbox']" fragment="top">Flexbox</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/utilities/flexbox'">
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex">Row Layout</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-column">Column Layout</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-wrap">Wrap Layout</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-fill-width">Stretch Cells to Fit</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-horiz-align">Horizontal Alignment/Distribution</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-vert-align">Vertical Alignment/Distribution</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-sizes">Cell Sizes</a></li>
+        </ul>
+      </li>
       <li>Breakpoint Mixins</li>
       <li>Alignment</li>
     </ul>

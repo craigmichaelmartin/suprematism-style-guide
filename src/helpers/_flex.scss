@@ -1,0 +1,13 @@
+//
+// Most flex classes are inherited by basscss
+// http://basscss.com/#basscss-flexbox
+//
+
+//
+// Add a set of classes to help set flex values for children
+//
+@for $i from 1 through 50 {
+  .flex-#{$i} {
+    flex: $i 1 auto;
+  }
+}

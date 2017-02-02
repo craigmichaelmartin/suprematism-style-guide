@@ -15,6 +15,7 @@ import { CheckboxesComponent } from './sections/checkboxes/checkboxes.component'
 import { BordersComponent } from './sections/utilities/borders/borders.component';
 import { SpacingComponent } from './sections/utilities/spacing/spacing.component';
 import { ZIndexComponent } from './sections/utilities/z-index/z-index.component';
+import { FlexBoxComponent } from './sections/utilities/flex-box/flex-box.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ZIndexComponent } from './sections/utilities/z-index/z-index.component'
     CheckboxesComponent,
     BordersComponent,
     SpacingComponent,
-    ZIndexComponent
+    ZIndexComponent,
+    FlexBoxComponent
   ],
   imports: [
     BrowserModule,

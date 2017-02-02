@@ -1,0 +1,254 @@
+<h1><a id="top"></a>Flex Box</h1>
+
+<a id="flexbox-flex"></a>
+<h5 class="_mtxl"><span class="size-xs">Row</span></h5>
+<div>
+  <div class="flex">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="flexbox-flex-column"></a>
+<h5 class="_mtxl"><span class="size-xs">Column</span></h5>
+<div>
+  <div class="flex flex-column">
+    <div class="_b1 _mbxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mbxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _plxs _prxs">Block 3</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}div class="flex flex-column">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="flexbox-flex-wrap"></a>
+<h5 class="_mtxl"><span class="size-xs">Wrap</span></h5>
+<div class="wrap-sample">
+  <div class="flex flex-wrap">
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 3</div>
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 4</div>
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 5</div>
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 6</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- in this example each cell has a width of 200px -->  
+  {{'&lt;'}}div class="flex flex-wrap">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 4{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 5{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 6{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="flexbox-flex-fill-width"></a>
+<h5 class="_mtxl"><span class="size-xs">Fill Width</span></h5>
+<div>
+  <div class="flex">
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 1</div>
+    <div class="flex-auto _b1 _mrxs _mbxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="flex">
+    <div class="flex-auto _b1 _mrxs _mbxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _mbxs _plxs _prxs">Block 3</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- Make the center div fill -->
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div class="flex-auto">Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+
+  {{'&lt;'}}!-- Make the left div fill -->
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div class="flex-auto">Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="flexbox-flex-horiz-align"></a>
+<h5 class="_mtxl"><span class="size-xs">Horizontal Alignment/Distribution</span></h5>
+<div>
+  <div class="_mbs flex justify-start">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="_bt1 _mbs _pts flex justify-center">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="_bt1 _mbs _pts flex justify-end">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="_bt1 _mbs _pts flex justify-between">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="_bt1 _mbs _pts flex justify-around">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}div class="flex justify-start">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex justify-center">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex justify-end">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex justify-between">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex justify-around">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="flexbox-flex-vert-align"></a>
+<h5 class="_mtxl"><span class="size-xs">Vertical Alignment/Distribution</span></h5>
+<div class="flex">
+  <div class="column-sample _mls _mbs flex-auto flex flex-column justify-start">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="column-sample _mls _mbs flex-auto flex flex-column justify-center">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="column-sample _mls _mbs flex-auto flex flex-column justify-end">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="column-sample _mls _mbs flex-auto flex flex-column justify-between">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+  <div class="column-sample _mbs flex-auto flex flex-column justify-around">
+    <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 2</div>
+    <div class="_b1 _mrxs _plxs _prxs">Block 3</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}div class="flex flex-column justify-start">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex flex-column justify-center">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex flex-column justify-end">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex flex-column justify-between">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex flex-column justify-around">
+    {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
+    {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="flexbox-flex-sizes"></a>
+<h5 class="_mtxl"><span class="size-xs">Flex Cell Sizes</span></h5>
+<div>
+  <div class="flex _mbs">
+    <div class="flex-1 _b1 _mrxs _plxs _prxs">Block 1 (flex-1)</div>
+    <div class="flex-8 _b1 _mrxs _plxs _prxs">Block 2 (flex-8)</div>
+    <div class="flex-2 _b1 _mrxs _plxs _prxs">Block 3 (flex-2)</div>
+  </div>
+  <div class="flex">
+    <div class="flex-2 _b1 _mrxs _plxs _prxs">Block 1 (flex-2)</div>
+    <div class="flex-auto _b1 _mrxs _plxs _prxs">Block 2 (flex-auto)</div>
+    <div class="flex-2 _b1 _mrxs _plxs _prxs">Block 3 (flex-2)</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- We have flex-1 through flex-50 for fine grain control -->
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div class="flex-1">Block 1 (flex-1){{'&lt;'}}/div>
+    {{'&lt;'}}div class="flex-8">Block 2 (flex-8){{'&lt;'}}/div>
+    {{'&lt;'}}div class="flex-2">Block 3 (flex-2){{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+
+  {{'&lt;'}}!-- You can use flex-auto in combination -->
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div class="flex-2">Block 1 (flex-2){{'&lt;'}}/div>
+    {{'&lt;'}}div class="flex-auto">Block 2 (flex-auto){{'&lt;'}}/div>
+    {{'&lt;'}}div class="flex-2">Block 3 (flex-2){{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
