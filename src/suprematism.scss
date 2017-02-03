@@ -5,7 +5,7 @@
  ******************************************************************************/ 
 
   // override vars
-  @import "_vars.concise.scss";
+  @import "vars/_vars.concise.scss";
 
 
   // main library
@@ -34,7 +34,7 @@
  ******************************************************************************/ 
 
   // Vars
-  @import '_vars.suprematisim.scss';
+  @import 'vars/_vars.suprematisim.scss';
 
   // Helpers
   @import '_helpers.scss';

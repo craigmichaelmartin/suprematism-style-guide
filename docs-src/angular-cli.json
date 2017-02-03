@@ -20,6 +20,7 @@
       "mobile": false,
       "styles": [
         "styles.scss",
+        "../../dist/suprematism.css",
         "../node_modules/prismjs/themes/prism.css"
       ],
       "scripts": [
