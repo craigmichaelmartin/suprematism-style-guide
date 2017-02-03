@@ -12,16 +12,28 @@ $spacing: (
   xl: $spacing-xl
 );
 $sides: (t: top, r: right, b: bottom, l: left);
-$spacing-pre-fixes: m, p;
 
 @each $spacing-prefix in $spacing-pre-fixes {
   @each $size-prefix, $size-value in $spacing {
-    %_#{$spacing-prefix}#{$size-prefix} {
+    %_m#{$size-prefix} {
       margin: #{$size-value};
     }
     @each $side-prefix, $side-long-name in $sides {
-      %_#{$spacing-prefix}#{$side-prefix}#{$size-prefix} {
+      %_m#{$side-prefix}#{$size-prefix} {
         margin-#{$side-long-name}: #{$size-value};
+      }
+    }
+  }
+}
+
+@each $spacing-prefix in $spacing-pre-fixes {
+  @each $size-prefix, $size-value in $spacing {
+    %_p#{$size-prefix} {
+      padding: #{$size-value};
+    }
+    @each $side-prefix, $side-long-name in $sides {
+      %_p#{$side-prefix}#{$size-prefix} {
+        padding-#{$side-long-name}: #{$size-value};
       }
     }
   }
