@@ -82,159 +82,6 @@
 /**
  * Helper classes for colors
  */
-.bg-ice {
-  background-color: #e8ecf0; }
-
-.color-ice {
-  color: #e8ecf0; }
-
-.border-name {
-  border-color: #e8ecf0; }
-
-.bg-off-white {
-  background-color: #f6f6f6; }
-
-.color-off-white {
-  color: #f6f6f6; }
-
-.border-name {
-  border-color: #f6f6f6; }
-
-.bg-gray {
-  background-color: #d5d8dd; }
-
-.color-gray {
-  color: #d5d8dd; }
-
-.border-name {
-  border-color: #d5d8dd; }
-
-.bg-lemon {
-  background-color: #ffd966; }
-
-.color-lemon {
-  color: #ffd966; }
-
-.border-name {
-  border-color: #ffd966; }
-
-.bg-blue-gray {
-  background-color: #9fb3c3; }
-
-.color-blue-gray {
-  color: #9fb3c3; }
-
-.border-name {
-  border-color: #9fb3c3; }
-
-.bg-aqua {
-  background-color: #55a0c2; }
-
-.color-aqua {
-  color: #55a0c2; }
-
-.border-name {
-  border-color: #55a0c2; }
-
-.bg-purple {
-  background-color: #6460aa; }
-
-.color-purple {
-  color: #6460aa; }
-
-.border-name {
-  border-color: #6460aa; }
-
-.bg-mid-gray {
-  background-color: #7f8a93; }
-
-.color-mid-gray {
-  color: #7f8a93; }
-
-.border-name {
-  border-color: #7f8a93; }
-
-.bg-blue {
-  background-color: #0082a9; }
-
-.color-blue {
-  color: #0082a9; }
-
-.border-name {
-  border-color: #0082a9; }
-
-.bg-green {
-  background-color: #7f982f; }
-
-.color-green {
-  color: #7f982f; }
-
-.border-name {
-  border-color: #7f982f; }
-
-.bg-lite-green {
-  background-color: #a8c839; }
-
-.color-lite-green {
-  color: #a8c839; }
-
-.border-name {
-  border-color: #a8c839; }
-
-.bg-white {
-  background-color: #ffffff; }
-
-.color-white {
-  color: #ffffff; }
-
-.border-name {
-  border-color: #ffffff; }
-
-.bg-black {
-  background-color: #000000; }
-
-.color-black {
-  color: #000000; }
-
-.border-name {
-  border-color: #000000; }
-
-.bg-lite-gray {
-  background-color: #cccccc; }
-
-.color-lite-gray {
-  color: #cccccc; }
-
-.border-name {
-  border-color: #cccccc; }
-
-.bg-active-stroke {
-  background-color: #c2cdd8; }
-
-.color-active-stroke {
-  color: #c2cdd8; }
-
-.border-name {
-  border-color: #c2cdd8; }
-
-.bg-disabled-stroke {
-  background-color: #d5d8dd; }
-
-.color-disabled-stroke {
-  color: #d5d8dd; }
-
-.border-name {
-  border-color: #d5d8dd; }
-
-.bg-soft-green {
-  background-color: #eff6e1; }
-
-.color-soft-green {
-  color: #eff6e1; }
-
-.border-name {
-  border-color: #eff6e1; }
-
 /**
  * ConciseCSS v4.0.1
  * https://github.com/ConciseCSS/concise.css
@@ -2492,9 +2339,6 @@ button.-affix, input.-affix[type="submit"] {
  * Custom: Suprematism
  *
  ******************************************************************************/
-.min-fit {
-  min-width: 100%; }
-
 ._b0 {
   border: none !important; }
 
@@ -2509,6 +2353,9 @@ button.-affix, input.-affix[type="submit"] {
 
 ._bl0 {
   border-left: none !important; }
+
+.min-fit {
+  min-width: 100%; }
 
 .flex-1 {
   -webkit-box-flex: 1;
@@ -2838,13 +2685,16 @@ button.-affix, input.-affix[type="submit"] {
 /**
  * Helper classes for colors
  */
+/**
+ * Helper classes for colors
+ */
 .bg-ice {
   background-color: #e8ecf0; }
 
 .color-ice {
   color: #e8ecf0; }
 
-.border-name {
+.border-ice {
   border-color: #e8ecf0; }
 
 .bg-off-white {
@@ -2853,7 +2703,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-off-white {
   color: #f6f6f6; }
 
-.border-name {
+.border-off-white {
   border-color: #f6f6f6; }
 
 .bg-gray {
@@ -2862,7 +2712,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-gray {
   color: #d5d8dd; }
 
-.border-name {
+.border-gray {
   border-color: #d5d8dd; }
 
 .bg-lemon {
@@ -2871,7 +2721,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-lemon {
   color: #ffd966; }
 
-.border-name {
+.border-lemon {
   border-color: #ffd966; }
 
 .bg-blue-gray {
@@ -2880,7 +2730,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-blue-gray {
   color: #9fb3c3; }
 
-.border-name {
+.border-blue-gray {
   border-color: #9fb3c3; }
 
 .bg-aqua {
@@ -2889,7 +2739,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-aqua {
   color: #55a0c2; }
 
-.border-name {
+.border-aqua {
   border-color: #55a0c2; }
 
 .bg-purple {
@@ -2898,7 +2748,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-purple {
   color: #6460aa; }
 
-.border-name {
+.border-purple {
   border-color: #6460aa; }
 
 .bg-mid-gray {
@@ -2907,7 +2757,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-mid-gray {
   color: #7f8a93; }
 
-.border-name {
+.border-mid-gray {
   border-color: #7f8a93; }
 
 .bg-blue {
@@ -2916,7 +2766,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-blue {
   color: #0082a9; }
 
-.border-name {
+.border-blue {
   border-color: #0082a9; }
 
 .bg-green {
@@ -2925,7 +2775,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-green {
   color: #7f982f; }
 
-.border-name {
+.border-green {
   border-color: #7f982f; }
 
 .bg-lite-green {
@@ -2934,7 +2784,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-lite-green {
   color: #a8c839; }
 
-.border-name {
+.border-lite-green {
   border-color: #a8c839; }
 
 .bg-white {
@@ -2943,7 +2793,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-white {
   color: #ffffff; }
 
-.border-name {
+.border-white {
   border-color: #ffffff; }
 
 .bg-black {
@@ -2952,7 +2802,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-black {
   color: #000000; }
 
-.border-name {
+.border-black {
   border-color: #000000; }
 
 .bg-lite-gray {
@@ -2961,7 +2811,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-lite-gray {
   color: #cccccc; }
 
-.border-name {
+.border-lite-gray {
   border-color: #cccccc; }
 
 .bg-active-stroke {
@@ -2970,7 +2820,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-active-stroke {
   color: #c2cdd8; }
 
-.border-name {
+.border-active-stroke {
   border-color: #c2cdd8; }
 
 .bg-disabled-stroke {
@@ -2979,7 +2829,7 @@ button.-affix, input.-affix[type="submit"] {
 .color-disabled-stroke {
   color: #d5d8dd; }
 
-.border-name {
+.border-disabled-stroke {
   border-color: #d5d8dd; }
 
 .bg-soft-green {
@@ -2988,9 +2838,87 @@ button.-affix, input.-affix[type="submit"] {
 .color-soft-green {
   color: #eff6e1; }
 
-.border-name {
+.border-soft-green {
   border-color: #eff6e1; }
 
+/**
+ * Design Reference:
+ * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
+ */
+/**
+ * Used for: 
+ *  - Condition Bar
+ */
+/**
+ * Used for:
+ *  - Data Grid columns
+ *  - Header, primary
+ */
+/**
+ * Used for:
+ *  - Data Grid columns
+ *  - Header, primary
+ */
+/**
+ * Used for:
+ *  - hover state fill: data grid, droplists
+ *  - fill state for search boxes
+ */
+/**
+ * Used for:
+ *  - unselected icons
+ *  - droplist unselected bold type
+ */
+/**
+ * Used for:
+ *  - selected icons
+ *  - selected text
+ */
+/**
+ * Used for:
+ *  - nav bar
+ *  - active toggle
+ */
+/**
+ * Used for:
+ *  - data grid column head text
+ */
+/**
+ * Used for:
+ *  - hover state color for toolbar buttons
+ */
+/**
+ * Used for:
+ *  - hover state color for action buttons
+ */
+/**
+ * Used for:
+ *  - hover state color for action buttons
+ */
+/**
+ * Holding container
+ */
+/**
+ * Used for:
+ *  - white
+ */
+/** 
+ * Used for:
+ *  - black
+ */
+/**
+ * Used for:
+ * In active text
+ */
+/**
+ * Strokes
+ */
+/**
+ * Collection of the colors
+ */
+/**
+ * Helper classes for colors
+ */
 button, input[type="submit"] {
   margin: 0px;
   padding: 0px; }
@@ -3471,159 +3399,6 @@ button, input[type="submit"] {
 /**
  * Helper classes for colors
  */
-.bg-ice {
-  background-color: #e8ecf0; }
-
-.color-ice {
-  color: #e8ecf0; }
-
-.border-name {
-  border-color: #e8ecf0; }
-
-.bg-off-white {
-  background-color: #f6f6f6; }
-
-.color-off-white {
-  color: #f6f6f6; }
-
-.border-name {
-  border-color: #f6f6f6; }
-
-.bg-gray {
-  background-color: #d5d8dd; }
-
-.color-gray {
-  color: #d5d8dd; }
-
-.border-name {
-  border-color: #d5d8dd; }
-
-.bg-lemon {
-  background-color: #ffd966; }
-
-.color-lemon {
-  color: #ffd966; }
-
-.border-name {
-  border-color: #ffd966; }
-
-.bg-blue-gray {
-  background-color: #9fb3c3; }
-
-.color-blue-gray {
-  color: #9fb3c3; }
-
-.border-name {
-  border-color: #9fb3c3; }
-
-.bg-aqua {
-  background-color: #55a0c2; }
-
-.color-aqua {
-  color: #55a0c2; }
-
-.border-name {
-  border-color: #55a0c2; }
-
-.bg-purple {
-  background-color: #6460aa; }
-
-.color-purple {
-  color: #6460aa; }
-
-.border-name {
-  border-color: #6460aa; }
-
-.bg-mid-gray {
-  background-color: #7f8a93; }
-
-.color-mid-gray {
-  color: #7f8a93; }
-
-.border-name {
-  border-color: #7f8a93; }
-
-.bg-blue {
-  background-color: #0082a9; }
-
-.color-blue {
-  color: #0082a9; }
-
-.border-name {
-  border-color: #0082a9; }
-
-.bg-green {
-  background-color: #7f982f; }
-
-.color-green {
-  color: #7f982f; }
-
-.border-name {
-  border-color: #7f982f; }
-
-.bg-lite-green {
-  background-color: #a8c839; }
-
-.color-lite-green {
-  color: #a8c839; }
-
-.border-name {
-  border-color: #a8c839; }
-
-.bg-white {
-  background-color: #ffffff; }
-
-.color-white {
-  color: #ffffff; }
-
-.border-name {
-  border-color: #ffffff; }
-
-.bg-black {
-  background-color: #000000; }
-
-.color-black {
-  color: #000000; }
-
-.border-name {
-  border-color: #000000; }
-
-.bg-lite-gray {
-  background-color: #cccccc; }
-
-.color-lite-gray {
-  color: #cccccc; }
-
-.border-name {
-  border-color: #cccccc; }
-
-.bg-active-stroke {
-  background-color: #c2cdd8; }
-
-.color-active-stroke {
-  color: #c2cdd8; }
-
-.border-name {
-  border-color: #c2cdd8; }
-
-.bg-disabled-stroke {
-  background-color: #d5d8dd; }
-
-.color-disabled-stroke {
-  color: #d5d8dd; }
-
-.border-name {
-  border-color: #d5d8dd; }
-
-.bg-soft-green {
-  background-color: #eff6e1; }
-
-.color-soft-green {
-  color: #eff6e1; }
-
-.border-name {
-  border-color: #eff6e1; }
-
 .dropdown-button:hover .dropdown-label:after, .dropdown-button:focus .dropdown-label:after, .dropdown-button:active .dropdown-label:after, .dropdown-button .dropdown-label:after {
   position: absolute;
   font-size: 16px;
@@ -3787,159 +3562,6 @@ button, input[type="submit"] {
 /**
  * Helper classes for colors
  */
-.bg-ice {
-  background-color: #e8ecf0; }
-
-.color-ice {
-  color: #e8ecf0; }
-
-.border-name {
-  border-color: #e8ecf0; }
-
-.bg-off-white {
-  background-color: #f6f6f6; }
-
-.color-off-white {
-  color: #f6f6f6; }
-
-.border-name {
-  border-color: #f6f6f6; }
-
-.bg-gray {
-  background-color: #d5d8dd; }
-
-.color-gray {
-  color: #d5d8dd; }
-
-.border-name {
-  border-color: #d5d8dd; }
-
-.bg-lemon {
-  background-color: #ffd966; }
-
-.color-lemon {
-  color: #ffd966; }
-
-.border-name {
-  border-color: #ffd966; }
-
-.bg-blue-gray {
-  background-color: #9fb3c3; }
-
-.color-blue-gray {
-  color: #9fb3c3; }
-
-.border-name {
-  border-color: #9fb3c3; }
-
-.bg-aqua {
-  background-color: #55a0c2; }
-
-.color-aqua {
-  color: #55a0c2; }
-
-.border-name {
-  border-color: #55a0c2; }
-
-.bg-purple {
-  background-color: #6460aa; }
-
-.color-purple {
-  color: #6460aa; }
-
-.border-name {
-  border-color: #6460aa; }
-
-.bg-mid-gray {
-  background-color: #7f8a93; }
-
-.color-mid-gray {
-  color: #7f8a93; }
-
-.border-name {
-  border-color: #7f8a93; }
-
-.bg-blue {
-  background-color: #0082a9; }
-
-.color-blue {
-  color: #0082a9; }
-
-.border-name {
-  border-color: #0082a9; }
-
-.bg-green {
-  background-color: #7f982f; }
-
-.color-green {
-  color: #7f982f; }
-
-.border-name {
-  border-color: #7f982f; }
-
-.bg-lite-green {
-  background-color: #a8c839; }
-
-.color-lite-green {
-  color: #a8c839; }
-
-.border-name {
-  border-color: #a8c839; }
-
-.bg-white {
-  background-color: #ffffff; }
-
-.color-white {
-  color: #ffffff; }
-
-.border-name {
-  border-color: #ffffff; }
-
-.bg-black {
-  background-color: #000000; }
-
-.color-black {
-  color: #000000; }
-
-.border-name {
-  border-color: #000000; }
-
-.bg-lite-gray {
-  background-color: #cccccc; }
-
-.color-lite-gray {
-  color: #cccccc; }
-
-.border-name {
-  border-color: #cccccc; }
-
-.bg-active-stroke {
-  background-color: #c2cdd8; }
-
-.color-active-stroke {
-  color: #c2cdd8; }
-
-.border-name {
-  border-color: #c2cdd8; }
-
-.bg-disabled-stroke {
-  background-color: #d5d8dd; }
-
-.color-disabled-stroke {
-  color: #d5d8dd; }
-
-.border-name {
-  border-color: #d5d8dd; }
-
-.bg-soft-green {
-  background-color: #eff6e1; }
-
-.color-soft-green {
-  color: #eff6e1; }
-
-.border-name {
-  border-color: #eff6e1; }
-
 label.checkbox {
   cursor: pointer;
   display: inline-block;

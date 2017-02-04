@@ -1,0 +1,16 @@
+@import "../utils/_colors.scss";
+
+/**
+ * Helper classes for colors
+ */
+@each $name, $hex in $colors {
+  .bg-#{$name} {
+    background-color: $hex;
+  }
+  .color-#{$name} {
+    color: $hex;
+  }
+  .border-#{$name} {
+    border-color: $hex;
+  }
+}

@@ -36,10 +36,13 @@
   // Vars
   @import 'vars/_vars.suprematisim.scss';
 
+  // Overrides
+  @import 'overrides/_borders.scss';
+
   // Helpers
   @import '_helpers.scss';
-  @import 'overrides/_borders.scss';
   @import 'helpers/_flex.scss';
+  @import 'helpers/_colors.scss';
 
   // Components
   @import 'components/_buttons.scss';
