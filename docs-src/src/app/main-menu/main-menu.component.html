@@ -65,7 +65,24 @@
     <h5 class="_mt0 _mb0 _mtm">Components</h5>
     <ul class="_mt0 _pbxs _pls">
       <li>Data Grid</li>
-      <li>Popover / Tooltip</li>
+      <li>
+        <a [routerLink]="['section/tooltips']" fragment="top">Tooltips</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/tooltips'">
+          <li><a [routerLink]="['section/tooltips']" fragment="tooltips-install">Installation</a></li>
+          <li><a [routerLink]="['section/tooltips']" fragment="tooltips-title-only">Title Only</a></li>
+          <li><a [routerLink]="['section/tooltips']" fragment="tooltips-title-with-icon">Title with Icon</a></li>
+          <li><a [routerLink]="['section/tooltips']" fragment="tooltips-title-with-icon-and-description">Title with a Description</a></li>
+          <li><a [routerLink]="['section/tooltips']" fragment="tooltips-placement">Placement</a></li>
+        </ul>
+      </li>
+      <li>
+        <a [routerLink]="['section/inline-dialogs']" fragment="top">Inline Dialog</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/inline-dialogs'">
+          <li><a [routerLink]="['section/inline-dialogs']" fragment="inline-dialog-install">Installation</a></li>
+          <li><a [routerLink]="['section/inline-dialogs']" fragment="inline-dialog-simple-example">Simple Example</a></li>
+          <li><a [routerLink]="['section/inline-dialogs']" fragment="inline-dialog-with-tooltip">Combined with a Tooltip</a></li>
+        </ul>
+      </li>
       <li>Modal</li>
       <li>Navigation</li>
       <li>Navigation Tiles</li>

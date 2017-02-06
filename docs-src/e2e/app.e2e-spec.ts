@@ -9,6 +9,6 @@ describe('suprematism-guide-docs App', function() {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('docs works!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });

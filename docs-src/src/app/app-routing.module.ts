@@ -12,6 +12,8 @@ import { BordersComponent } from './sections/utilities/borders/borders.component
 import { SpacingComponent } from './sections/utilities/spacing/spacing.component';
 import { ZIndexComponent } from './sections/utilities/z-index/z-index.component';
 import { FlexBoxComponent } from './sections/utilities/flex-box/flex-box.component';
+import { TooltipComponent } from './sections/tooltip/tooltip.component';
+import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
 
 const routes: Routes = [
 
@@ -28,6 +30,8 @@ const routes: Routes = [
   { path: 'section/buttons', component: ButtonsComponent },
   { path: 'section/dropdowns', component: DropdownsComponent },
   { path: 'section/checkboxes', component: CheckboxesComponent },
+  { path: 'section/tooltips', component: TooltipComponent },
+  { path: 'section/inline-dialogs', component: InlineDialogSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },
