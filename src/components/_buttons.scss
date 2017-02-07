@@ -69,24 +69,9 @@ button {
 
 
     //
-    // Disabled: Override Concise here
+    // Disabled when present
     //
-    &[disabled],
-    &[disabled=false],
-    &:disabled {
-      border-color: inherit;
-      color: $white;
-      @include button-states((hover, focus), $white, $green);
-      // note, the HTML spec doesn't allow active for disabled
-      @include button-states(active, $white, $green, 2px 2px 7px 0px #4e4e4e inset);
-      cursor: pointer;
-    }
-
-    //
-    // Disabled: when set to true
-    //
-    &[disabled=true], 
-    &[disabled=disabled]{
+    &[disabled]{
       background:  $disabled-bkg-color;
       color: $disabled-text-color;
       @include button-states((hover, focus, active), $disabled-text-color, $bg-color: $disabled-bkg-color);
@@ -166,25 +151,9 @@ button {
 
 
     //
-    // Disabled: Override Concise here
+    // Disabled when present
     //
-    &[disabled],
-    &[disabled=false],
-    &:disabled {
-      border-color: inherit;
-      color: $white;
-      @include button-states((hover, focus), $white, $green);
-      // note, the HTML spec doesn't allow active for disabled
-      @include button-states(active, $white, $green, 2px 2px 7px 0px #4e4e4e inset, $border-color: $white);
-      cursor: pointer;
-    }
-
-
-    //
-    // Disabled: when set to true
-    //
-    &[disabled=true], 
-    &[disabled=disabled]{
+    &[disabled]{
       background:  $disabled-bkg-color;
       color: $disabled-text-color;
       @include button-states((hover, focus, active), $disabled-text-color, $border-color: $white, $bg-color: $disabled-bkg-color);
@@ -248,25 +217,9 @@ button {
 
 
     //
-    // Disabled: Override Concise here
+    // Disabled when present
     //
-    &[disabled],
-    &[disabled=false],
-    &:disabled {
-      border-color: inherit;
-      color: $white;
-      @include button-states((hover, focus), $white, $green);
-      // note, the HTML spec doesn't allow active for disabled
-      @include button-states(active, $white, $green, 2px 2px 7px 0px #4e4e4e inset, $border-color: $white);
-      cursor: pointer;
-    }
-
-
-    //
-    // Disabled: when set to true
-    //
-    &[disabled=true], 
-    &[disabled=disabled]{
+    &[disabled] {
       background:  $disabled-bkg-color;
       color: $disabled-text-color;
       @include button-states((hover, focus, active), $disabled-text-color, $border-color: $white, $bg-color: $disabled-bkg-color);
@@ -309,25 +262,9 @@ button {
 
 
     //
-    // Disabled: Override Concise here
+    // Disabled when present
     //
-    &[disabled],
-    &[disabled=false],
-    &:disabled {
-      border-color: inherit;
-      color: $white;
-      @include button-states((hover, focus), $white, $green);
-      // note, the HTML spec doesn't allow active for disabled
-      @include button-states(active, $white, $green, 2px 2px 7px 0px #4e4e4e inset, $border-color: $white);
-      cursor: pointer;
-    }
-
-
-    //
-    // Disabled: when set to true
-    //
-    &[disabled=true], 
-    &[disabled=disabled]{
+    &[disabled] {
       background: $white !important;
       color: $disabled-text-color;
       border: 1px solid $disabled-stroke;
@@ -366,10 +303,9 @@ button {
 
 
     //
-    // Disabled: when set to true
+    // Disabled when present
     //
-    &[disabled=true], 
-    &[disabled=disabled]{
+    &[disabled] {
       background:  $white;
       color: rgba($blue-gray, .3);
       border: 1px solid $disabled-stroke;

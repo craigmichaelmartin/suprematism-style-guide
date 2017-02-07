@@ -2969,40 +2969,21 @@ button, input[type="submit"] {
       border-color: inherit;
       color: #ffffff;
       box-shadow: 2px 2px 7px 0px #4e4e4e inset; }
-    button.-action[disabled], input.-action[disabled][type="submit"], button.-action[disabled=false], input.-action[disabled=false][type="submit"], button.-action:disabled, input.-action[type="submit"]:disabled {
-      border-color: inherit;
-      color: #ffffff;
-      cursor: pointer; }
-      button.-action[disabled]:hover, input.-action[disabled][type="submit"]:hover, button.-action[disabled=false]:hover, input.-action[disabled=false][type="submit"]:hover, button.-action:disabled:hover, input.-action[type="submit"]:disabled:hover {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: inherit; }
-      button.-action[disabled]:focus, input.-action[disabled][type="submit"]:focus, button.-action[disabled=false]:focus, input.-action[disabled=false][type="submit"]:focus, button.-action:disabled:focus, input.-action[type="submit"]:disabled:focus {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: inherit; }
-      button.-action[disabled]:active, input.-action[disabled][type="submit"]:active, button.-action[disabled=false]:active, input.-action[disabled=false][type="submit"]:active, button.-action:disabled:active, input.-action[type="submit"]:disabled:active {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: 2px 2px 7px 0px #4e4e4e inset; }
-    button.-action[disabled=true], input.-action[disabled=true][type="submit"], button.-action[disabled=disabled], input.-action[disabled=disabled][type="submit"] {
+    button.-action[disabled], input.-action[disabled][type="submit"] {
       background: #e8ecf0;
       color: #cccccc;
       cursor: default; }
-      button.-action[disabled=true]:hover, input.-action[disabled=true][type="submit"]:hover, button.-action[disabled=disabled]:hover, input.-action[disabled=disabled][type="submit"]:hover {
+      button.-action[disabled]:hover, input.-action[disabled][type="submit"]:hover {
         background-color: #e8ecf0;
         border-color: inherit;
         color: #cccccc;
         box-shadow: inherit; }
-      button.-action[disabled=true]:focus, input.-action[disabled=true][type="submit"]:focus, button.-action[disabled=disabled]:focus, input.-action[disabled=disabled][type="submit"]:focus {
+      button.-action[disabled]:focus, input.-action[disabled][type="submit"]:focus {
         background-color: #e8ecf0;
         border-color: inherit;
         color: #cccccc;
         box-shadow: inherit; }
-      button.-action[disabled=true]:active, input.-action[disabled=true][type="submit"]:active, button.-action[disabled=disabled]:active, input.-action[disabled=disabled][type="submit"]:active {
+      button.-action[disabled]:active, input.-action[disabled][type="submit"]:active {
         background-color: #e8ecf0;
         border-color: inherit;
         color: #cccccc;
@@ -3058,40 +3039,21 @@ button, input[type="submit"] {
       border-color: inherit;
       color: #ffffff;
       box-shadow: 2px 2px 7px 0px #4e4e4e inset; }
-    button.-toolbar[disabled], input.-toolbar[disabled][type="submit"], button.-toolbar[disabled=false], input.-toolbar[disabled=false][type="submit"], button.-toolbar:disabled, input.-toolbar[type="submit"]:disabled {
-      border-color: inherit;
-      color: #ffffff;
-      cursor: pointer; }
-      button.-toolbar[disabled]:hover, input.-toolbar[disabled][type="submit"]:hover, button.-toolbar[disabled=false]:hover, input.-toolbar[disabled=false][type="submit"]:hover, button.-toolbar:disabled:hover, input.-toolbar[type="submit"]:disabled:hover {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: inherit; }
-      button.-toolbar[disabled]:focus, input.-toolbar[disabled][type="submit"]:focus, button.-toolbar[disabled=false]:focus, input.-toolbar[disabled=false][type="submit"]:focus, button.-toolbar:disabled:focus, input.-toolbar[type="submit"]:disabled:focus {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: inherit; }
-      button.-toolbar[disabled]:active, input.-toolbar[disabled][type="submit"]:active, button.-toolbar[disabled=false]:active, input.-toolbar[disabled=false][type="submit"]:active, button.-toolbar:disabled:active, input.-toolbar[type="submit"]:disabled:active {
-        background-color: #7f982f;
-        border-color: #ffffff;
-        color: #ffffff;
-        box-shadow: 2px 2px 7px 0px #4e4e4e inset; }
-    button.-toolbar[disabled=true], input.-toolbar[disabled=true][type="submit"], button.-toolbar[disabled=disabled], input.-toolbar[disabled=disabled][type="submit"] {
+    button.-toolbar[disabled], input.-toolbar[disabled][type="submit"] {
       background: #e8ecf0;
       color: #cccccc;
       cursor: default; }
-      button.-toolbar[disabled=true]:hover, input.-toolbar[disabled=true][type="submit"]:hover, button.-toolbar[disabled=disabled]:hover, input.-toolbar[disabled=disabled][type="submit"]:hover {
+      button.-toolbar[disabled]:hover, input.-toolbar[disabled][type="submit"]:hover {
         background-color: #e8ecf0;
         border-color: #ffffff;
         color: #cccccc;
         box-shadow: inherit; }
-      button.-toolbar[disabled=true]:focus, input.-toolbar[disabled=true][type="submit"]:focus, button.-toolbar[disabled=disabled]:focus, input.-toolbar[disabled=disabled][type="submit"]:focus {
+      button.-toolbar[disabled]:focus, input.-toolbar[disabled][type="submit"]:focus {
         background-color: #e8ecf0;
         border-color: #ffffff;
         color: #cccccc;
         box-shadow: inherit; }
-      button.-toolbar[disabled=true]:active, input.-toolbar[disabled=true][type="submit"]:active, button.-toolbar[disabled=disabled]:active, input.-toolbar[disabled=disabled][type="submit"]:active {
+      button.-toolbar[disabled]:active, input.-toolbar[disabled][type="submit"]:active {
         background-color: #e8ecf0;
         border-color: #ffffff;
         color: #cccccc;
@@ -3168,40 +3130,21 @@ button, input[type="submit"] {
       border-color: inherit;
       color: #ffffff;
       box-shadow: 2px 2px 7px 0px #4e4e4e inset; }
-    button.-condition[disabled], input.-condition[disabled][type="submit"], button.-condition[disabled=false], input.-condition[disabled=false][type="submit"], button.-condition:disabled, input.-condition[type="submit"]:disabled {
-      border-color: inherit;
-      color: #ffffff;
-      cursor: pointer; }
-      button.-condition[disabled]:hover, input.-condition[disabled][type="submit"]:hover, button.-condition[disabled=false]:hover, input.-condition[disabled=false][type="submit"]:hover, button.-condition:disabled:hover, input.-condition[type="submit"]:disabled:hover {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: inherit; }
-      button.-condition[disabled]:focus, input.-condition[disabled][type="submit"]:focus, button.-condition[disabled=false]:focus, input.-condition[disabled=false][type="submit"]:focus, button.-condition:disabled:focus, input.-condition[type="submit"]:disabled:focus {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: inherit; }
-      button.-condition[disabled]:active, input.-condition[disabled][type="submit"]:active, button.-condition[disabled=false]:active, input.-condition[disabled=false][type="submit"]:active, button.-condition:disabled:active, input.-condition[type="submit"]:disabled:active {
-        background-color: #7f982f;
-        border-color: #ffffff;
-        color: #ffffff;
-        box-shadow: 2px 2px 7px 0px #4e4e4e inset; }
-    button.-condition[disabled=true], input.-condition[disabled=true][type="submit"], button.-condition[disabled=disabled], input.-condition[disabled=disabled][type="submit"] {
+    button.-condition[disabled], input.-condition[disabled][type="submit"] {
       background: #e8ecf0;
       color: #cccccc;
       cursor: default; }
-      button.-condition[disabled=true]:hover, input.-condition[disabled=true][type="submit"]:hover, button.-condition[disabled=disabled]:hover, input.-condition[disabled=disabled][type="submit"]:hover {
+      button.-condition[disabled]:hover, input.-condition[disabled][type="submit"]:hover {
         background-color: #e8ecf0;
         border-color: #ffffff;
         color: #cccccc;
         box-shadow: inherit; }
-      button.-condition[disabled=true]:focus, input.-condition[disabled=true][type="submit"]:focus, button.-condition[disabled=disabled]:focus, input.-condition[disabled=disabled][type="submit"]:focus {
+      button.-condition[disabled]:focus, input.-condition[disabled][type="submit"]:focus {
         background-color: #e8ecf0;
         border-color: #ffffff;
         color: #cccccc;
         box-shadow: inherit; }
-      button.-condition[disabled=true]:active, input.-condition[disabled=true][type="submit"]:active, button.-condition[disabled=disabled]:active, input.-condition[disabled=disabled][type="submit"]:active {
+      button.-condition[disabled]:active, input.-condition[disabled][type="submit"]:active {
         background-color: #e8ecf0;
         border-color: #ffffff;
         color: #cccccc;
@@ -3237,41 +3180,22 @@ button, input[type="submit"] {
       border-color: #6460aa;
       color: #ffffff;
       box-shadow: inherit; }
-    button.-toggle[disabled], input.-toggle[disabled][type="submit"], button.-toggle[disabled=false], input.-toggle[disabled=false][type="submit"], button.-toggle:disabled, input.-toggle[type="submit"]:disabled {
-      border-color: inherit;
-      color: #ffffff;
-      cursor: pointer; }
-      button.-toggle[disabled]:hover, input.-toggle[disabled][type="submit"]:hover, button.-toggle[disabled=false]:hover, input.-toggle[disabled=false][type="submit"]:hover, button.-toggle:disabled:hover, input.-toggle[type="submit"]:disabled:hover {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: inherit; }
-      button.-toggle[disabled]:focus, input.-toggle[disabled][type="submit"]:focus, button.-toggle[disabled=false]:focus, input.-toggle[disabled=false][type="submit"]:focus, button.-toggle:disabled:focus, input.-toggle[type="submit"]:disabled:focus {
-        background-color: #7f982f;
-        border-color: inherit;
-        color: #ffffff;
-        box-shadow: inherit; }
-      button.-toggle[disabled]:active, input.-toggle[disabled][type="submit"]:active, button.-toggle[disabled=false]:active, input.-toggle[disabled=false][type="submit"]:active, button.-toggle:disabled:active, input.-toggle[type="submit"]:disabled:active {
-        background-color: #7f982f;
-        border-color: #ffffff;
-        color: #ffffff;
-        box-shadow: 2px 2px 7px 0px #4e4e4e inset; }
-    button.-toggle[disabled=true], input.-toggle[disabled=true][type="submit"], button.-toggle[disabled=disabled], input.-toggle[disabled=disabled][type="submit"] {
+    button.-toggle[disabled], input.-toggle[disabled][type="submit"] {
       background: #ffffff !important;
       color: #cccccc;
       border: 1px solid #d5d8dd;
       cursor: default; }
-      button.-toggle[disabled=true]:hover, input.-toggle[disabled=true][type="submit"]:hover, button.-toggle[disabled=disabled]:hover, input.-toggle[disabled=disabled][type="submit"]:hover {
+      button.-toggle[disabled]:hover, input.-toggle[disabled][type="submit"]:hover {
         background-color: #ffffff;
         border-color: #d5d8dd;
         color: #cccccc;
         box-shadow: inherit; }
-      button.-toggle[disabled=true]:focus, input.-toggle[disabled=true][type="submit"]:focus, button.-toggle[disabled=disabled]:focus, input.-toggle[disabled=disabled][type="submit"]:focus {
+      button.-toggle[disabled]:focus, input.-toggle[disabled][type="submit"]:focus {
         background-color: #ffffff;
         border-color: #d5d8dd;
         color: #cccccc;
         box-shadow: inherit; }
-      button.-toggle[disabled=true]:active, input.-toggle[disabled=true][type="submit"]:active, button.-toggle[disabled=disabled]:active, input.-toggle[disabled=disabled][type="submit"]:active {
+      button.-toggle[disabled]:active, input.-toggle[disabled][type="submit"]:active {
         background-color: #ffffff;
         border-color: #d5d8dd;
         color: #cccccc;
@@ -3306,22 +3230,22 @@ button, input[type="submit"] {
       border-color: #c2cdd8;
       color: #55a0c2;
       box-shadow: inherit; }
-    button.-toggle-action[disabled=true], input.-toggle-action[disabled=true][type="submit"], button.-toggle-action[disabled=disabled], input.-toggle-action[disabled=disabled][type="submit"] {
+    button.-toggle-action[disabled], input.-toggle-action[disabled][type="submit"] {
       background: #ffffff;
       color: rgba(159, 179, 195, 0.3);
       border: 1px solid #d5d8dd;
       cursor: default; }
-      button.-toggle-action[disabled=true]:hover, input.-toggle-action[disabled=true][type="submit"]:hover, button.-toggle-action[disabled=disabled]:hover, input.-toggle-action[disabled=disabled][type="submit"]:hover {
+      button.-toggle-action[disabled]:hover, input.-toggle-action[disabled][type="submit"]:hover {
         background-color: #ffffff;
         border-color: #d5d8dd;
         color: rgba(159, 179, 195, 0.3);
         box-shadow: inherit; }
-      button.-toggle-action[disabled=true]:focus, input.-toggle-action[disabled=true][type="submit"]:focus, button.-toggle-action[disabled=disabled]:focus, input.-toggle-action[disabled=disabled][type="submit"]:focus {
+      button.-toggle-action[disabled]:focus, input.-toggle-action[disabled][type="submit"]:focus {
         background-color: #ffffff;
         border-color: #d5d8dd;
         color: rgba(159, 179, 195, 0.3);
         box-shadow: inherit; }
-      button.-toggle-action[disabled=true]:active, input.-toggle-action[disabled=true][type="submit"]:active, button.-toggle-action[disabled=disabled]:active, input.-toggle-action[disabled=disabled][type="submit"]:active {
+      button.-toggle-action[disabled]:active, input.-toggle-action[disabled][type="submit"]:active {
         background-color: #ffffff;
         border-color: #d5d8dd;
         color: rgba(159, 179, 195, 0.3);
