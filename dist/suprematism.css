@@ -3011,7 +3011,7 @@ button, input[type="submit"] {
     border-radius: 4px;
     background: #ffffff !important;
     text-transform: uppercase;
-    box-shadow: 0px 0px 0px 1px #6460aa inset;
+    box-shadow: 0px 0px 0px 1px #55a0c2 inset;
     font-weight: bold; }
     button.-dialog-reverse .u-supre-icon, input.-dialog-reverse[type="submit"] .u-supre-icon {
       top: 4px;
@@ -3170,7 +3170,7 @@ button, input[type="submit"] {
       border-color: #c2cdd8;
       color: #6460aa;
       box-shadow: inherit; }
-    button.-toggle:focus, input.-toggle[type="submit"]:focus {
+    button.-toggle.is-active, input.-toggle.is-active[type="submit"] {
       background-color: #6460aa;
       border-color: #6460aa;
       color: #ffffff;
@@ -3202,10 +3202,6 @@ button, input[type="submit"] {
         box-shadow: inherit; }
     button.-toggle + .-toggle, input.-toggle[type="submit"] + .-toggle {
       margin-left: -1px; }
-    button.-toggle[selected=true], input.-toggle[selected=true][type="submit"] {
-      background: #6460aa;
-      color: #ffffff;
-      border: 1px solid #6460aa; }
   button.-toggle-action, input.-toggle-action[type="submit"] {
     color: #9fb3c3;
     height: 32px;
@@ -3220,7 +3216,7 @@ button, input[type="submit"] {
       border-color: #c2cdd8;
       color: #55a0c2;
       box-shadow: inherit; }
-    button.-toggle-action:focus, input.-toggle-action[type="submit"]:focus {
+    button.-toggle-action.is-active, input.-toggle-action.is-active[type="submit"] {
       background-color: #ffffff;
       border-color: #c2cdd8;
       color: #55a0c2;
@@ -3230,6 +3226,10 @@ button, input[type="submit"] {
       border-color: #c2cdd8;
       color: #55a0c2;
       box-shadow: inherit; }
+    button.-toggle-action.background, input.-toggle-action.background[type="submit"] {
+      background: #eff6e1; }
+    button.-toggle-action.open-bottom, input.-toggle-action.open-bottom[type="submit"] {
+      border-bottom: none; }
     button.-toggle-action[disabled], input.-toggle-action[disabled][type="submit"] {
       background: #ffffff;
       color: rgba(159, 179, 195, 0.3);
@@ -3252,14 +3252,6 @@ button, input[type="submit"] {
         box-shadow: inherit; }
     button.-toggle-action + .-toggle-action, input.-toggle-action[type="submit"] + .-toggle-action {
       margin-left: -1px; }
-    button.-toggle-action[selected=true], input.-toggle-action[selected=true][type="submit"] {
-      background: #ffffff;
-      color: #55a0c2;
-      border: 1px solid #c2cdd8; }
-    button.-toggle-action.background, input.-toggle-action.background[type="submit"] {
-      background: #eff6e1; }
-    button.-toggle-action.open-bottom, input.-toggle-action.open-bottom[type="submit"] {
-      border-bottom: none; }
     button.-toggle-action .u-supre-icon, input.-toggle-action[type="submit"] .u-supre-icon {
       top: 0px;
       font-size: 17px;
