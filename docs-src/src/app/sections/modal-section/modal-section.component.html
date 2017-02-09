@@ -1,0 +1,201 @@
+<h1><a id="top"></a>Modal</h1>
+
+
+<a id="modal-install"></a>
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-modal --save
+  
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} ModalModule } from 'suprematism-modal';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      ModalModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+
+<a id="modal-simple-example"></a>
+<h5 class="_mtxl">Simple Example</h5>
+<div>
+  <button id="modal-1-button" class="-action" (click)="modal1.open();">open basic modal</button>
+  <supre-modal #modal1>
+    <span modal-title class="flex justify-between">
+      <h3 class="_p0 _m0">Save Audience</h3>
+      <p class="_p0 _m0 _ptxs">right Side Text</p>
+    </span>
+    <span modal-body>
+      This is the body section of the Modal.
+    </span>
+    <span modal-footer class="flex justify-end">
+      <p class="flex-auto">Error Message Here</p>
+      <div>
+        <button (click)="modal1.close();" class="-dialog">Do Stuff</button>
+      </div>
+    </span>
+  </supre-modal>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- call the modal.open() method -->
+  {{'&lt;'}}button id="modal-1-button" class="-action" (click)="modalInstance.open();">open basic modal{{'&lt;'}}/button>
+
+  {{'&lt;'}}!-- add the modal on the page -->
+  {{'&lt;'}}supre-modal #modalInstance>
+
+    {{'&lt;'}}!-- Title Section -->
+    {{'&lt;'}}span modal-title>
+      ...
+    {{'&lt;'}}/span>
+
+    {{'&lt;'}}!-- Body Section -->
+    {{'&lt;'}}span modal-body>
+      ...
+    {{'&lt;'}}/span>
+
+    {{'&lt;'}}!-- footer Section -->
+    {{'&lt;'}}span modal-footer>
+      ...
+      {{'&lt;'}}!-- You can close the modal close() method from anywhere -->
+      {{'&lt;'}}button (click)="modalInstance.close();" class="-dialog">Do Stuff{{'&lt;'}}/button>
+      ...
+    {{'&lt;'}}/span>
+
+  {{'&lt;'}}/supre-modal>
+  </code>
+</pre>
+
+
+<a id="modal-sizing"></a>
+<h5 class="_mtxl">Sizes (Optional)</h5>
+<div>
+  <button id="modal-2-button" class="-action" (click)="modal2.open();">small modal</button>
+  <button id="modal-3-button" class="-action" (click)="modal3.open();">medium modal</button>
+  <button id="modal-4-button" class="-action" (click)="modal4.open();">large modal</button>
+
+  <supre-modal #modal2 size="small">
+    <span modal-title class="flex justify-between">
+      <h3 class="_p0 _m0">Save Audience</h3>
+      <p class="_p0 _m0 _ptxs">right Side Text</p>
+    </span>
+    <span modal-body>
+      This is the body section of the Modal.
+    </span>
+    <span modal-footer class="flex justify-end">
+      <p class="flex-auto">Error Message Here</p>
+      <div>
+        <button (click)="modal2.close();" class="-dialog">Do Stuff</button>
+      </div>
+    </span>
+  </supre-modal>
+
+  <supre-modal #modal3 size="medium">
+    <span modal-title class="flex justify-between">
+      <h3 class="_p0 _m0">Save Audience</h3>
+      <p class="_p0 _m0 _ptxs">right Side Text</p>
+    </span>
+    <span modal-body>
+      This is the body section of the Modal.
+    </span>
+    <span modal-footer class="flex justify-end">
+      <p class="flex-auto">Error Message Here</p>
+      <div>
+        <button (click)="modal3.close();" class="-dialog">Do Stuff</button>
+      </div>
+    </span>
+  </supre-modal>
+
+  <supre-modal #modal4 size="large">
+    <span modal-title class="flex justify-between">
+      <h3 class="_p0 _m0">Save Audience</h3>
+      <p class="_p0 _m0 _ptxs">right Side Text</p>
+    </span>
+    <span modal-body>
+      This is the body section of the Modal.
+    </span>
+    <span modal-footer class="flex justify-end">
+      <p class="flex-auto">Error Message Here</p>
+      <div>
+        <button (click)="modal4.close();" class="-dialog">Do Stuff</button>
+      </div>
+    </span>
+  </supre-modal>
+
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- size="small" (default) -->
+  {{'&lt;'}}supre-modal size="small">
+    {{'&lt;'}}span modal-title>...{{'&lt;'}}/span>
+    {{'&lt;'}}span modal-body>...{{'&lt;'}}/span>
+    {{'&lt;'}}span modal-footer>...{{'&lt;'}}/span>
+  {{'&lt;'}}/supre-modal>
+
+  {{'&lt;'}}!-- size="medium" (default) -->
+  {{'&lt;'}}supre-modal size="medium">
+    {{'&lt;'}}span modal-title>...{{'&lt;'}}/span>
+    {{'&lt;'}}span modal-body>...{{'&lt;'}}/span>
+    {{'&lt;'}}span modal-footer>...{{'&lt;'}}/span>
+  {{'&lt;'}}/supre-modal>
+
+  {{'&lt;'}}!-- size="large" (default) -->
+  {{'&lt;'}}supre-modal size="large">
+    {{'&lt;'}}span modal-title>...{{'&lt;'}}/span>
+    {{'&lt;'}}span modal-body>...{{'&lt;'}}/span>
+    {{'&lt;'}}span modal-footer>...{{'&lt;'}}/span>
+  {{'&lt;'}}/supre-modal>
+  </code>
+</pre>
+
+
+
+<a id="modal-api"></a>
+<h5 class="_mtxl">API</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  /** 
+   * Classes and Interfaces 
+   */
+  import {{'&#123;'}}
+    ModalEvent, // an interface for the event emitted from the modal
+    ModalComponent // the component class
+  } from 'suprematism-modal';
+
+
+  /**
+   * Event (emitter)
+   */
+  {{'&lt;'}}supre-modal (onChange)="yourMethod($event: ModalEvent);">...{{'&lt;'}}/supre-modal>
+
+
+  /**
+   * ModalEvent Interface
+   */
+  export interface ModalEvent {{'&#123;'}}
+    // tells you what method/action was called
+    methodCalled: 'open' | 'close' | null;
+    // the current state
+    isOpen: boolean;
+    // the value of the 'id' property/attribute on the {{'&lt;'}}supre-modal> element, null if there is none
+    id: string | null;
+  }
+
+
+  /** 
+   * ModalComponent Class
+   */
+  ModalComponent.open();  // emits: {{'&#123;'}} methodCalled: 'open', isOpen: true, id: null }
+  ModalComponent.close(); // emits: {{'&#123;'}} methodCalled: 'close', isOpen: false, id: null }
+  // NOTE: if {{'&lt;'}}supre-modal id="myModal">...{{'&lt;'}}/supre-modal> then the id would be: 'myModal'
+  </code>
+</pre>
+
+

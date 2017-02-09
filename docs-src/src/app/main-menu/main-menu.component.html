@@ -81,9 +81,17 @@
           <li><a [routerLink]="['section/inline-dialogs']" fragment="inline-dialog-install">Installation</a></li>
           <li><a [routerLink]="['section/inline-dialogs']" fragment="inline-dialog-simple-example">Simple Example</a></li>
           <li><a [routerLink]="['section/inline-dialogs']" fragment="inline-dialog-with-tooltip">Combined with a Tooltip</a></li>
+          <li><a [routerLink]="['section/inline-dialogs']" fragment="inline-dialog-placement">Placement</a></li>
         </ul>
       </li>
-      <li>Modal</li>
+      <li>
+        <a [routerLink]="['section/modal']" fragment="top">Modal</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/modal'">
+          <li><a [routerLink]="['section/modal']" fragment="modal-install">Installation</a></li>
+          <li><a [routerLink]="['section/modal']" fragment="modal-simple-example">Simple Example</a></li>
+          <li><a [routerLink]="['section/modal']" fragment="modal-api">API</a></li>
+        </ul>
+      </li>
       <li>Navigation</li>
       <li>Navigation Tiles</li>
       <li>Dialogs / User Feedback</li>

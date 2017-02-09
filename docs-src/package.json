@@ -24,6 +24,7 @@
     "core-js": "^2.4.1",
     "prismjs": "^1.6.0",
     "rxjs": "^5.0.1",
+    "suprematism-modal": "github:cinbcuniversal/suprematism-modal",
     "suprematism-popover": "github:cinbcuniversal/suprematism-popover",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"

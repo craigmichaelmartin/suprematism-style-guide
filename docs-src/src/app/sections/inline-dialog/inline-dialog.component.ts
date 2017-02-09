@@ -2,7 +2,6 @@ import {
   Component,
   ViewChild
 } from '@angular/core';
-// import { InlineDialogComponent } from 'suprematism-popover';
 import { ActivatedRoute } from '@angular/router';
 import { AbstractSectionComponent } from '../section.abstract';
 

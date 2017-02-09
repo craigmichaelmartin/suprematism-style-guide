@@ -19,8 +19,10 @@ import { FlexBoxComponent } from './sections/utilities/flex-box/flex-box.compone
 
 // import { PopoverModule } from 'suprematism-popover';
 import { PopoverModule } from 'suprematism-popover';
+import { ModalModule } from 'suprematism-modal';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
+import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 
 @NgModule({
   declarations: [
@@ -37,14 +39,16 @@ import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-di
     ZIndexComponent,
     FlexBoxComponent,
     TooltipComponent,
-    InlineDialogSectionComponent
+    InlineDialogSectionComponent,
+    ModalSectionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    PopoverModule
+    PopoverModule, 
+    ModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,6 +14,7 @@ import { ZIndexComponent } from './sections/utilities/z-index/z-index.component'
 import { FlexBoxComponent } from './sections/utilities/flex-box/flex-box.component';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
+import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 
 const routes: Routes = [
 
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'section/checkboxes', component: CheckboxesComponent },
   { path: 'section/tooltips', component: TooltipComponent },
   { path: 'section/inline-dialogs', component: InlineDialogSectionComponent },
+  { path: 'section/modal', component: ModalSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },
