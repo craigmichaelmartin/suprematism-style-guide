@@ -103,6 +103,6 @@ $colors: (
     color: $hex;
   }
   %border-#{$name} {
-    color: $hex;
+    border-color: $hex;
   }
 }
