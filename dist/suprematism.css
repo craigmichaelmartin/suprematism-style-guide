@@ -9,77 +9,6 @@
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
  */
 /**
- * Used for: 
- *  - Condition Bar
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - hover state fill: data grid, droplists
- *  - fill state for search boxes
- */
-/**
- * Used for:
- *  - unselected icons
- *  - droplist unselected bold type
- */
-/**
- * Used for:
- *  - selected icons
- *  - selected text
- */
-/**
- * Used for:
- *  - nav bar
- *  - active toggle
- */
-/**
- * Used for:
- *  - data grid column head text
- */
-/**
- * Used for:
- *  - hover state color for toolbar buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Holding container
- */
-/**
- * Used for:
- *  - white
- */
-/** 
- * Used for:
- *  - black
- */
-/**
- * Used for:
- * In active text
- */
-/**
- * Strokes
- */
-/**
- * 
- */
-/**
  * Collection of the colors
  */
 /**
@@ -2635,77 +2564,6 @@ button.-affix, input.-affix[type="submit"] {
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
  */
 /**
- * Used for: 
- *  - Condition Bar
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - hover state fill: data grid, droplists
- *  - fill state for search boxes
- */
-/**
- * Used for:
- *  - unselected icons
- *  - droplist unselected bold type
- */
-/**
- * Used for:
- *  - selected icons
- *  - selected text
- */
-/**
- * Used for:
- *  - nav bar
- *  - active toggle
- */
-/**
- * Used for:
- *  - data grid column head text
- */
-/**
- * Used for:
- *  - hover state color for toolbar buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Holding container
- */
-/**
- * Used for:
- *  - white
- */
-/** 
- * Used for:
- *  - black
- */
-/**
- * Used for:
- * In active text
- */
-/**
- * Strokes
- */
-/**
- * 
- */
-/**
  * Collection of the colors
  */
 /**
@@ -2876,6 +2734,105 @@ button.-affix, input.-affix[type="submit"] {
 .border-shark-skin {
   border-color: #6f7b86; }
 
+.bg-sequence-1 {
+  background-color: #e47a39; }
+
+.color-sequence-1 {
+  color: #e47a39; }
+
+.border-sequence-1 {
+  border-color: #e47a39; }
+
+.bg-sequence-2 {
+  background-color: #78b1e4; }
+
+.color-sequence-2 {
+  color: #78b1e4; }
+
+.border-sequence-2 {
+  border-color: #78b1e4; }
+
+.bg-sequence-3 {
+  background-color: #67ab9f; }
+
+.color-sequence-3 {
+  color: #67ab9f; }
+
+.border-sequence-3 {
+  border-color: #67ab9f; }
+
+.bg-sequence-4 {
+  background-color: #b42a40; }
+
+.color-sequence-4 {
+  color: #b42a40; }
+
+.border-sequence-4 {
+  border-color: #b42a40; }
+
+.bg-viz-aqua {
+  background-color: #32cee6; }
+
+.color-viz-aqua {
+  color: #32cee6; }
+
+.border-viz-aqua {
+  border-color: #32cee6; }
+
+.bg-viz-purple {
+  background-color: #9b75b1; }
+
+.color-viz-purple {
+  color: #9b75b1; }
+
+.border-viz-purple {
+  border-color: #9b75b1; }
+
+.bg-viz-lime {
+  background-color: #a8e077; }
+
+.color-viz-lime {
+  color: #a8e077; }
+
+.border-viz-lime {
+  border-color: #a8e077; }
+
+.bg-viz-ocean {
+  background-color: #37c0a7; }
+
+.color-viz-ocean {
+  color: #37c0a7; }
+
+.border-viz-ocean {
+  border-color: #37c0a7; }
+
+.bg-viz-orange {
+  background-color: #f47634; }
+
+.color-viz-orange {
+  color: #f47634; }
+
+.border-viz-orange {
+  border-color: #f47634; }
+
+.bg-viz-blue {
+  background-color: #003da0; }
+
+.color-viz-blue {
+  color: #003da0; }
+
+.border-viz-blue {
+  border-color: #003da0; }
+
+.bg-viz-yellow {
+  background-color: #f7d03e; }
+
+.color-viz-yellow {
+  color: #f7d03e; }
+
+.border-viz-yellow {
+  border-color: #f7d03e; }
+
 .u-type-xs {
   font-size: 9px; }
 
@@ -2923,77 +2880,6 @@ button.-affix, input.-affix[type="submit"] {
 /**
  * Design Reference:
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
- */
-/**
- * Used for: 
- *  - Condition Bar
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - hover state fill: data grid, droplists
- *  - fill state for search boxes
- */
-/**
- * Used for:
- *  - unselected icons
- *  - droplist unselected bold type
- */
-/**
- * Used for:
- *  - selected icons
- *  - selected text
- */
-/**
- * Used for:
- *  - nav bar
- *  - active toggle
- */
-/**
- * Used for:
- *  - data grid column head text
- */
-/**
- * Used for:
- *  - hover state color for toolbar buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Holding container
- */
-/**
- * Used for:
- *  - white
- */
-/** 
- * Used for:
- *  - black
- */
-/**
- * Used for:
- * In active text
- */
-/**
- * Strokes
- */
-/**
- * 
  */
 /**
  * Collection of the colors
@@ -3324,77 +3210,6 @@ button, input[type="submit"] {
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
  */
 /**
- * Used for: 
- *  - Condition Bar
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - hover state fill: data grid, droplists
- *  - fill state for search boxes
- */
-/**
- * Used for:
- *  - unselected icons
- *  - droplist unselected bold type
- */
-/**
- * Used for:
- *  - selected icons
- *  - selected text
- */
-/**
- * Used for:
- *  - nav bar
- *  - active toggle
- */
-/**
- * Used for:
- *  - data grid column head text
- */
-/**
- * Used for:
- *  - hover state color for toolbar buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Holding container
- */
-/**
- * Used for:
- *  - white
- */
-/** 
- * Used for:
- *  - black
- */
-/**
- * Used for:
- * In active text
- */
-/**
- * Strokes
- */
-/**
- * 
- */
-/**
  * Collection of the colors
  */
 /**
@@ -3403,77 +3218,6 @@ button, input[type="submit"] {
 /**
  * Design Reference:
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
- */
-/**
- * Used for: 
- *  - Condition Bar
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - hover state fill: data grid, droplists
- *  - fill state for search boxes
- */
-/**
- * Used for:
- *  - unselected icons
- *  - droplist unselected bold type
- */
-/**
- * Used for:
- *  - selected icons
- *  - selected text
- */
-/**
- * Used for:
- *  - nav bar
- *  - active toggle
- */
-/**
- * Used for:
- *  - data grid column head text
- */
-/**
- * Used for:
- *  - hover state color for toolbar buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Holding container
- */
-/**
- * Used for:
- *  - white
- */
-/** 
- * Used for:
- *  - black
- */
-/**
- * Used for:
- * In active text
- */
-/**
- * Strokes
- */
-/**
- * 
  */
 /**
  * Collection of the colors
@@ -3569,77 +3313,6 @@ button, input[type="submit"] {
 /**
  * Design Reference:
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
- */
-/**
- * Used for: 
- *  - Condition Bar
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-/**
- * Used for:
- *  - hover state fill: data grid, droplists
- *  - fill state for search boxes
- */
-/**
- * Used for:
- *  - unselected icons
- *  - droplist unselected bold type
- */
-/**
- * Used for:
- *  - selected icons
- *  - selected text
- */
-/**
- * Used for:
- *  - nav bar
- *  - active toggle
- */
-/**
- * Used for:
- *  - data grid column head text
- */
-/**
- * Used for:
- *  - hover state color for toolbar buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-/**
- * Holding container
- */
-/**
- * Used for:
- *  - white
- */
-/** 
- * Used for:
- *  - black
- */
-/**
- * Used for:
- * In active text
- */
-/**
- * Strokes
- */
-/**
- * 
  */
 /**
  * Collection of the colors

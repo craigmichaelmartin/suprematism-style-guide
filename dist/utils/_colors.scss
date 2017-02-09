@@ -3,130 +3,52 @@
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
  */
 
-/**
- * Used for: 
- *  - Condition Bar
- */
-$ice: #e8ecf0;
 
 
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-$off-white: #f6f6f6;
-
-
-/**
- * Used for:
- *  - Data Grid columns
- *  - Header, primary
- */
-$gray: #d5d8dd;
-
-
-/**
- * Used for:
- *  - hover state fill: data grid, droplists
- *  - fill state for search boxes
- */
-$lemon: #ffd966;
-
-
-/**
- * Used for:
- *  - unselected icons
- *  - droplist unselected bold type
- */
-$blue-gray: #9fb3c3;
-
-
-/**
- * Used for:
- *  - selected icons
- *  - selected text
- */
-$aqua: #55a0c2;
-
-
-/**
- * Used for:
- *  - nav bar
- *  - active toggle
- */
-$purple: #6460aa;
-
-
-/**
- * Used for:
- *  - data grid column head text
- */
-$mid-gray: #7f8a93;
-
-
-/**
- * Used for:
- *  - hover state color for toolbar buttons
- */
-$blue: #0082a9;
-
-
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-$green: #7f982f;
-
-
-/**
- * Used for:
- *  - hover state color for action buttons
- */
-$lite-green: #a8c839;
-
-
-/**
- * Holding container
- */
-$soft-green: #eff6e1;
-
-
-/**
- * Used for:
- *  - white
- */
-$white: #ffffff;
-
-
-/** 
- * Used for:
- *  - black
- */
-$black: #000000;
-
-
-/**
- * Used for:
- * In active text
- */
-$lite-gray: #cccccc;
-
-
-/**
- * Strokes
- */
-$active-stroke: #c2cdd8;
-$disabled-stroke: #d5d8dd;
-
-
-/**
- * 
- */
-$shark-skin: #6f7b86;
+//
+// Base UI Colors
+//
+$ice:               #e8ecf0;
+$off-white:         #f6f6f6;
+$gray:              #d5d8dd;
+$lemon:             #ffd966;
+$blue-gray:         #9fb3c3;
+$aqua:              #55a0c2;
+$purple:            #6460aa;
+$mid-gray:          #7f8a93;
+$blue:              #0082a9;
+$green:             #7f982f;
+$lite-green:        #a8c839;
+$soft-green:        #eff6e1;
+$white:             #ffffff;
+$black:             #000000;
+$lite-gray:         #cccccc;
+$active-stroke:     #c2cdd8;
+$disabled-stroke:   #d5d8dd;
+$shark-skin:        #6f7b86;
 
 
 
+//
+// Sequence Colors
+//
+$sequence-1:        #e47a39;
+$sequence-2:        #78b1e4;
+$sequence-3:        #67ab9f;
+$sequence-4:        #b42a40;
+
+
+
+//
+// Viz Colors
+//
+$viz-aqua:          #32cee6;
+$viz-purple:        #9b75b1;
+$viz-lime:          #a8e077;
+$viz-ocean:         #37c0a7;
+$viz-orange:        #f47634;
+$viz-blue:          #003da0;
+$viz-yellow:        #f7d03e;
 
 
 
@@ -134,6 +56,7 @@ $shark-skin: #6f7b86;
  * Collection of the colors
  */
 $colors: (
+
   ('ice', $ice),
   ('off-white', $off-white),
   ('gray', $gray),
@@ -151,7 +74,21 @@ $colors: (
   ('active-stroke', $active-stroke),
   ('disabled-stroke', $disabled-stroke),
   ('soft-green', $soft-green),
-  ('shark-skin', $shark-skin)
+  ('shark-skin', $shark-skin),
+
+  ('sequence-1', $sequence-1),
+  ('sequence-2', $sequence-2),
+  ('sequence-3', $sequence-3),
+  ('sequence-4', $sequence-4),
+
+  ('viz-aqua', $viz-aqua),
+  ('viz-purple', $viz-purple),
+  ('viz-lime', $viz-lime),
+  ('viz-ocean', $viz-ocean),
+  ('viz-orange', $viz-orange),
+  ('viz-blue', $viz-blue),
+  ('viz-yellow', $viz-yellow)
+
 );
 
 
