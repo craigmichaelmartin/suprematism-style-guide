@@ -10,7 +10,8 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "../../dist/fonts"
+        "../../dist/fonts",
+        "404.html"
       ],
       "index": "index.html",
       "main": "main.ts",
