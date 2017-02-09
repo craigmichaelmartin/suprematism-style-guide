@@ -22,12 +22,14 @@
   <li>
     <h5 class="_mt0 _mb0 _mtm">Typography</h5>
     <ul class="_mt0 _pbxs _pls">
-      <li>Headers</li>
-      <li>Links</li>
-      <li>Paragraphs / Body Copy</li>
+      <li>
+        <a [routerLink]="['section/typography']" fragment="top">Typography</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/typography'">
+          <li><a [routerLink]="['section/typography']" fragment="type-styles">Classes &amp; Placeholders</a></li>
+        </ul>
+      </li>
       <li><a [routerLink]="['section/icons']" fragment="top">Icons</a></li>
       <li>Lists</li>
-      <li>Alignment</li>
       <li>Tabular Data (Tables)</li>
     </ul>
   </li>

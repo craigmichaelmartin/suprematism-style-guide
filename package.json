@@ -19,7 +19,7 @@
     "build:icons": "node lib/parse-icons-demo.js",
     "build:watch": "npm run build -- watch",
     "build:docs": "npm run build && cd docs-src && npm run build && cd ../",
-    "serve": "cd docs-src && npm run start && cd ../"
+    "start": "cd docs-src && npm run start && cd ../"
   },
   "homepage": "https://cinbcuniversal.github.io/suprematism-style-guide/index.html",
   "dependencies": {},

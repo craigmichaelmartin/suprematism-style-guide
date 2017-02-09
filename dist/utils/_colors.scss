@@ -120,6 +120,14 @@ $active-stroke: #c2cdd8;
 $disabled-stroke: #d5d8dd;
 
 
+/**
+ * 
+ */
+$shark-skin: #6f7b86;
+
+
+
+
 
 
 /**
@@ -142,7 +150,8 @@ $colors: (
   ('lite-gray', $lite-gray),
   ('active-stroke', $active-stroke),
   ('disabled-stroke', $disabled-stroke),
-  ('soft-green', $soft-green)
+  ('soft-green', $soft-green),
+  ('shark-skin', $shark-skin)
 );
 
 

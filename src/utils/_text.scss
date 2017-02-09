@@ -1,0 +1,18 @@
+@import '../vars/_vars.suprematisim.scss';
+@import '../vars/_vars.concise.scss';
+
+%u-type-xs {
+  font-size: $text-size-xs + px;
+}
+%u-type-s {
+  font-size: $text-size-s + px;
+}
+%u-type-m {
+  font-size: $text-size-m + px;
+}
+%u-type-l {
+  font-size: $text-size-l + px;
+}
+%u-type-xl {
+  font-size: $text-size-xl + px;
+}

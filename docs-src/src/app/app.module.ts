@@ -22,6 +22,7 @@ import { PopoverModule } from 'suprematism-popover';
 import { ModalModule } from 'suprematism-modal';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
+import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ModalSectionComponent } from './sections/modal-section/modal-section.co
     FlexBoxComponent,
     TooltipComponent,
     InlineDialogSectionComponent,
+    TypographySectionComponent,
     ModalSectionComponent
   ],
   imports: [

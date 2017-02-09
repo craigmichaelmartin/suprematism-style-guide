@@ -1,14 +1,16 @@
+@import '../vars/_vars.suprematisim.scss';
+@import '../vars/_vars.concise.scss';
 @import '../utils/_colors.scss';
 @import '../utils/_z-indexes.scss';
 
 
-$dropdown-item-horiz-padding: 10px;
+$dropdown-item-horiz-padding: $spacing-s;
 
 
 %label-icon {
   position: absolute;
-  font-size: 16px;
-  right: 10px;
+  font-size: $text-size-l + px;
+  right: $spacing-s;
   padding: 0px 1px;
   font-weight: normal;
 }
@@ -64,7 +66,7 @@ $dropdown-item-horiz-padding: 10px;
     border: 1px solid $gray;
     width: auto;
     line-height: 32px;
-    font-size: 10px;
+    font-size: $text-size-s + px;
     font-weight: bold;
     padding: 0px 50px 0px $dropdown-item-horiz-padding;
     position: relative;
@@ -81,7 +83,7 @@ $dropdown-item-horiz-padding: 10px;
     &[selected=true] {
       color: $aqua;
       .#{$icon-class} {
-        margin-right: 6px;
+        margin-right: $spacing-xs;
         font-size: 14px;
         position: relative;
         top: 2px;
@@ -105,7 +107,7 @@ $dropdown-item-horiz-padding: 10px;
     // border-color: $gray;
     padding: 0 0 0 0;
     margin: -1px 0 0 0;
-    font-size: 10px;
+    font-size: $text-size-s + px;
     box-shadow: 4px 4px 7px -4px black;
     border: 1px solid $blue-gray;
     // border-top: 0;
@@ -139,7 +141,7 @@ $dropdown-item-horiz-padding: 10px;
       }
 
       .#{$icon-class} {
-        margin-right: 10px;
+        margin-right: $spacing-s;
         font-size: 14px;
         position: relative;
         top: 2px;

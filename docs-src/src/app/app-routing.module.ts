@@ -14,6 +14,7 @@ import { ZIndexComponent } from './sections/utilities/z-index/z-index.component'
 import { FlexBoxComponent } from './sections/utilities/flex-box/flex-box.component';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
+import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
 
   // Typography
   { path: 'section/icons', component: IconsComponent },
+  { path: 'section/typography', component: TypographySectionComponent },
 
   // Styles / Esthetics
   { path: 'section/colors', component: ColorsSectionComponent },

@@ -77,6 +77,9 @@
  * Strokes
  */
 /**
+ * 
+ */
+/**
  * Collection of the colors
  */
 /**
@@ -2700,6 +2703,9 @@ button.-affix, input.-affix[type="submit"] {
  * Strokes
  */
 /**
+ * 
+ */
+/**
  * Collection of the colors
  */
 /**
@@ -2861,6 +2867,59 @@ button.-affix, input.-affix[type="submit"] {
 .border-soft-green {
   border-color: #eff6e1; }
 
+.bg-shark-skin {
+  background-color: #6f7b86; }
+
+.color-shark-skin {
+  color: #6f7b86; }
+
+.border-shark-skin {
+  border-color: #6f7b86; }
+
+.u-type-xs {
+  font-size: 9px; }
+
+.u-type-s {
+  font-size: 10px; }
+
+.u-type-m {
+  font-size: 12px; }
+
+.u-type-l {
+  font-size: 16px; }
+
+.u-type-xl {
+  font-size: 24px; }
+
+.u-uppercase {
+  text-transform: uppercase; }
+
+.u-captialize {
+  text-transform: capitalize; }
+
+.u-type-left {
+  text-align: left; }
+
+.u-type-center {
+  text-align: center; }
+
+.u-type-right {
+  text-align: right; }
+
+.u-bold {
+  font-weight: bold; }
+
+.u-em {
+  font-style: italic; }
+
+.u-parens::before {
+  content: '(';
+  color: #55a0c2; }
+
+.u-parens::after {
+  content: ')';
+  color: #55a0c2; }
+
 /**
  * Design Reference:
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
@@ -2932,6 +2991,9 @@ button.-affix, input.-affix[type="submit"] {
  */
 /**
  * Strokes
+ */
+/**
+ * 
  */
 /**
  * Collection of the colors
@@ -3330,6 +3392,90 @@ button, input[type="submit"] {
  * Strokes
  */
 /**
+ * 
+ */
+/**
+ * Collection of the colors
+ */
+/**
+ * Helper classes for colors
+ */
+/**
+ * Design Reference:
+ * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
+ */
+/**
+ * Used for: 
+ *  - Condition Bar
+ */
+/**
+ * Used for:
+ *  - Data Grid columns
+ *  - Header, primary
+ */
+/**
+ * Used for:
+ *  - Data Grid columns
+ *  - Header, primary
+ */
+/**
+ * Used for:
+ *  - hover state fill: data grid, droplists
+ *  - fill state for search boxes
+ */
+/**
+ * Used for:
+ *  - unselected icons
+ *  - droplist unselected bold type
+ */
+/**
+ * Used for:
+ *  - selected icons
+ *  - selected text
+ */
+/**
+ * Used for:
+ *  - nav bar
+ *  - active toggle
+ */
+/**
+ * Used for:
+ *  - data grid column head text
+ */
+/**
+ * Used for:
+ *  - hover state color for toolbar buttons
+ */
+/**
+ * Used for:
+ *  - hover state color for action buttons
+ */
+/**
+ * Used for:
+ *  - hover state color for action buttons
+ */
+/**
+ * Holding container
+ */
+/**
+ * Used for:
+ *  - white
+ */
+/** 
+ * Used for:
+ *  - black
+ */
+/**
+ * Used for:
+ * In active text
+ */
+/**
+ * Strokes
+ */
+/**
+ * 
+ */
+/**
  * Collection of the colors
  */
 /**
@@ -3373,7 +3519,7 @@ button, input[type="submit"] {
     .dropdown-button .dropdown-label[selected=true] {
       color: #55a0c2; }
       .dropdown-button .dropdown-label[selected=true] .u-supre-icon {
-        margin-right: 6px;
+        margin-right: 5px;
         font-size: 14px;
         position: relative;
         top: 2px;
@@ -3491,6 +3637,9 @@ button, input[type="submit"] {
  */
 /**
  * Strokes
+ */
+/**
+ * 
  */
 /**
  * Collection of the colors

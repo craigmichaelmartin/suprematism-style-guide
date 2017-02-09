@@ -1,0 +1,73 @@
+//
+// Font Sizes
+//
+.u-type-xs {
+  font-size: $text-size-xs + px;
+}
+.u-type-s {
+  font-size: $text-size-s + px;
+}
+.u-type-m {
+  font-size: $text-size-m + px;
+}
+.u-type-l {
+  font-size: $text-size-l + px;
+}
+.u-type-xl {
+  font-size: $text-size-xl + px;
+}
+
+
+
+//
+// Text Transformations
+//
+.u-uppercase {
+  text-transform: uppercase;
+}
+.u-captialize {
+  text-transform: capitalize;
+}
+
+
+
+//
+// Text Align
+//
+.u-type-left {
+  text-align: left;
+}
+.u-type-center {
+  text-align: center;
+}
+.u-type-right {
+  text-align: right;
+}
+
+
+
+//
+// Emphasis
+//
+.u-bold {
+  font-weight: bold;
+}
+.u-em {
+ font-style: italic;
+}
+
+
+//
+// Wrap in Parenthesis 
+//
+.u-parens {
+  &::before {
+    content: '(';
+    color: $aqua;
+  }
+  &::after {
+    content: ')';
+    color: $aqua;
+  }
+}
+
