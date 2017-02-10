@@ -14,7 +14,7 @@
   // align-items: center;
   // flex-wrap: wrap;
 
-  @each $name, $hex in $colors {
+  @each $name, $hex in $supre-colors {
     .color-block-#{$name} {
       width: 124px;
       border: 2px solid #3f3c3c;

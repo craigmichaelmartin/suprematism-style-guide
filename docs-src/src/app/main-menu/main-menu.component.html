@@ -10,9 +10,11 @@
       <li>
         <a [routerLink]="['section/colors']" fragment="top">Colors List</a>
         <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/colors'">
+          <li><a [routerLink]="['section/colors']" fragment="colors-installation">Installation</a></li>
           <li><a [routerLink]="['section/colors']" fragment="colors-list">List of Colors</a></li>
           <li><a [routerLink]="['section/colors']" fragment="colors-classes">Color Classes</a></li>
           <li><a [routerLink]="['section/colors']" fragment="colors-placeholders">Color Place Holders</a></li>
+          <li><a [routerLink]="['section/colors']" fragment="colors-list-mixins">Color List &amp; Mixins</a></li>
         </ul>
       </li>
       <li>Colors Guide</li>
@@ -166,8 +168,10 @@
           <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-column">Column Layout</a></li>
           <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-wrap">Wrap Layout</a></li>
           <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-fill-width">Stretch Cells to Fit</a></li>
-          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-horiz-align">Horizontal Alignment/Distribution</a></li>
-          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-vert-align">Vertical Alignment/Distribution</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-horiz-align">Horizontal Justification</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-vert-align">Vertical Justification</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-align-items">Align Items (Vertical)</a></li>
+          <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-self-align">Self Align (Vertical)</a></li>
           <li><a [routerLink]="['section/utilities/flexbox']" fragment="flexbox-flex-sizes">Cell Sizes</a></li>
         </ul>
       </li>

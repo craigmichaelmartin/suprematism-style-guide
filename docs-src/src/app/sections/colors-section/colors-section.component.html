@@ -1,20 +1,22 @@
 <h1><a id="top"></a>Colors List</h1>
 
-<a id="colors-list"></a>
+<a id="colors-installation"></a>
 <h5 class="_mtxl">List of Colors</h5>
 <p>Colors are a Utility, add it to your SCSS file from here:</p>
 <pre class="code-block">
-  <code class="language-sass">
+  <code class="language-css">
   @import "../node_modules/suprematism-style-guide/dist/utils/_colors.scss";
   </code>
 </pre>
 
 
 <!-- UI Colors -->
+<a id="colors-list"></a>
+<h5 class="_mtxl">List of Colors</h5>
 <div id="colors" class="flex flex-column">
 
 
-  <h6 class="_p0 _mtxl">UI Colors</h6>
+  <h6 class="_p0 _mtxl">UI &amp; Text Colors</h6>
   <div class="_mt0 flex flex-wrap _mbl">
 
     <div class="color-block-ice">
@@ -316,8 +318,7 @@
 
   {{'&lt;'}}--
     Use to set the color of borders on an element
-  -->
-  <!-- Note to devs: make sure you update the colors section in the typography page -->
+  --> <!-- Note to devs: make sure you update the colors section in the typography page -->
   {{'&lt;'}}div class="border-ice">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="border-off-white">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="border-gray">...{{'&lt;'}}/div>
@@ -357,12 +358,12 @@
 <a id="colors-placeholders"></a>
 <h5 class="_mtxl">Color Placeholders</h5>
 <pre class="code-block">
-  <code class="language-sass">
+  <code class="language-css">
   @import "../node_modules/suprematism-style-guide/dist/utils/_colors.scss";
   </code>
 </pre>
 <pre class="code-block">
-  <code class="language-sass">
+  <code class="language-css">
   /**
    * Use to add the background color in a style definition
    */
@@ -401,8 +402,7 @@
 
   /**
    * Use to add the color of text in a style definition
-   */
-  <!-- Note to devs: make sure you update the colors section in the typography page -->
+   */ <!-- Note to devs: make sure you update the colors section in the typography page -->
   @extend %color-ice;
   @extend %color-off-white;
   @extend %color-gray;
@@ -471,6 +471,81 @@
   @extend %border-viz-blue;
   @extend %border-viz-yellow;
 
+  </code>
+</pre>
+
+
+<a id="colors-list-mixins"></a>
+<h5 class="_mtxl">Color List &amp; Mixins</h5>
+<pre class="code-block">
+  <code class="language-css">
+  @import "../node_modules/suprematism-style-guide/dist/utils/_colors.scss";
+  </code>
+</pre>
+<pre class="code-block">
+  <code class="language-css">
+  //////////////////////////////////////////////////////////////////
+  // SASS/SCSS List of all the colors
+  //////////////////////////////////////////////////////////////////
+
+  $supre-colors: (
+
+    ('ice', $ice),
+    ('off-white', $off-white),
+    ('gray', $gray),
+    ('lemon', $lemon),
+    ('blue-gray', $blue-gray),
+    ('aqua', $aqua),
+    ('purple', $purple),
+    ('mid-gray', $mid-gray),
+    ('blue', $blue),
+    ('green', $green),
+    ('lite-green', $lite-green),
+    ('white', $white),
+    ('black', $black),
+    ('lite-gray', $lite-gray),
+    ('active-stroke', $active-stroke),
+    ('disabled-stroke', $disabled-stroke),
+    ('soft-green', $soft-green),
+    ('shark-skin', $shark-skin),
+
+    ('sequence-1', $sequence-1),
+    ('sequence-2', $sequence-2),
+    ('sequence-3', $sequence-3),
+    ('sequence-4', $sequence-4),
+
+    ('viz-aqua', $viz-aqua),
+    ('viz-purple', $viz-purple),
+    ('viz-lime', $viz-lime),
+    ('viz-ocean', $viz-ocean),
+    ('viz-orange', $viz-orange),
+    ('viz-blue', $viz-blue),
+    ('viz-yellow', $viz-yellow)
+
+  );
+
+  
+  //////////////////////////////////////////////////////////////////
+  // Mixins
+  // These mixins can help with avoiding specificity issues
+  //////////////////////////////////////////////////////////////////
+
+  // append all background color classes
+  @mixin appendBackgroundColorClasses();
+  // add only the supplied background color classes
+  @mixin appendBackgroundColorClasses('aqua', 'lemon', 'viz-purple');
+
+
+  // append all text color classes
+  @mixin appendTextColorClasses();
+  // add only the supplied text color classes
+  @mixin appendTextColorClasses('blue', 'sequence-2', 'lite-gray', 'mid-gray');
+
+
+  // append all border color classes
+  @mixin appendBorderColorClasses();
+  // add only the supplied border color classes
+  @mixin appendBorderColorClasses('shark-skin', 'off-white');
   </code>
 </pre>
 

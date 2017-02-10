@@ -12,9 +12,6 @@
  * Collection of the colors
  */
 /**
- * Helper classes for colors
- */
-/**
  * ConciseCSS v4.1.2
  * https://github.com/ConciseCSS/concise.css
  *
@@ -2569,9 +2566,6 @@ button.-affix, input.-affix[type="submit"] {
 /**
  * Helper classes for colors
  */
-/**
- * Helper classes for colors
- */
 .bg-ice {
   background-color: #e8ecf0; }
 
@@ -2883,9 +2877,6 @@ button.-affix, input.-affix[type="submit"] {
  */
 /**
  * Collection of the colors
- */
-/**
- * Helper classes for colors
  */
 button, input[type="submit"] {
   margin: 0px;
@@ -3213,17 +3204,11 @@ button, input[type="submit"] {
  * Collection of the colors
  */
 /**
- * Helper classes for colors
- */
-/**
  * Design Reference:
  * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
  */
 /**
  * Collection of the colors
- */
-/**
- * Helper classes for colors
  */
 .dropdown-button:hover .dropdown-label:after, .dropdown-button:focus .dropdown-label:after, .dropdown-button:active .dropdown-label:after, .dropdown-button .dropdown-label:after {
   position: absolute;
@@ -3316,9 +3301,6 @@ button, input[type="submit"] {
  */
 /**
  * Collection of the colors
- */
-/**
- * Helper classes for colors
  */
 label.checkbox {
   cursor: pointer;

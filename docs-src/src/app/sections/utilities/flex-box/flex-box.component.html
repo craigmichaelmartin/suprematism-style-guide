@@ -101,7 +101,7 @@
 
 
 <a id="flexbox-flex-horiz-align"></a>
-<h5 class="_mtxl"><span class="size-xs">Horizontal Alignment/Distribution</span></h5>
+<h5 class="_mtxl"><span class="size-xs">Horizontal Justification</span></h5>
 <div>
   <div class="_mbs flex justify-start">
     <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
@@ -161,7 +161,7 @@
 
 
 <a id="flexbox-flex-vert-align"></a>
-<h5 class="_mtxl"><span class="size-xs">Vertical Alignment/Distribution</span></h5>
+<h5 class="_mtxl"><span class="size-xs">Vertical Justification</span></h5>
 <div class="flex">
   <div class="column-sample _mls _mbs flex-auto flex flex-column justify-start">
     <div class="_b1 _mrxs _plxs _prxs">Block 1</div>
@@ -215,6 +215,86 @@
     {{'&lt;'}}div>Block 1{{'&lt;'}}/div>
     {{'&lt;'}}div>Block 2{{'&lt;'}}/div>
     {{'&lt;'}}div>Block 3{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="flexbox-align-items"></a>
+<h5 class="_mtxl"><span class="size-xs">Align Items</span></h5>
+<div class="flex" style="height: 100px;">
+  <div class="flex-1 flex items-start">
+    <div class="_b1 _pxs">items-start</div>
+  </div>
+  <div class="flex-1 flex items-end">
+    <div class="_b1 _pxs">items-end</div>
+  </div>
+  <div class="flex-1 flex items-center">
+    <div class="_b1 _pxs">items-center</div>
+  </div>
+  <div class="flex-1 flex items-baseline">
+    <div class="_b1 _pxs">items-baseline</div>
+  </div>
+  <div class="flex-1 flex items-stretch">
+    <div class="_b1 _pxs">items-stretch</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}div class="flex items-start">
+    {{'&lt;'}}div>items-start{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex items-end">
+    {{'&lt;'}}div>items-end{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex items-center">
+    {{'&lt;'}}div>items-center{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex items-baseline">
+    {{'&lt;'}}div>items-baseline{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex items-stretch">
+    {{'&lt;'}}div>items-stretch{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  </code>
+</pre>
+
+
+<a id="flexbox-self-align"></a>
+<h5 class="_mtxl"><span class="size-xs">Self Align</span></h5>
+<div class="flex" style="height: 100px;">
+  <div class="flex-1 flex">
+    <div class="_b1 _pxs self-start">self-start</div>
+  </div>
+  <div class="flex-1 flex">
+    <div class="_b1 _pxs self-end">self-end</div>
+  </div>
+  <div class="flex-1 flex">
+    <div class="_b1 _pxs self-center">self-center</div>
+  </div>
+  <div class="flex-1 flex">
+    <div class="_b1 _pxs self-baseline">self-baseline</div>
+  </div>
+  <div class="flex-1 flex">
+    <div class="_b1 _pxs self-stretch">self-stretch</div>
+  </div>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div class="self-start">self-start{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div class="self-end">self-end{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div class="self-center">self-center{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div class="self-baseline">self-baseline{{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+  {{'&lt;'}}div class="flex">
+    {{'&lt;'}}div class="self-stretch">self-stretch{{'&lt;'}}/div>
   {{'&lt;'}}/div>
   </code>
 </pre>

@@ -27,8 +27,6 @@ $active-stroke:     #c2cdd8;
 $disabled-stroke:   #d5d8dd;
 $shark-skin:        #6f7b86;
 
-
-
 //
 // Sequence Colors
 //
@@ -36,8 +34,6 @@ $sequence-1:        #e47a39;
 $sequence-2:        #78b1e4;
 $sequence-3:        #67ab9f;
 $sequence-4:        #b42a40;
-
-
 
 //
 // Viz Colors
@@ -92,9 +88,10 @@ $colors: (
 );
 
 
-/**
- * Helper classes for colors
- */
+
+//
+// Helper classes for colors
+//
 @each $name, $hex in $colors {
   %bg-#{$name} {
     background-color: $hex;
@@ -106,3 +103,80 @@ $colors: (
     border-color: $hex;
   }
 }
+
+
+
+//
+// assign to a name spaced variable to avoid collision
+//
+$supre-colors: $colors;
+
+
+
+//
+// Create background colors to help with specificity issues
+// if supplied list is empty, it returns all background classes
+//
+@mixin appendBackgroundColorClasses($color-names...){
+  @if (length($color-names) > 0) {
+    @each $name, $hex in $supre-colors {
+      @each $color-name in $color-names {
+        @if ($color-name == $name) {
+          &.bg-#{$name} { background-color: $hex; }
+        } 
+      }
+    }  
+  }
+  @else {
+    @each $name, $hex in $supre-colors {
+      &.bg-#{$name} { background-color: $hex; }
+    }
+  }
+}
+
+
+
+//
+// Create text colors to help with specificity issues
+// if supplied list is empty, it returns all text classes
+//
+@mixin appendTextColorClasses($color-names...){
+  @if (length($color-names) > 0) {
+    @each $name, $hex in $supre-colors {
+      @each $color-name in $color-names {
+        @if ($color-name == $name) {
+          &.color-#{$name} { color: $hex; }
+        } 
+      }
+    }  
+  }
+  @else {
+    @each $name, $hex in $supre-colors {
+      &.color-#{$name} { color: $hex; }
+    }
+  }
+}
+
+
+
+//
+// Create text colors to help with specificity issues
+// if supplied list is empty, it returns all text classes
+//
+@mixin appendBorderColorClasses($color-names...){
+  @if (length($color-names) > 0) {
+    @each $name, $hex in $supre-colors {
+      @each $color-name in $color-names {
+        @if ($color-name == $name) {
+          &.border-#{$name} { border-color: $hex; }
+        } 
+      }
+    }  
+  }
+  @else {
+    @each $name, $hex in $supre-colors {
+      &.border-#{$name} { border-color: $hex; }
+    }
+  }
+}
+
