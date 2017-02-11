@@ -3119,6 +3119,23 @@ button, input[type="submit"] {
       border-color: #6460aa;
       color: #ffffff;
       box-shadow: inherit; }
+    .has-selection button.-toggle, .has-selection input.-toggle[type="submit"] {
+      color: #b8b6d8; }
+      .has-selection button.-toggle:hover, .has-selection input.-toggle[type="submit"]:hover {
+        background-color: rgba(100, 96, 170, 0.25);
+        border-color: #c2cdd8;
+        color: #6460aa;
+        box-shadow: inherit; }
+      .has-selection button.-toggle.is-active, .has-selection input.-toggle.is-active[type="submit"] {
+        background-color: #6460aa;
+        border-color: #6460aa;
+        color: #ffffff;
+        box-shadow: inherit; }
+      .has-selection button.-toggle:active, .has-selection input.-toggle[type="submit"]:active {
+        background-color: #6460aa;
+        border-color: #6460aa;
+        color: #ffffff;
+        box-shadow: inherit; }
     button.-toggle[disabled], input.-toggle[disabled][type="submit"] {
       background: #ffffff !important;
       color: #cccccc;

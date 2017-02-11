@@ -89,8 +89,10 @@
   <button class="-toggle">AND</button>
   <button class="-toggle">OR</button>
   <div class="_mls">&nbsp;</div>
-  <button class="-toggle">AND</button>
-  <button class="-toggle is-active">OR</button>
+  <span class="has-selection flex">
+    <button class="-toggle">AND</button>
+    <button class="-toggle is-active">OR</button>
+  </span>
   <div class="_mls">&nbsp;</div>
   <button class="-toggle" disabled>AND</button>
   <button class="-toggle" disabled>OR</button>
@@ -102,8 +104,11 @@
   {{'&lt;'}}button class="-toggle">OR{{'&lt;'}}/button>
   
   {{'&lt;'}}!-- One selected, enabled toggles -->
+  {{'&lt;'}}!-- Add the has-selection class to the parent container -->
+  {{'&lt;'}}span class="has-selection">
   {{'&lt;'}}button class="-toggle">AND{{'&lt;'}}/button>
   {{'&lt;'}}button class="-toggle is-active">OR{{'&lt;'}}/button>
+  {{'&lt;'}}/span>
 
   {{'&lt;'}}!-- Unselected, disabled toggles -->
   {{'&lt;'}}button class="-toggle" disabled>AND{{'&lt;'}}/button>

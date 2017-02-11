@@ -25,9 +25,9 @@ $shadow-color: #4e4e4e;
 // Mixin:
 // Create the main changing attributes for a pseduo class
 //
-@mixin button-states($pseudo-class, $text-color: inherit, $bg-color: inherit, $shadow: inherit, $border-color: inherit){
+@mixin button-states($classes, $text-color: inherit, $bg-color: inherit, $shadow: inherit, $border-color: inherit){
 
-  @each $class in $pseudo-class {
+  @each $class in $classes {
     &#{$class} {
       background-color: $bg-color;
       border-color: $border-color;
@@ -262,6 +262,14 @@ button {
     @include button-states((':hover'), $purple, rgba($purple, .25), $border-color: $active-stroke);
     @include button-states(('.is-active', ':active'), $white, $purple, $border-color: $purple);
 
+    //
+    // apply this class to the parent containter when at least one element is selected
+    //
+    .has-selection & {
+      color: lighten($purple, 26%);
+      @include button-states((':hover'), $purple, rgba($purple, .25), $border-color: $active-stroke);
+      @include button-states(('.is-active', ':active'), $white, $purple, $border-color: $purple);
+    }
 
     //
     // Disabled when present
