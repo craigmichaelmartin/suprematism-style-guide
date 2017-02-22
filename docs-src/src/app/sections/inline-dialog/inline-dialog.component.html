@@ -182,3 +182,47 @@
   {{'&lt;'}}/supre-inline-dialog>
   </code>
 </pre>
+
+
+<a id="inline-dialog-disabled"></a>
+<h5 class="_mtxl">Disable/Enable</h5>
+<div>
+  <!-- Dialog Example -->
+  <div class="flex justify-start">
+    <div class="flex _b1 border-gray" style="max-width: 740px; width: 100%;">
+      <div class="flex-auto bg-ice border-white _br1">&nbsp;</div>
+      <button class="-toolbar" disabled="disabled"><span class="u-supre-icon u-supre-icon--add-create"></span> Condition</button>
+      <button class="-toolbar" supreTooltip="Clear All Conditions" [dialogDisabled]="true" [supreInlineDialog]="clearAllConditions" [onHover]="false"><span class="u-supre-icon u-supre-icon--refresh-clear"></span> Clear All</button>
+    </div>
+  </div>
+  <!-- We can place this anywhere -->
+  <supre-inline-dialog #clearAllConditions title="Clear All Conditions" placement="auto bottom">
+    <p class="_mbm">Are you sure you want to clear all attributes and conditions?</p>
+    <div class="flex justify-end">
+      <button class="-cancel-md" (click)="clearAllConditions.hide()">Cancel</button>
+      <button class="-dialog bg-aqua"><span class="u-supre-icon u-supre-icon--refresh-clear"></span> Clear All</button>
+    </div>
+  </supre-inline-dialog>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- Condition Bar -->
+  {{'&lt;'}}div class="flex justify-start">
+    {{'&lt;'}}div class="flex _b1 border-gray">
+      {{'&lt;'}}div class="flex-auto bg-ice border-white _br1">&nbsp;{{'&lt;'}}/div>
+      {{'&lt;'}}button class="-toolbar" disabled="disabled">{{'&lt;'}}span class="u-supre-icon u-supre-icon--add-create">{{'&lt;'}}/span> Condition{{'&lt;'}}/button>
+      {{'&lt;'}}!-- apply [dialogDisabled]="true" to the 'supreInlineDialog' directive, it is optional and it defaults to false -->
+      {{'&lt;'}}button class="-toolbar" supreTooltip="Clear All Conditions" [dialogDisabled]="true" [supreInlineDialog]="clearAllConditions" [onHover]="false">{{'&lt;'}}span class="u-supre-icon u-supre-icon--refresh-clear">{{'&lt;'}}/span> Clear All{{'&lt;'}}/button>
+    {{'&lt;'}}/div>
+  {{'&lt;'}}/div>
+
+  {{'&lt;'}}!-- Clear Dialog Box -->
+  {{'&lt;'}}supre-inline-dialog #clearAllConditions title="Clear All Conditions" placement="auto bottom">
+    {{'&lt;'}}p class="_mbm">Are you sure you want to clear all attributes and conditions?{{'&lt;'}}/p>
+    {{'&lt;'}}div class="flex justify-end">
+      {{'&lt;'}}button class="-cancel-md" (click)="clearAllConditions.hide()">Cancel{{'&lt;'}}/button>
+      {{'&lt;'}}button class="-dialog bg-aqua">{{'&lt;'}}span class="u-supre-icon u-supre-icon--refresh-clear">{{'&lt;'}}/span> Clear All{{'&lt;'}}/button>
+    {{'&lt;'}}/div>
+  {{'&lt;'}}/supre-inline-dialog>
+  </code>
+</pre>

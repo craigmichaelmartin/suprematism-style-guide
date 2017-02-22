@@ -104,3 +104,19 @@
   {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="left"> left {{'&lt;'}}/strong>
   </code>
 </pre>
+
+
+<a id="tooltips-disabled"></a>
+<h5 class="_mtxl">Disable</h5>
+<div>
+  Popovers can be disabled/enabled: 
+  <strong class="color-aqua" [disabled]="false" supreTooltip="Title Goes Here Enabled"> Enabled</strong>, 
+  <strong class="color-aqua" [disabled]="true" supreTooltip="Title Goes Here Disabled"> Disabled</strong>.
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+  {{'&lt;'}}!-- disabled is optional, it defaults to 'false' -->
+  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here Enabled"> Enabled {{'&lt;'}}/strong>, 
+  {{'&lt;'}}strong class="color-aqua" [disabled]="true" supreTooltip="Title Goes Here Disabled"> Disabled {{'&lt;'}}/strong>.
+  </code>
+</pre>
