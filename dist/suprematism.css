@@ -3356,6 +3356,79 @@ label.checkbox {
     label.checkbox [type=checkbox][disabled=true] + span.icon:after, label.checkbox [type=checkbox][disabled=disabled] + span.icon:after {
       opacity: .5; }
 
+/**
+ * Design Reference:
+ * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
+ */
+/**
+ * Collection of the colors
+ */
+.indeterminate-indicator {
+  height: 30px;
+  width: 300px; }
+
+.indeterminate-indicator .indeterminate-indicator-circle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #32cee6;
+  border-radius: 50%;
+  -webkit-animation: forward 2.3s linear infinite;
+  animation: forward 2.3s linear infinite; }
+
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(1) {
+  -webkit-animation-delay: -0.46s;
+  animation-delay: -0.46s; }
+
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(2) {
+  margin-top: -30px;
+  -webkit-animation-delay: -0.92s;
+  animation-delay: -0.92s; }
+
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(3) {
+  margin-top: -30px;
+  -webkit-animation-delay: -1.38s;
+  animation-delay: -1.38s; }
+
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(4) {
+  margin-top: -30px;
+  -webkit-animation-delay: -1.84s;
+  animation-delay: -1.84s; }
+
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(5) {
+  margin-top: -30px; }
+
+/*keyframes for forward animations*/
+@-webkit-keyframes forward {
+  0% {
+    left: -7%;
+    opacity: 0;
+    background: #a8e077; }
+  10% {
+    left: 20%;
+    opacity: 1; }
+  90% {
+    left: 65%;
+    opacity: 1; }
+  100% {
+    left: 95%;
+    opacity: 0; } }
+
+@keyframes forward {
+  0% {
+    left: -7%;
+    opacity: 0;
+    background: #a8e077; }
+  10% {
+    left: 20%;
+    opacity: 1; }
+  90% {
+    left: 65%;
+    opacity: 1; }
+  100% {
+    left: 95%;
+    opacity: 0; } }
+
 .flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
 
 @media (min-width: 40em) {

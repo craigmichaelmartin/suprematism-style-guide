@@ -7,7 +7,7 @@
   <code class="language-javascript">
   // install the repo
   npm install CINBCUniversal/suprematism-modal --save
-  
+
   // add it to a module (app.module.ts)
   import {{'&#123;'}} ModalModule } from 'suprematism-modal';
 
@@ -77,9 +77,22 @@
 <a id="modal-sizing"></a>
 <h5 class="_mtxl">Sizes (Optional)</h5>
 <div>
+  <button id="modal-5-button" class="-action" (click)="modal5.open();">xsmall modal</button>
   <button id="modal-2-button" class="-action" (click)="modal2.open();">small modal</button>
   <button id="modal-3-button" class="-action" (click)="modal3.open();">medium modal</button>
   <button id="modal-4-button" class="-action" (click)="modal4.open();">large modal</button>
+
+  <supre-modal #modal5 size="xsmall">
+    <span modal-title>
+      <span class="u-type-m color-aqua u-bold">Saving Audience</span>
+    </span>
+    <span modal-body>
+      <span class="u-type-m color-mid-gray">
+        This is the body section of the Modal.
+      </span>
+      <button (click)="modal5.close();" class="-dialog">Do Stuff</button>
+    </span>
+  </supre-modal>
 
   <supre-modal #modal2 size="small">
     <span modal-title class="flex justify-between">
@@ -155,14 +168,43 @@
   </code>
 </pre>
 
+<a id="modal-without-close"></a>
+<h5 class="_mtxl">Modal Without Close Button</h5>
+<div>
+  <button id="modal-6-button" class="-action" (click)="modal6.open();">Open Modal</button>
+  <supre-modal #modal6 [canClose]="false">
+    <span modal-title class="flex justify-between">
+      <h3 class="_p0 _m0">No X to close</h3>
+    </span>
+    <span modal-body>
+      There's a backup close button for the demo.
+    </span>
+    <span modal-footer class="flex justify-end">
+      <div>
+        <button (click)="modal6.close();" class="-dialog">Close</button>
+      </div>
+    </span>
+  </supre-modal>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}!-- [canClose]="false" (by default `canClose` is true) -->
+    {{'&lt;'}}supre-modal [canClose]="false">
+      {{'&lt;'}}span modal-title>...{{'&lt;'}}/span>
+      {{'&lt;'}}span modal-body>...{{'&lt;'}}/span>
+      {{'&lt;'}}span modal-footer>...{{'&lt;'}}/span>
+    {{'&lt;'}}/supre-modal>
+  </code>
+</pre>
+
 
 
 <a id="modal-api"></a>
 <h5 class="_mtxl">API</h5>
 <pre class="code-block">
   <code class="language-javascript">
-  /** 
-   * Classes and Interfaces 
+  /**
+   * Classes and Interfaces
    */
   import {{'&#123;'}}
     ModalEvent, // an interface for the event emitted from the modal
@@ -189,7 +231,7 @@
   }
 
 
-  /** 
+  /**
    * ModalComponent Class
    */
   ModalComponent.open();  // emits: {{'&#123;'}} methodCalled: 'open', isOpen: true, id: null }
@@ -197,5 +239,3 @@
   // NOTE: if {{'&lt;'}}supre-modal id="myModal">...{{'&lt;'}}/supre-modal> then the id would be: 'myModal'
   </code>
 </pre>
-
-

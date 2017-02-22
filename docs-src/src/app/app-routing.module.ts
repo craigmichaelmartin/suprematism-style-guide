@@ -16,6 +16,7 @@ import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
 import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
+import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
 
 const routes: Routes = [
 
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'section/tooltips', component: TooltipComponent },
   { path: 'section/inline-dialogs', component: InlineDialogSectionComponent },
   { path: 'section/modal', component: ModalSectionComponent },
+  { path: 'section/progress-indicator', component: ProgressIndicatorSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },

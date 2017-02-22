@@ -24,6 +24,7 @@ import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
 import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
+import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
 
 @NgModule({
   declarations: [
@@ -42,14 +43,15 @@ import { ModalSectionComponent } from './sections/modal-section/modal-section.co
     TooltipComponent,
     InlineDialogSectionComponent,
     TypographySectionComponent,
-    ModalSectionComponent
+    ModalSectionComponent,
+    ProgressIndicatorSectionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    PopoverModule, 
+    PopoverModule,
     ModalModule
   ],
   providers: [],

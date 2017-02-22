@@ -1,0 +1,137 @@
+@import '../utils/colors';
+
+//
+// Indeterminate Indicator (Horizontal circles as bars)
+// =============================================================================
+
+$indeterminate-indicator-circle-width: 30px;
+
+.indeterminate-indicator {
+  height: $indeterminate-indicator-circle-width;
+  width: 10 * $indeterminate-indicator-circle-width;
+}
+.indeterminate-indicator .indeterminate-indicator-circle{
+	position: relative;
+	width: $indeterminate-indicator-circle-width;
+	height: $indeterminate-indicator-circle-width;
+	background: $viz-aqua;
+	border-radius: 50%;
+    -webkit-animation: forward 2.3s linear infinite;
+    -moz-animation: forward 2.3s linear infinite;
+    -o-animation: forward 2.3s linear infinite;
+    animation: forward 2.3s linear infinite ;
+}
+
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(1) {
+	-webkit-animation-delay: -0.46s;
+	-moz-animation-delay: -0.46s;
+	-o-animation-delay: -0.46s;
+		animation-delay: -0.46s;
+}
+
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(2) {
+  margin-top: -$indeterminate-indicator-circle-width;
+	-webkit-animation-delay: -0.92s;
+	-moz-animation-delay: -0.92s;
+	-o-animation-delay: -0.92s;
+		animation-delay: -0.92s;
+}
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(3) {
+  margin-top: -$indeterminate-indicator-circle-width;
+	-webkit-animation-delay: -1.38s;
+	-moz-animation-delay: -1.38s;
+	-o-animation-delay: -1.38s;
+		animation-delay: -1.38s;
+}
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(4) {
+  margin-top: -$indeterminate-indicator-circle-width;
+	-webkit-animation-delay: -1.84s;
+	-moz-animation-delay: -1.84s;
+	-o-animation-delay: -1.84s;
+		animation-delay: -1.84s;
+}
+.indeterminate-indicator > .indeterminate-indicator-circle:nth-of-type(5) {
+  margin-top: -$indeterminate-indicator-circle-width;
+}
+
+/*keyframes for forward animations*/
+
+@-webkit-keyframes forward {
+  0% {
+		left: -7%;
+		opacity: 0;
+		background: $viz-lime;
+	}
+	10% {
+		left: 20%;
+		opacity: 1;
+	}
+	90% {
+		left: 65%;
+		opacity: 1;
+	}
+	100% {
+		left: 95%;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes forward {
+  0% {
+		left: -7%;
+		opacity: 0;
+		background: $viz-lime;
+	}
+	10% {
+		left: 20%;
+		opacity: 1;
+	}
+	90% {
+		left: 65%;
+		opacity: 1;
+	}
+	100% {
+		left: 95%;
+		opacity: 0;
+	}
+}
+
+@-o-keyframes forward {
+  0% {
+		left: -7%;
+		opacity: 0;
+		background: $viz-lime;
+	}
+	10% {
+		left: 20%;
+		opacity: 1;
+	}
+	90% {
+		left: 65%;
+		opacity: 1;
+	}
+	100% {
+		left: 95%;
+		opacity: 0;
+	}
+}
+
+@keyframes forward {
+  0% {
+		left: -7%;
+		opacity: 0;
+		background: $viz-lime;
+	}
+	10% {
+		left: 20%;
+		opacity: 1;
+	}
+	90% {
+		left: 65%;
+		opacity: 1;
+	}
+	100% {
+		left: 95%;
+		opacity: 0;
+	}
+}

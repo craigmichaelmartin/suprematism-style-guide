@@ -2,14 +2,14 @@
  *
  * Load Concise
  *
- ******************************************************************************/ 
+ ******************************************************************************/
 
   // override vars
   @import "vars/_vars.concise.scss";
 
 
   // main library
-  @import "../node_modules/concise.css/concise"; 
+  @import "../node_modules/concise.css/concise";
 
   // utils
   @import '../node_modules/concise-utils/concise-utils';
@@ -21,7 +21,7 @@
  *
  * Custom: Suprematism
  *
- ******************************************************************************/   
+ ******************************************************************************/
 
   // Audri Icons
   $icomoon-font-path: "fonts";
@@ -31,7 +31,7 @@
  *
  * Custom: Suprematism
  *
- ******************************************************************************/ 
+ ******************************************************************************/
 
   // Vars
   @import 'vars/_vars.suprematisim.scss';
@@ -49,4 +49,4 @@
   @import 'components/_buttons.scss';
   @import 'components/_dropdown.scss';
   @import 'components/_checkbox.scss';
-
+  @import 'components/_progress_indicators.scss';

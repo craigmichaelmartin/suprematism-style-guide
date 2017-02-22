@@ -96,6 +96,8 @@
         <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/modal'">
           <li><a [routerLink]="['section/modal']" fragment="modal-install">Installation</a></li>
           <li><a [routerLink]="['section/modal']" fragment="modal-simple-example">Simple Example</a></li>
+          <li><a [routerLink]="['section/modal']" fragment="modal-sizing">Sizing</a></li>
+          <li><a [routerLink]="['section/modal']" fragment="modal-without-close">Without Close</a></li>
           <li><a [routerLink]="['section/modal']" fragment="modal-api">API</a></li>
         </ul>
       </li>
@@ -129,6 +131,12 @@
         </ul>
       </li>
       <li>Breadcrumbs</li>
+      <li>
+        <a [routerLink]="['section/progress-indicator']" fragment="top">Progress Indicator</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/progress-indicator'">
+          <li><a [routerLink]="['section/progress-indicator']" fragment="indeterminate-progress-bar">Indeterminate Progress Indicator</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>
