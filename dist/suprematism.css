@@ -2152,7 +2152,7 @@ button.-affix, input.-affix[type="submit"] {
  ******************************************************************************/
 @font-face {
   font-family: 'Audri-alpha';
-  src: url("fonts/Audri-alpha.woff2?x25116") format("woff2"), url("fonts/Audri-alpha.ttf?x25116") format("truetype"), url("fonts/Audri-alpha.woff?x25116") format("woff"), url("fonts/Audri-alpha.svg?x25116#Audri-alpha") format("svg");
+  src: url("fonts/Audri-alpha.woff2?m86406") format("woff2"), url("fonts/Audri-alpha.ttf?m86406") format("truetype"), url("fonts/Audri-alpha.woff?m86406") format("woff"), url("fonts/Audri-alpha.svg?m86406#Audri-alpha") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2285,6 +2285,12 @@ button.-affix, input.-affix[type="submit"] {
 
 .u-supre-icon--trash:before {
   content: ""; }
+
+.u-supre-icon--sort-down:before {
+  content: ""; }
+
+.u-supre-icon--sort-up:before {
+  content: ""; }
 
 /******************************************************************************
  *
