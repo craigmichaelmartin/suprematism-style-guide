@@ -2152,7 +2152,7 @@ button.-affix, input.-affix[type="submit"] {
  ******************************************************************************/
 @font-face {
   font-family: 'Audri-alpha';
-  src: url("fonts/Audri-alpha.woff2?m86406") format("woff2"), url("fonts/Audri-alpha.ttf?m86406") format("truetype"), url("fonts/Audri-alpha.woff?m86406") format("woff"), url("fonts/Audri-alpha.svg?m86406#Audri-alpha") format("svg");
+  src: url("fonts/Audri-alpha.woff2?p1cvxp") format("woff2"), url("fonts/Audri-alpha.ttf?p1cvxp") format("truetype"), url("fonts/Audri-alpha.woff?p1cvxp") format("woff"), url("fonts/Audri-alpha.svg?p1cvxp#Audri-alpha") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2187,11 +2187,11 @@ button.-affix, input.-affix[type="submit"] {
 .u-supre-icon--user-menu-icon:before {
   content: ""; }
 
-.u-supre-icon--arrow-down-stroke:before {
-  content: ""; }
-
 .u-supre-icon--arrow-right-stroke:before {
   content: ""; }
+
+.u-supre-icon--arrow-down-stroke:before {
+  content: ""; }
 
 .u-supre-icon--arrow-right-filled:before {
   content: ""; }
@@ -2291,6 +2291,12 @@ button.-affix, input.-affix[type="submit"] {
 
 .u-supre-icon--sort-up:before {
   content: ""; }
+
+.u-supre-icon--logout:before {
+  content: ""; }
+
+.u-supre-icon--settings:before {
+  content: ""; }
 
 /******************************************************************************
  *

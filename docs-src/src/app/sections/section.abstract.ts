@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import 'prismjs';
 
+declare let Prism: any;
 
 export abstract class AbstractSectionComponent implements AfterViewInit, OnDestroy {
 

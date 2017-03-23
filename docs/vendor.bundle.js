@@ -22694,6 +22694,7 @@ var Router = (function () {
          */
         this.navigated = false;
         /**
+         * Extracts and merges URLs. Used for Angular 1 to Angular 2 migrations.
          * Used by RouterModule. This allows us to
          * pause the navigation either before preactivation or after it.
          * @internal
@@ -22703,7 +22704,7 @@ var Router = (function () {
             afterPreactivation: defaultRouterHook
         };
         /**
-         * Extracts and merges URLs. Used for Angular 1 to Angular 2 migrations.
+         * Extracts and merges URLs. Used for AngularJS to Angular migrations.
          */
         this.urlHandlingStrategy = new __WEBPACK_IMPORTED_MODULE_20__url_handling_strategy__["b" /* DefaultUrlHandlingStrategy */]();
         this.routeReuseStrategy = new DefaultRouteReuseStrategy();
@@ -23226,6 +23227,7 @@ function Router_tsickle_Closure_declarations() {
      */
     Router.prototype.navigated;
     /**
+     * Extracts and merges URLs. Used for Angular 1 to Angular 2 migrations.
      * Used by RouterModule. This allows us to
      * pause the navigation either before preactivation or after it.
      * \@internal
@@ -23233,7 +23235,7 @@ function Router_tsickle_Closure_declarations() {
      */
     Router.prototype.hooks;
     /**
-     * Extracts and merges URLs. Used for Angular 1 to Angular 2 migrations.
+     * Extracts and merges URLs. Used for AngularJS to Angular migrations.
      * @type {?}
      */
     Router.prototype.urlHandlingStrategy;
@@ -23950,8 +23952,14 @@ var RouterConfigLoader = (function () {
             return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__["fromPromise"])(this.loader.load(loadChildren));
         }
         else {
-            var /** @type {?} */ offlineMode_1 = this.compiler instanceof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Compiler"];
-            return __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_mergeMap__["mergeMap"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__utils_collection__["b" /* wrapIntoObservable */])(loadChildren()), function (t) { return offlineMode_1 ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__["of"])(/** @type {?} */ (t)) : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__["fromPromise"])(_this.compiler.compileModuleAsync(t)); });
+            return __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_mergeMap__["mergeMap"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__utils_collection__["b" /* wrapIntoObservable */])(loadChildren()), function (t) {
+                if (t instanceof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModuleFactory"]) {
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__["of"])(t);
+                }
+                else {
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__["fromPromise"])(_this.compiler.compileModuleAsync(t));
+                }
+            });
         }
     };
     return RouterConfigLoader;
@@ -50417,6 +50425,7 @@ function triggerAnimation(view, componentView, boundProp, boundOutputs, eventLis
 /* unused harmony export sha1 */
 /* unused harmony export fingerprint */
 /* unused harmony export computeMsgId */
+/* unused harmony export utf8Encode */
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -50700,39 +50709,30 @@ Endian[Endian.Big] = "Big";
 function utf8Encode(str) {
     var /** @type {?} */ encoded = '';
     for (var /** @type {?} */ index = 0; index < str.length; index++) {
-        var /** @type {?} */ codePoint = decodeSurrogatePairs(str, index);
+        var /** @type {?} */ codePoint = str.charCodeAt(index);
+        // decode surrogate
+        // see https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+        if (codePoint >= 0xd800 && codePoint <= 0xdbff && str.length > (index + 1)) {
+            var /** @type {?} */ low = str.charCodeAt(index + 1);
+            if (low >= 0xdc00 && low <= 0xdfff) {
+                index++;
+                codePoint = ((codePoint - 0xd800) << 10) + low - 0xdc00 + 0x10000;
+            }
+        }
         if (codePoint <= 0x7f) {
             encoded += String.fromCharCode(codePoint);
         }
         else if (codePoint <= 0x7ff) {
-            encoded += String.fromCharCode(0xc0 | codePoint >>> 6, 0x80 | codePoint & 0x3f);
+            encoded += String.fromCharCode(((codePoint >> 6) & 0x1F) | 0xc0, (codePoint & 0x3f) | 0x80);
         }
         else if (codePoint <= 0xffff) {
-            encoded += String.fromCharCode(0xe0 | codePoint >>> 12, 0x80 | codePoint >>> 6 & 0x3f, 0x80 | codePoint & 0x3f);
+            encoded += String.fromCharCode((codePoint >> 12) | 0xe0, ((codePoint >> 6) & 0x3f) | 0x80, (codePoint & 0x3f) | 0x80);
         }
         else if (codePoint <= 0x1fffff) {
-            encoded += String.fromCharCode(0xf0 | codePoint >>> 18, 0x80 | codePoint >>> 12 & 0x3f, 0x80 | codePoint >>> 6 & 0x3f, 0x80 | codePoint & 0x3f);
+            encoded += String.fromCharCode(((codePoint >> 18) & 0x07) | 0xf0, ((codePoint >> 12) & 0x3f) | 0x80, ((codePoint >> 6) & 0x3f) | 0x80, (codePoint & 0x3f) | 0x80);
         }
     }
     return encoded;
-}
-/**
- * @param {?} str
- * @param {?} index
- * @return {?}
- */
-function decodeSurrogatePairs(str, index) {
-    if (index < 0 || index >= str.length) {
-        throw new Error("index=" + index + " is out of range in \"" + str + "\"");
-    }
-    var /** @type {?} */ high = str.charCodeAt(index);
-    if (high >= 0xd800 && high <= 0xdfff && str.length > index + 1) {
-        var /** @type {?} */ low = byteAt(str, index + 1);
-        if (low >= 0xdc00 && low <= 0xdfff) {
-            return (high - 0xd800) * 0x400 + low - 0xdc00 + 0x10000;
-        }
-    }
-    return high;
 }
 /**
  * @param {?} a
@@ -60881,7 +60881,7 @@ function Version_tsickle_Closure_declarations() {
 /**
  * @stable
  */
-var /** @type {?} */ VERSION = new Version('2.4.8');
+var /** @type {?} */ VERSION = new Version('2.4.10');
 //# sourceMappingURL=version.js.map
 
 /***/ }),
@@ -65681,7 +65681,7 @@ function routerNgProbeToken() {
  * In addition, we often want to split applications into multiple bundles and load them on demand.
  * Doing this transparently is not trivial.
  *
- * The Angular router solves these problems. Using the router, you can declaratively specify
+ * The Angular 2 router solves these problems. Using the router, you can declaratively specify
  * application states, manage state transitions while taking care of the URL, and load bundles on
  * demand.
  *
@@ -65870,6 +65870,7 @@ var RouterInitializer = (function () {
      */
     function RouterInitializer(injector) {
         this.injector = injector;
+        this.initNavigation = false;
         this.resultOfPreactivationDone = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__["Subject"]();
     }
     /**
@@ -65883,10 +65884,14 @@ var RouterInitializer = (function () {
             var /** @type {?} */ res = new Promise(function (r) { return resolve = r; });
             var /** @type {?} */ router = _this.injector.get(__WEBPACK_IMPORTED_MODULE_9__router__["a" /* Router */]);
             var /** @type {?} */ opts = _this.injector.get(ROUTER_CONFIGURATION);
-            if (opts.initialNavigation === false) {
-                router.setUpLocationChangeListener();
+            if (_this.isLegacyDisabled(opts) || _this.isLegacyEnabled(opts)) {
+                resolve(true);
             }
-            else {
+            else if (opts.initialNavigation === 'disabled') {
+                router.setUpLocationChangeListener();
+                resolve(true);
+            }
+            else if (opts.initialNavigation === 'enabled') {
                 router.hooks.afterPreactivation = function () {
                     // only the initial navigation should be delayed
                     if (!_this.initNavigation) {
@@ -65900,6 +65905,9 @@ var RouterInitializer = (function () {
                 };
                 router.initialNavigation();
             }
+            else {
+                throw new Error("Invalid initialNavigation options: '" + opts.initialNavigation + "'");
+            }
             return res;
         });
     };
@@ -65908,16 +65916,38 @@ var RouterInitializer = (function () {
      * @return {?}
      */
     RouterInitializer.prototype.bootstrapListener = function (bootstrappedComponentRef) {
+        var /** @type {?} */ opts = this.injector.get(ROUTER_CONFIGURATION);
+        var /** @type {?} */ preloader = this.injector.get(__WEBPACK_IMPORTED_MODULE_12__router_preloader__["a" /* RouterPreloader */]);
+        var /** @type {?} */ router = this.injector.get(__WEBPACK_IMPORTED_MODULE_9__router__["a" /* Router */]);
         var /** @type {?} */ ref = this.injector.get(__WEBPACK_IMPORTED_MODULE_1__angular_core__["ApplicationRef"]);
         if (bootstrappedComponentRef !== ref.components[0]) {
             return;
         }
-        var /** @type {?} */ preloader = this.injector.get(__WEBPACK_IMPORTED_MODULE_12__router_preloader__["a" /* RouterPreloader */]);
+        if (this.isLegacyEnabled(opts)) {
+            router.initialNavigation();
+        }
+        else if (this.isLegacyDisabled(opts)) {
+            router.setUpLocationChangeListener();
+        }
         preloader.setUpPreloading();
-        var /** @type {?} */ router = this.injector.get(__WEBPACK_IMPORTED_MODULE_9__router__["a" /* Router */]);
         router.resetRootComponentType(ref.componentTypes[0]);
         this.resultOfPreactivationDone.next(null);
         this.resultOfPreactivationDone.complete();
+    };
+    /**
+     * @param {?} opts
+     * @return {?}
+     */
+    RouterInitializer.prototype.isLegacyEnabled = function (opts) {
+        return opts.initialNavigation === 'legacy_enabled' || opts.initialNavigation === true ||
+            opts.initialNavigation === undefined;
+    };
+    /**
+     * @param {?} opts
+     * @return {?}
+     */
+    RouterInitializer.prototype.isLegacyDisabled = function (opts) {
+        return opts.initialNavigation === 'legacy_disabled' || opts.initialNavigation === false;
     };
     RouterInitializer.decorators = [
         { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"] },
@@ -72467,7 +72497,7 @@ var /** @type {?} */ isObservable = __WEBPACK_IMPORTED_MODULE_0__angular_core__[
 /**
  * @stable
  */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.8');
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.10');
 //# sourceMappingURL=version.js.map
 
 /***/ }),
@@ -76604,7 +76634,7 @@ function escapeBlocks(input) {
 /**
  * @stable
  */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.8');
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.10');
 //# sourceMappingURL=version.js.map
 
 /***/ }),
@@ -82139,7 +82169,7 @@ function ReactiveFormsModule_tsickle_Closure_declarations() {
 /**
  * @stable
  */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.8');
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.10');
 //# sourceMappingURL=version.js.map
 
 /***/ }),
@@ -82405,7 +82435,7 @@ function JsonpModule_tsickle_Closure_declarations() {
 /**
  * @stable
  */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.8');
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.10');
 //# sourceMappingURL=version.js.map
 
 /***/ }),
@@ -82736,7 +82766,7 @@ var CachedResourceLoader = (function (_super) {
 /**
  * @stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.8');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.10');
 //# sourceMappingURL=version.js.map
 
 /***/ }),
@@ -84178,7 +84208,7 @@ function sanitizeStyle(value) {
 /**
  * @stable
  */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.8');
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('2.4.10');
 //# sourceMappingURL=version.js.map
 
 /***/ }),
@@ -86052,7 +86082,7 @@ function getResolve(route) {
 /**
  * @stable
  */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('3.4.8');
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('3.4.10');
 //# sourceMappingURL=version.js.map
 
 /***/ }),
