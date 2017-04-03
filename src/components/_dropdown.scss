@@ -2,6 +2,7 @@
 @import '../vars/_vars.concise.scss';
 @import '../utils/_colors.scss';
 @import '../utils/_z-indexes.scss';
+@import '../../node_modules/suprematism-font-icons/variables.scss';
 
 
 $dropdown-item-horiz-padding: $spacing-s;
@@ -9,7 +10,7 @@ $dropdown-item-horiz-padding: $spacing-s;
 
 %label-icon {
   position: absolute;
-  font-size: $text-size-l + px;
+  font-size: $text-size-m + px;
   right: $spacing-s;
   padding: 0px 1px;
   font-weight: normal;
@@ -22,7 +23,7 @@ $dropdown-item-horiz-padding: $spacing-s;
 .dropdown-button {
   width: auto;
   position: relative;
-  
+
 
   //
   // pseudo classes for the master button/container
@@ -35,7 +36,7 @@ $dropdown-item-horiz-padding: $spacing-s;
       z-index: $z-index-level-1;
       &::after {
         font-family: 'Audri-alpha' !important;
-        content: "\e903";
+        content: $u-supre-icon--arrow-right-filled;
       }
       &:after {
         @extend %label-icon;
@@ -58,6 +59,17 @@ $dropdown-item-horiz-padding: $spacing-s;
     }
   }
 
+  //
+  // Rotate icon on focus
+  //
+  &:focus {
+    .dropdown-label {
+      &:after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
 
   //
   // Label
@@ -74,7 +86,7 @@ $dropdown-item-horiz-padding: $spacing-s;
 
     &::after {
       font-family: 'Audri-alpha' !important;
-      content: "\e900";
+      content: $u-supre-icon--arrow-right-stroke;
     }
     &:after {
       @extend %label-icon;
