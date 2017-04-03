@@ -9,7 +9,7 @@ $dropdown-item-horiz-padding: $spacing-s;
 
 %label-icon {
   position: absolute;
-  font-size: $text-size-l + px;
+  font-size: $text-size-m + px;
   right: $spacing-s;
   padding: 0px 1px;
   font-weight: normal;
@@ -22,7 +22,7 @@ $dropdown-item-horiz-padding: $spacing-s;
 .dropdown-button {
   width: auto;
   position: relative;
-  
+
 
   //
   // pseudo classes for the master button/container
@@ -35,7 +35,7 @@ $dropdown-item-horiz-padding: $spacing-s;
       z-index: $z-index-level-1;
       &::after {
         font-family: 'Audri-alpha' !important;
-        content: "\e903";
+        content: "\e902";
       }
       &:after {
         @extend %label-icon;
@@ -58,6 +58,15 @@ $dropdown-item-horiz-padding: $spacing-s;
     }
   }
 
+  //
+  // Rotate icon on focus
+  //
+  &:focus {
+    &:after {
+      transform: rotate(90deg);
+    }
+  }
+
 
   //
   // Label
@@ -74,7 +83,7 @@ $dropdown-item-horiz-padding: $spacing-s;
 
     &::after {
       font-family: 'Audri-alpha' !important;
-      content: "\e900";
+      content: "\e901";
     }
     &:after {
       @extend %label-icon;
