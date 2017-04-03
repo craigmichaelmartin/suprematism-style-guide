@@ -84,15 +84,17 @@ button {
     // Icon Rules
     //
     .#{$icon-class} {
-      top: 4px;
       font-size: $icon-size;
+      line-height:inherit;
+      display:inline-block;
+      vertical-align:top;
     }
 
   }
 
 
 
-  // 
+  //
   // Confirm / Dialog Buttons
   //
   &.-dialog {
@@ -245,7 +247,7 @@ button {
 
 
 
-  // 
+  //
   // Purple Toggles
   //
   &.-toggle {
@@ -291,7 +293,7 @@ button {
 
 
 
-  // 
+  //
   // Action Toggles (they use an icon...)
   //
   &.-toggle-action {

@@ -2943,8 +2943,10 @@ button, input[type="submit"] {
         color: #cccccc;
         box-shadow: inherit; }
     button.-action .u-supre-icon, input.-action[type="submit"] .u-supre-icon {
-      top: 4px;
-      font-size: 20px; }
+      font-size: 20px;
+      line-height: inherit;
+      display: inline-block;
+      vertical-align: top; }
   button.-dialog, input.-dialog[type="submit"] {
     color: #ffffff;
     line-height: 32px;
