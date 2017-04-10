@@ -2898,7 +2898,11 @@ button, input[type="submit"] {
   padding: 0px; }
   button .u-supre-icon, input[type="submit"] .u-supre-icon {
     padding: 0 5px 0 0;
-    position: relative; }
+    font-size: 20px;
+    position: relative;
+    line-height: inherit;
+    display: inline-block;
+    vertical-align: top; }
   button.-action, input.-action[type="submit"] {
     color: #ffffff;
     line-height: 36px;
@@ -2942,11 +2946,6 @@ button, input[type="submit"] {
         border-color: inherit;
         color: #cccccc;
         box-shadow: inherit; }
-    button.-action .u-supre-icon, input.-action[type="submit"] .u-supre-icon {
-      font-size: 20px;
-      line-height: inherit;
-      display: inline-block;
-      vertical-align: top; }
   button.-dialog, input.-dialog[type="submit"] {
     color: #ffffff;
     line-height: 32px;
@@ -2956,9 +2955,6 @@ button, input[type="submit"] {
     background: #55a0c2;
     text-transform: uppercase;
     font-weight: bold; }
-    button.-dialog .u-supre-icon, input.-dialog[type="submit"] .u-supre-icon {
-      top: 4px;
-      font-size: 20px; }
   button.-dialog-reverse, input.-dialog-reverse[type="submit"] {
     color: #55a0c2;
     line-height: 32px;
@@ -2969,9 +2965,6 @@ button, input[type="submit"] {
     text-transform: uppercase;
     box-shadow: 0px 0px 0px 1px #55a0c2 inset;
     font-weight: bold; }
-    button.-dialog-reverse .u-supre-icon, input.-dialog-reverse[type="submit"] .u-supre-icon {
-      top: 4px;
-      font-size: 20px; }
   button.-toolbar, input.-toolbar[type="submit"] {
     color: #ffffff;
     line-height: 32px;
@@ -3016,9 +3009,6 @@ button, input[type="submit"] {
         box-shadow: inherit; }
     button.-toolbar + .-toolbar, input.-toolbar[type="submit"] + .-toolbar {
       border-left: 1px solid white; }
-    button.-toolbar .u-supre-icon, input.-toolbar[type="submit"] .u-supre-icon {
-      top: 4px;
-      font-size: 20px; }
   button.-cancel-lg, input.-cancel-lg[type="submit"] {
     color: #7f8a93;
     line-height: 36px;
@@ -3107,9 +3097,6 @@ button, input[type="submit"] {
         box-shadow: inherit; }
     button.-condition + .-condition, input.-condition[type="submit"] + .-condition {
       border-left: 3px solid white; }
-    button.-condition .u-supre-icon, input.-condition[type="submit"] .u-supre-icon {
-      top: 4px;
-      font-size: 20px; }
   button.-toggle, input.-toggle[type="submit"] {
     color: #6460aa;
     height: 32px;
@@ -3226,9 +3213,8 @@ button, input[type="submit"] {
     button.-toggle-action + .-toggle-action, input.-toggle-action[type="submit"] + .-toggle-action {
       margin-left: -1px; }
     button.-toggle-action .u-supre-icon, input.-toggle-action[type="submit"] .u-supre-icon {
-      top: 0px;
       font-size: 17px;
-      left: 3px; }
+      padding: 0px; }
 
 /**
  * Design Reference:
