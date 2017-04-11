@@ -38,6 +38,7 @@ $shadow-color: #4e4e4e;
 
 }
 
+
 button {
 
   // make sure they're clean
@@ -49,7 +50,11 @@ button {
   //
   .#{$icon-class} {
     padding: 0 5px 0 0;
+    font-size: $icon-size;
     position: relative;
+    line-height:inherit;
+    display:inline-block;
+    vertical-align:top;
   }
 
 
@@ -80,16 +85,6 @@ button {
       cursor: default;
     }
 
-    //
-    // Icon Rules
-    //
-    .#{$icon-class} {
-      font-size: $icon-size;
-      line-height:inherit;
-      display:inline-block;
-      vertical-align:top;
-    }
-
   }
 
 
@@ -107,13 +102,6 @@ button {
     text-transform: uppercase;
     font-weight: bold;
 
-    //
-    // Icon Rules
-    //
-    .#{$icon-class} {
-      top: 4px;
-      font-size: $icon-size;
-    }
 
   }
   &.-dialog-reverse {
@@ -127,13 +115,6 @@ button {
     box-shadow: 0px 0px 0px 1px $aqua inset;
     font-weight: bold;
 
-    //
-    // Icon Rules
-    //
-    .#{$icon-class} {
-      top: 4px;
-      font-size: $icon-size;
-    }
 
   }
 
@@ -167,14 +148,6 @@ button {
     // the next tool bar button should add a border to the left to seperate like the mock
     + .-toolbar {
       border-left: 1px solid white;
-    }
-
-    //
-    // Icon Rules
-    //
-    .#{$icon-class} {
-      top: 4px;
-      font-size: $icon-size;
     }
 
   }
@@ -233,14 +206,6 @@ button {
     // the next tool bar button should add a border to the left to seperate like the mock
     + .-condition {
       border-left: 3px solid white;
-    }
-
-    //
-    // Icon Rules
-    //
-    .#{$icon-class} {
-      top: 4px;
-      font-size: $icon-size;
     }
 
   }
@@ -335,9 +300,8 @@ button {
     // Icon Rules
     //
     .#{$icon-class} {
-      top: 0px;
       font-size: 17px;
-      left: 3px;
+      padding:0px;
     }
 
   }
