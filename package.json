@@ -14,7 +14,7 @@
     "url": "https://github.com/CINBCUniversal/suprematism-style-guide/issues"
   },
   "scripts": {
-    "build": "npm run build:icons && npm run build:guide && npm run build:docs",
+    "build": "npm cache clean && npm install && npm run build:icons && npm run build:guide && npm run build:docs",
     "build:watch": "npm run build -- watch",
     "build:guide": "node lib/build-style-guide.js",
     "build:icons": "node lib/parse-icons-demo.js",
