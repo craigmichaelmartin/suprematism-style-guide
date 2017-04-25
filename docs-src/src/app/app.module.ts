@@ -18,7 +18,7 @@ import { ZIndexComponent } from './sections/utilities/z-index/z-index.component'
 import { FlexBoxComponent } from './sections/utilities/flex-box/flex-box.component';
 
 // import { PopoverModule } from 'suprematism-popover';
-import { PopoverModule } from 'suprematism-popover';
+import { SuprePopoverModule } from 'suprematism-popover';
 import { ModalModule } from 'suprematism-modal';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
@@ -51,7 +51,7 @@ import { ProgressIndicatorSectionComponent } from './sections/progress-indicator
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    PopoverModule,
+    SuprePopoverModule,
     ModalModule
   ],
   providers: [],
