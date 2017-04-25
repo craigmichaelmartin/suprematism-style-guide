@@ -24,6 +24,12 @@
         "../../dist/suprematism.css",
         "../node_modules/prismjs/themes/prism.css"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "../../dist",
+          "../node_modules/bootstrap-sass/assets/stylesheets/"
+        ]
+      },
       "scripts": [
         "../node_modules/prismjs/prism.js",
         "../node_modules/prismjs/components/prism-typescript.min.js",
