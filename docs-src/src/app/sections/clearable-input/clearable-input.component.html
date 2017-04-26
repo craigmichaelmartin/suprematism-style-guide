@@ -1,0 +1,94 @@
+<h1><a id="top"></a>Clearable Input</h1>
+
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-clearable-input --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} ClearableInputModule } from 'suprematism-clearable-input';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      ClearableInputModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+<h5 class="_mtxl">Simple Example</h5>
+<div>
+  <supre-clearable-input
+    [search]=true
+    placeholder="Search"
+    [value]="value || ''"
+    (valueChange)="value = $event"
+    >
+  </supre-clearable-input>
+  <div>Search: {{value}}</div>
+</div>
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-clearable-input
+      [search]=true
+      placeholder="Search"
+      [value]="value || ''"
+      (valueChange)="value = $event"
+      >
+    {{'&lt;'}}/supre-clearable-input>
+  </code>
+</pre>
+
+<h5 class="_mtxl">Input Type</h5>
+<div>
+  <supre-clearable-input
+    type="number"
+    placeholder="Enter number"
+    [value]="value2 || ''"
+    (valueChange)="value2 = $event"
+    >
+  </supre-clearable-input>
+  <div>Search: {{value2}}</div>
+</div>
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-clearable-input
+      type="number"
+      placeholder="Enter number"
+      [value]="value2 || ''"
+      (valueChange)="value2 = $event"
+      >
+    {{'&lt;'}}/supre-clearable-input>
+  </code>
+</pre>
+
+<h5 class="_mtxl">Debouncing</h5>
+<div>
+  <supre-clearable-input
+    type="text"
+    placeholder="Enter Search"
+    [value]="value3 || ''"
+    [search]="true"
+    debounce="400"
+    (valueChange)="value3 = $event"
+    >
+  </supre-clearable-input>
+  <div>Search: {{value3}}</div>
+</div>
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-clearable-input
+      type="text"
+      placeholder="Enter Search"
+      [value]="value3 || ''"
+      [search]="true"
+      debounce="400"
+      (valueChange)="value3 = $event"
+      >
+    {{'&lt;'}}/supre-clearable-input>
+  </code>
+</pre>

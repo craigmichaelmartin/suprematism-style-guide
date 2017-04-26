@@ -14,8 +14,13 @@ import { ZIndexComponent } from './sections/utilities/z-index/z-index.component'
 import { FlexBoxComponent } from './sections/utilities/flex-box/flex-box.component';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
+import { DropdownSelectSectionComponent } from './sections/dropdown-select/dropdown-select.component';
+import { ClearableInputSectionComponent } from './sections/clearable-input/clearable-input.component';
+import { RangeInputSectionComponent } from './sections/range-input/range-input.component';
+import { DropdownMenuSectionComponent } from './sections/dropdown-menu/dropdown-menu.component';
 import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
+import { ToggleSwitchSectionComponent } from './sections/toggle-switch/toggle-switch.component';
 import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
 
 const routes: Routes = [
@@ -36,6 +41,11 @@ const routes: Routes = [
   { path: 'section/checkboxes', component: CheckboxesComponent },
   { path: 'section/tooltips', component: TooltipComponent },
   { path: 'section/inline-dialogs', component: InlineDialogSectionComponent },
+  { path: 'section/dropdown-select', component: DropdownSelectSectionComponent },
+  { path: 'section/clearable-input', component: ClearableInputSectionComponent },
+  { path: 'section/range-input', component: RangeInputSectionComponent },
+  { path: 'section/toggle-switch', component: ToggleSwitchSectionComponent },
+  { path: 'section/dropdown-menu', component: DropdownMenuSectionComponent },
   { path: 'section/modal', component: ModalSectionComponent },
   { path: 'section/progress-indicator', component: ProgressIndicatorSectionComponent },
 

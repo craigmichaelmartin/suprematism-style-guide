@@ -20,8 +20,18 @@ import { FlexBoxComponent } from './sections/utilities/flex-box/flex-box.compone
 // import { PopoverModule } from 'suprematism-popover';
 import { SuprePopoverModule } from 'suprematism-popover';
 import { ModalModule } from 'suprematism-modal';
+import { DropdownMenuModule } from 'suprematism-dropdown-menu';
+import { DropdownSelectModule } from 'suprematism-dropdown-select';
+import { ClearableInputModule } from 'suprematism-clearable-input';
+import { RangeInputModule } from 'suprematism-range-input';
+import { ToggleSwitchModule } from 'suprematism-toggle-switch';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
+import { DropdownSelectSectionComponent } from './sections/dropdown-select/dropdown-select.component';
+import { ClearableInputSectionComponent } from './sections/clearable-input/clearable-input.component';
+import { RangeInputSectionComponent } from './sections/range-input/range-input.component';
+import { DropdownMenuSectionComponent } from './sections/dropdown-menu/dropdown-menu.component';
+import { ToggleSwitchSectionComponent } from './sections/toggle-switch/toggle-switch.component';
 import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
@@ -42,6 +52,11 @@ import { ProgressIndicatorSectionComponent } from './sections/progress-indicator
     FlexBoxComponent,
     TooltipComponent,
     InlineDialogSectionComponent,
+    DropdownSelectSectionComponent,
+    ClearableInputSectionComponent,
+    RangeInputSectionComponent,
+    DropdownMenuSectionComponent,
+    ToggleSwitchSectionComponent,
     TypographySectionComponent,
     ModalSectionComponent,
     ProgressIndicatorSectionComponent
@@ -52,7 +67,12 @@ import { ProgressIndicatorSectionComponent } from './sections/progress-indicator
     HttpModule,
     AppRoutingModule,
     SuprePopoverModule,
-    ModalModule
+    ModalModule,
+    DropdownMenuModule,
+    DropdownSelectModule,
+    ClearableInputModule,
+    RangeInputModule,
+    ToggleSwitchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

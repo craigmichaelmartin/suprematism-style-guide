@@ -1,0 +1,88 @@
+<h1><a id="top"></a>Range Input</h1>
+
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-range-input --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} RangeInputModule } from 'suprematism-range-input';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      RangeInputModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+
+<h5 class="_mtxl">With Units Toggle</h5>
+
+<supre-range-input
+  [value]="range1"
+  minPlaceholder="Enter Min"
+  maxPlaceholder="Enter Max"
+  (valueChange)="range1 = $event"
+  >
+</supre-range-input>
+range ({{range1.units}}) : {{range1.min || '--'}} to {{range1.max || '--'}}
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-range-input
+      minPlaceholder="Enter Min"
+      maxPlaceholder="Enter Max"
+      (valueChange)="range1 = $event"
+      >
+    {{'&lt;'}}/supre-range-input>
+  </code>
+</pre>
+
+<h5 class="_mtxl">Without Units Toggle</h5>
+<supre-range-input
+  [showUnits]="false"
+  minPlaceholder="Enter Min"
+  maxPlaceholder="Enter Max"
+  (valueChange)="range2 = $event"
+  >
+</supre-range-input>
+range : {{range2.min || '--'}} to {{range2.max || '--'}}
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-range-input
+      [showUnits]="false"
+      minPlaceholder="Enter Min"
+      maxPlaceholder="Enter Max"
+      (valueChange)="range2 = $event"
+      >
+    {{'&lt;'}}/supre-range-input>
+  </code>
+</pre>
+
+<h5 class="_mtxl">Debouncing</h5>
+<supre-range-input
+  debounce="500"
+  minPlaceholder="Enter Min"
+  maxPlaceholder="Enter Max"
+  (valueChange)="range3 = $event"
+  >
+</supre-range-input>
+range : {{range3.min || '--'}} to {{range3.max || '--'}}
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-range-input
+      debounce="500"
+      minPlaceholder="Enter Min"
+      maxPlaceholder="Enter Max"
+      (valueChange)="range3 = $event"
+      >
+    {{'&lt;'}}/supre-range-input>
+  </code>
+</pre>

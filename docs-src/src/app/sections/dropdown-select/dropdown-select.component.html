@@ -1,0 +1,168 @@
+<h1><a id="top"></a>Dropdown Select</h1>
+
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-dropdown-select --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} DropdownSelectModule } from 'suprematism-dropdown-select';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      DropdownSelectModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+<h5 class="_mtxl">Simple Example</h5>
+<div>
+  <supre-dropdown-select
+    [value]="[]"
+    allLabel="All Star Wars Heroes"
+    prompt="Select Start Wars Heroes"
+    [options]="availableHeroes"
+    (valueChange)="heroes=$event.value">
+  </supre-dropdown-select>
+  Selection : {{heroes.join(',')}}
+</div>
+<pre class="code-block">
+  <code class="language-javascript">
+  {{'&lt;'}}supre-dropdown-select
+    [value]="[]"
+    allLabel="All Star Wars Heroes"
+    prompt="Select Start Wars Heroes"
+    [options]="availableHeroes"
+    (valueChange)="heroes=$event.value">
+  {{'&lt;'}}/supre-dropdown-select>
+  </code>
+</pre>
+
+<h5 style="margin-top:2em">Treatment of Empty Selected Values</h5>
+<div>Sometimes you may want to treat an empty value as "All". Setting `emptyValueMode="all"` will show all selected if `value` is empty
+and set value to an empty array when all options are selected. If no options are selected `value` will contain a single value determined by the `noneSelectedValue` property which defaults to -1.</div>
+
+Villains: {{villains.join(',')}}
+<supre-dropdown-select
+  [value]="[]"
+  emptyValueMode="all"
+  noneSelectedValue="none"
+  allLabel="All Star Wars Villains"
+  prompt="Select Star Wars Villain"
+  [options]="availableVillains"
+  (valueChange)="villains=$event.value">
+</supre-dropdown-select>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-select
+      [value]="[]"
+      emptyValueMode="all"
+      noneSelectedValue="none"
+      allLabel="All Star Wars Villains"
+      prompt="Select Star Wars Villain"
+      [options]="availableVillains"
+      (valueChange)="villains=$event.value">
+    {{'&lt;'}}/supre-dropdown-select>
+  </code>
+</pre>
+
+<h5 style="margin-top:2em">Button Label</h5>
+<p>You can specify a custom buttonLabel for the dropdown button.</p>
+  Planets: {{planets.join(',')}}
+<supre-dropdown-select
+  [buttonLabel]="getPlanetsLabel(planets)"
+  allLabel="All Planets"
+  [options]="availablePlanets"
+  (valueChange)="planets=$event.value"
+  >
+</supre-dropdown-select>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-select
+      [buttonLabel]="getPlanetsLabel(model.planets)"
+      allLabel="All Planets"
+      [options]="availablePlanets"
+      (valueChange)="planets=$event.value"
+      >
+    {{'&lt;'}}/supre-dropdown-select>
+  </code>
+</pre>
+
+<h5>Trigger Events</h5>
+<p>Set an openTrigger and closeTrigger to control if the dropdown opens
+  on hover or click.  The default openTrigger is 'click' and closeTrigger is 'hover'.</p>
+
+<h6>Open=Click, Close=Hover (default)</h6>
+<supre-dropdown-select
+  prompt="Select Droid"
+  openTrigger="click"
+  closeTrigger="hover"
+  allLabel="All Droids"
+  [options]="availableDroids">
+</supre-dropdown-select>
+
+<h6>Open=Click, Close=Click</h6>
+<supre-dropdown-select
+  prompt="Select Droid"
+  openTrigger="click"
+  closeTrigger="click"
+  allLabel="All Droids"
+  [options]="availableDroids">
+</supre-dropdown-select>
+
+<h6>Open=Hover, Close=Hover</h6>
+<supre-dropdown-select
+  prompt="Select Droid"
+  openTrigger="hover"
+  closeTrigger="hover"
+  allLabel="All Droids"
+  [options]="availableDroids">
+</supre-dropdown-select>
+
+<h6>Open=Hover, Close=Click</h6>
+<supre-dropdown-select
+  prompt="Select Droid"
+  openTrigger="hover"
+  closeTrigger="click"
+  allLabel="All Droids"
+  [options]="availableDroids">
+</supre-dropdown-select>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-select
+      prompt="Select Droid"
+      openTrigger="hover"
+      closeTrigger="click"
+      allLabel="All Droids"
+      [options]="availableDroids">
+    {{'&lt;'}}/supre-dropdown-select>
+  </code>
+</pre>
+
+<h5>Hiding the "All" option</h5>
+<p>You can hide the "All" option by setting showAllOption=false</p>
+<supre-dropdown-select
+  emptyValue="none"
+  [showAllOption]="false"
+  prompt="Select Start Wars Villain"
+  [options]="availableVillains">
+</supre-dropdown-select>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-select
+      emptyValue="none"
+      [showAllOption]="false"
+      prompt="Select Start Wars Villain"
+      [options]="availableVillains">
+    {{'&lt;'}}/supre-dropdown-select>
+  </code>
+</pre>
