@@ -1,0 +1,425 @@
+<h1><a id="top"></a>Dropdown Menu</h1>
+
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-dropdown-menu --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} DropdownMenuModule } from 'suprematism-dropdown-menu';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      DropdownMenuModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+
+
+
+
+<h5 class="_mtxl">Trigger</h5>
+
+
+<h6>Trigger Event</h6>
+
+<p>The dropdown menu can open on either a click or hover.</p>
+<supre-dropdown-menu trigger="click" [placements]="['bottom-right']">
+  <button supre-dropdown-menu-button class="-dialog">trigger="click"</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-right']">
+  <button supre-dropdown-menu-button class="-dialog">trigger="hover"</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-menu trigger="click" [placements]="['bottom-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">trigger="click"{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">trigger="hover"{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+  </code>
+</pre>
+
+<h6>Trigger Element</h6>
+<p>The triggering element can be anything.  To specify the triggering element add the attribute "supre-dropdown-menu-button" to the appropriate child.</p>
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-right']">
+  <button supre-dropdown-menu-button class="-dialog">Button</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-right']">
+  <span supre-dropdown-menu-button style="font-size:12px;color:red;">Anything</span>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">Button{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-right']">
+      {{'&lt;'}}span supre-dropdown-menu-button>Anything{{'&lt;'}}/span>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+  </code>
+</pre>
+
+<h5>Placement</h5>
+<h6>placements Attribute</h6>
+<p>The side of the triggering element the menu is placed and how it is aligned.</p>
+<div style="margin-bottom:1em">
+<supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+  <button supre-dropdown-menu-button class="-dialog">top-right</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['top-middle']">
+  <button supre-dropdown-menu-button class="-dialog">top-middle</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['top-left']">
+  <button supre-dropdown-menu-button class="-dialog">top-left</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+</div>
+<div style="margin-bottom:1em">
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-right']">
+  <button supre-dropdown-menu-button class="-dialog">bottom-right</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-middle']">
+  <button supre-dropdown-menu-button class="-dialog">bottom-middle</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-left']">
+  <button supre-dropdown-menu-button class="-dialog">bottom-left</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+</div>
+<div style="margin-bottom:1em">
+<supre-dropdown-menu trigger="hover" [placements]="['right-bottom']">
+  <button supre-dropdown-menu-button class="-dialog">right-bottom</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['right-middle']">
+  <button supre-dropdown-menu-button class="-dialog">right-middle</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['right-top']">
+  <button supre-dropdown-menu-button class="-dialog">right-top</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+</div>
+<div style="margin-bottom:1em">
+<supre-dropdown-menu trigger="hover" [placements]="['left-top']">
+  <button supre-dropdown-menu-button class="-dialog">left-top</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['left-middle']">
+  <button supre-dropdown-menu-button class="-dialog">left-middle</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['left-bottom']">
+  <button supre-dropdown-menu-button class="-dialog">left-bottom</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+</div>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}div>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">top-right{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-middle']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">top-middle{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-left']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">top-left{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}/div>
+    {{'&lt;'}}div>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">bottom-right{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-middle']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">bottom-middle{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-left']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">bottom-left{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}/div>
+    {{'&lt;'}}div>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['right-bottom']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">right-bottom{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['right-middle']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">right-middle{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['right-top']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">right-top{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}/div>
+    {{'&lt;'}}div>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['left-top']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">left-top{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['left-middle']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">left-middle{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['left-bottom']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">left-bottom{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}/div>
+  </code>
+</pre>
+
+<h6>Placement Precidence</h6>
+<p>The 'placements' propery is an array of placements in which to try to fit the dropdown.  Each supplied placement will be tried in sequence until the dropdown fits on-screen.
+  If the dropdown does not fit onscreen for any of the specified placements it will be placed at the first specified placement.
+</p>
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-right','top-right']">
+  <button supre-dropdown-menu-button class="-dialog">bottom-right, top-right</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-right','top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">bottom-right, top-right{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+  </code>
+</pre>
+
+
+<h5>Content</h5>
+<p>The dropdown menu has built-in support for menu items and headers, but can accept any content.</p>
+
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-right', 'top-right']">
+  <button supre-dropdown-menu-button class="-dialog">Menu Items</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+  <button supre-dropdown-menu-button class="-dialog">With Header</button>
+  <div class="header">Header</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+  <button supre-dropdown-menu-button class="-dialog">Custom Content</button>
+  <div style="padding:5px;">
+    <div style="font-weight:bold;font-size:11px;">Custom Content</div>
+    <button class="-action">Custom</button></div>
+</supre-dropdown-menu>
+
+<pre class="code-block">
+  <code class="language-javascript">
+
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-right', 'top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">Menu Items{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">With Header{{'&lt;'}}/button>
+      {{'&lt;'}}div class="header">Header{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">Custom Content{{'&lt;'}}/button>
+      {{'&lt;'}}div style="padding:5px;">
+        {{'&lt;'}}div style="font-weight:bold;font-size:11px;">Custom Content{{'&lt;'}}/div>
+        {{'&lt;'}}button class="-action">Custom{{'&lt;'}}/button>{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+
+  </code>
+</pre>
+
+
+<h5>Close Event</h5>
+<p>You can control how events triggered on child menu items close the dropdown itself.
+Use the "supreCloseEvent" attribute to specify which type of event should close the dropdown.  This can be applied to any element in the DOM hierarchy between the child and the parent dropdown.  It will control how events on children at or below that level in the DOM close the dropdown.  This gives flexibility to specify different events for different children.
+Supported values include:</p>
+<ul>
+  <li>click: close the dropdown when a child is clicked</li>
+  <li>change: close the dropdown when a child is changed</li>
+  <li>none: do not close the dropdown on child interaction</li>
+</ul>
+
+<supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+  <button supre-dropdown-menu-button class="-dialog">Click</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+  <button supre-dropdown-menu-button class="-dialog">Change</button>
+  <div style="padding:5px" supreCloseEvent="change"><select><option>One</option><option>Two</option><option>Three</option></select></div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+  <button supre-dropdown-menu-button class="-dialog">None</button>
+  <div style="padding:5px" supreCloseEvent="none"><select><option>One</option><option>Two</option><option>Three</option></select></div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+  <button supre-dropdown-menu-button class="-dialog">Click or Change</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Click</div>
+  <div style="padding:5px" supreCloseEvent="change"><select><option>Change</option><option>Two</option><option>Three</option></select></div>
+</supre-dropdown-menu>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">Click{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">Change{{'&lt;'}}/button>
+      {{'&lt;'}}div supreCloseEvent="change">{{'&lt;'}}select>{{'&lt;'}}option>One{{'&lt;'}}/option>{{'&lt;'}}option>Two{{'&lt;'}}/option>{{'&lt;'}}option>Three{{'&lt;'}}/option>{{'&lt;'}}/select>{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">None{{'&lt;'}}/button>
+      {{'&lt;'}}div supreCloseEvent="none">{{'&lt;'}}select>{{'&lt;'}}option>One{{'&lt;'}}/option>{{'&lt;'}}option>Two{{'&lt;'}}/option>{{'&lt;'}}option>Three{{'&lt;'}}/option>{{'&lt;'}}/select>{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">Click or Change{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Click{{'&lt;'}}/div>
+      {{'&lt;'}}div supreCloseEvent="change">{{'&lt;'}}select>{{'&lt;'}}option>Change{{'&lt;'}}/option>{{'&lt;'}}option>Two{{'&lt;'}}/option>{{'&lt;'}}option>Three{{'&lt;'}}/option>{{'&lt;'}}/select>{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+
+  </code>
+</pre>
+
+
+<h5>Pointer Arrow</h5>
+<p>The menu by default has a pointer arrow.  This arrow can be removed by setting [pointed]="false".</p>
+
+<supre-dropdown-menu trigger="hover" [placements]="['bottom-right','top-right']">
+  <button supre-dropdown-menu-button class="-dialog">pointed=true</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+<supre-dropdown-menu trigger="hover" [pointed]="false"  [placements]="['bottom-right','top-right']">
+  <button supre-dropdown-menu-button class="-dialog">pointed=false</button>
+  <div class="item"><span class="u-supre-icon u-supre-icon--snapshot"></span>Option One</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--edit"></span>Option Two</div>
+  <div class="item"><span class="u-supre-icon u-supre-icon--export"></span>Option Three</div>
+</supre-dropdown-menu>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [placements]="['bottom-right','top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">pointed=true{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+
+    {{'&lt;'}}supre-dropdown-menu trigger="hover" [pointed]="false"  [placements]="['bottom-right','top-right']">
+      {{'&lt;'}}button supre-dropdown-menu-button class="-dialog">pointed=false{{'&lt;'}}/button>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--snapshot">{{'&lt;'}}/span>Option One{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--edit">{{'&lt;'}}/span>Option Two{{'&lt;'}}/div>
+      {{'&lt;'}}div class="item">{{'&lt;'}}span class="u-supre-icon u-supre-icon--export">{{'&lt;'}}/span>Option Three{{'&lt;'}}/div>
+    {{'&lt;'}}/supre-dropdown-menu>
+  </code>
+</pre>

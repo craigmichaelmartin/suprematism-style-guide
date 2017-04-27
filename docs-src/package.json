@@ -26,6 +26,11 @@
     "rxjs": "^5.0.1",
     "suprematism-modal": "github:cinbcuniversal/suprematism-modal",
     "suprematism-popover": "github:cinbcuniversal/suprematism-popover",
+    "suprematism-dropdown-menu": "github:cinbcuniversal/suprematism-dropdown-menu",
+    "suprematism-range-input": "github:cinbcuniversal/suprematism-range-input",
+    "suprematism-clearable-input": "github:cinbcuniversal/suprematism-clearable-input",
+    "suprematism-dropdown-select": "github:cinbcuniversal/suprematism-dropdown-select",
+    "suprematism-toggle-switch": "github:cinbcuniversal/suprematism-toggle-switch",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
   },
