@@ -26,6 +26,7 @@ $lite-gray:         #cccccc;
 $active-stroke:     #c2cdd8;
 $disabled-stroke:   #d5d8dd;
 $shark-skin:        #6f7b86;
+$red:               #b42a40;
 
 //
 // Sequence Colors
@@ -33,7 +34,7 @@ $shark-skin:        #6f7b86;
 $sequence-1:        #e47a39;
 $sequence-2:        #78b1e4;
 $sequence-3:        #67ab9f;
-$sequence-4:        #b42a40;
+$sequence-4:        #9c5f87;
 
 //
 // Viz Colors
@@ -71,6 +72,7 @@ $colors: (
   ('disabled-stroke', $disabled-stroke),
   ('soft-green', $soft-green),
   ('shark-skin', $shark-skin),
+  ('red', $red),
 
   ('sequence-1', $sequence-1),
   ('sequence-2', $sequence-2),
@@ -123,9 +125,9 @@ $supre-colors: $colors;
       @each $color-name in $color-names {
         @if ($color-name == $name) {
           &.bg-#{$name} { background-color: $hex; }
-        } 
+        }
       }
-    }  
+    }
   }
   @else {
     @each $name, $hex in $supre-colors {
@@ -146,9 +148,9 @@ $supre-colors: $colors;
       @each $color-name in $color-names {
         @if ($color-name == $name) {
           &.color-#{$name} { color: $hex; }
-        } 
+        }
       }
-    }  
+    }
   }
   @else {
     @each $name, $hex in $supre-colors {
@@ -169,9 +171,9 @@ $supre-colors: $colors;
       @each $color-name in $color-names {
         @if ($color-name == $name) {
           &.border-#{$name} { border-color: $hex; }
-        } 
+        }
       }
-    }  
+    }
   }
   @else {
     @each $name, $hex in $supre-colors {
@@ -179,4 +181,3 @@ $supre-colors: $colors;
     }
   }
 }
-
