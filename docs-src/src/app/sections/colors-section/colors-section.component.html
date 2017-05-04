@@ -145,6 +145,13 @@
       </p>
     </div>
 
+    <div class="color-block-red">
+      <p class="text">
+        <span class="title"></span>
+        <span class="hex"></span>
+      </p>
+    </div>
+
   </div>
 
 
@@ -265,6 +272,7 @@
   {{'&lt;'}}div class="bg-disabled-stroke">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="bg-soft-green">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="bg-shark-skin">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="bg-red">...{{'&lt;'}}/div>
 
   {{'&lt;'}}div class="bg-sequence-1">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="bg-sequence-2">...{{'&lt;'}}/div>
@@ -301,6 +309,7 @@
   {{'&lt;'}}div class="color-disabled-stroke">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="color-soft-green">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="color-shark-skin">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="color-red">...{{'&lt;'}}/div>
 
   {{'&lt;'}}div class="color-sequence-1">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="color-sequence-2">...{{'&lt;'}}/div>
@@ -337,6 +346,7 @@
   {{'&lt;'}}div class="border-disabled-stroke">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="border-soft-green">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="border-shark-skin">...{{'&lt;'}}/div>
+  {{'&lt;'}}div class="border-red">...{{'&lt;'}}/div>
 
   {{'&lt;'}}div class="border-sequence-1">...{{'&lt;'}}/div>
   {{'&lt;'}}div class="border-sequence-2">...{{'&lt;'}}/div>
@@ -385,6 +395,7 @@
   @extend %bg-disabled-stroke;
   @extend %bg-soft-green;
   @extend %bg-shark-skin;
+  @extend %bg-red;
 
   @extend %bg-sequence-1;
   @extend %bg-sequence-2;
@@ -421,6 +432,7 @@
   @extend %color-disabled-stroke;
   @extend %color-soft-green;
   @extend %color-shark-skin;
+  @extend %color-red;
 
   @extend %color-sequence-1;
   @extend %color-sequence-2;
@@ -457,12 +469,13 @@
   @extend %border-disabled-stroke;
   @extend %border-soft-green;
   @extend %border-shark-skin;
+  @extend %border-red;
 
   @extend %border-sequence-1;
   @extend %border-sequence-2;
   @extend %border-sequence-3;
   @extend %border-sequence-4;
-  
+
   @extend %border-viz-aqua;
   @extend %border-viz-purple;
   @extend %border-viz-lime;
@@ -508,6 +521,7 @@
     ('disabled-stroke', $disabled-stroke),
     ('soft-green', $soft-green),
     ('shark-skin', $shark-skin),
+    ('red', $red),
 
     ('sequence-1', $sequence-1),
     ('sequence-2', $sequence-2),
@@ -524,7 +538,7 @@
 
   );
 
-  
+
   //////////////////////////////////////////////////////////////////
   // Mixins
   // These mixins can help with avoiding specificity issues
@@ -548,6 +562,3 @@
   @mixin appendBorderColorClasses('shark-skin', 'off-white');
   </code>
 </pre>
-
-
-
