@@ -34,7 +34,8 @@
         "../node_modules/prismjs/prism.js",
         "../node_modules/prismjs/components/prism-typescript.min.js",
         "../node_modules/prismjs/components/prism-javascript.min.js",
-        "../node_modules/prismjs/components/prism-sass.min.js"
+        "../node_modules/prismjs/components/prism-sass.min.js",
+        "../node_modules/shave/dist/shave.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

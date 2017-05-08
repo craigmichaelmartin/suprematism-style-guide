@@ -22,6 +22,7 @@ import { TypographySectionComponent } from './sections/typography-section/typogr
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 import { ToggleSwitchSectionComponent } from './sections/toggle-switch/toggle-switch.component';
 import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
+import { SmartTextSectionComponent } from './sections/smart-text/smart-text.component';
 
 const routes: Routes = [
 
@@ -48,6 +49,7 @@ const routes: Routes = [
   { path: 'section/dropdown-menu', component: DropdownMenuSectionComponent },
   { path: 'section/modal', component: ModalSectionComponent },
   { path: 'section/progress-indicator', component: ProgressIndicatorSectionComponent },
+  { path: 'section/smart-text', component: SmartTextSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },

@@ -33,7 +33,7 @@
 
   {{'&lt;'}}!--
     When an item is selected:
-      - add the text to the dropdown-button 
+      - add the text to the dropdown-button
       - set selected="true" on the item
   -->
   {{'&lt;'}}div tabindex="0" class="dropdown-button">
@@ -46,7 +46,6 @@
   {{'&lt;'}}/div>
   </code>
 </pre>
-
 
 <a id="dropdown-with-icons"></a>
 <h5 class="_mtxl">Simple Dropdown, with Icons</h5>
@@ -78,9 +77,9 @@
     {{'&lt;'}}/ul>
   {{'&lt;'}}/div>
 
-  {{'&lt;'}}!-- 
+  {{'&lt;'}}!--
     When an item is selected:
-      - add the icon and text to the dropdown-button 
+      - add the icon and text to the dropdown-button
       - set selected="true" on the item
   -->
   {{'&lt;'}}div tabindex="0" class="dropdown-button _mlm">
@@ -94,6 +93,67 @@
   </code>
 </pre>
 
+<a id="dropup-no-icons"></a>
+<h5 class="_mtxl">Simple Dropup, with no Icons</h5>
+<div tabindex="0" class="dropdown-button -top">
+  <div class="dropdown-label">Dropup</div>
+  <ul class="dropdown-content">
+    <li class="item" selected="false">Item One</li>
+    <li class="item" selected="false">Item Two</li>
+    <li class="item" selected="false">Item Three</li>
+  </ul>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}div tabindex="0" class="dropdown-button -top">
+      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}li class="item" selected="false">Item One{{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">Item Two{{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">Item Three{{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
+    {{'&lt;'}}/div>
+  </code>
+</pre>
+
+<a id="dropdown-disabled"></a>
+<h5 class="_mtxl">Simple Dropdown, disabled</h5>
+<div tabindex="0" class="dropdown-button -disabled">
+  <div class="dropdown-label">Dropdown</div>
+  <ul class="dropdown-content">
+    <li class="item" selected="false">Item One</li>
+    <li class="item" selected="false">Item Two</li>
+    <li class="item" selected="false">Item Three</li>
+  </ul>
+</div>
+<div tabindex="0" class="dropdown-button _mlm -disabled">
+  <div class="dropdown-label" selected="true">Item Three</div>
+  <ul class="dropdown-content">
+    <li class="item" selected="false">Item One</li>
+    <li class="item" selected="false">Item Two</li>
+    <li class="item" selected="true">Item Three</li>
+  </ul>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}div tabindex="0" class="dropdown-button -disabled">
+      {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}li class="item" selected="false">Item One{{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">Item Two{{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">Item Three{{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
+    {{'&lt;'}}/div>
+    {{'&lt;'}}div tabindex="0" class="dropdown-button _mlm -disabled">
+      {{'&lt;'}}div class="dropdown-label" selected="true">Item Three{{'&lt;'}}/div>
+      {{'&lt;'}}ul class="dropdown-content">
+        {{'&lt;'}}li class="item" selected="false">Item One{{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="false">Item Two{{'&lt;'}}/li>
+        {{'&lt;'}}li class="item" selected="true">Item Three{{'&lt;'}}/li>
+      {{'&lt;'}}/ul>
+    {{'&lt;'}}/div>
+  </code>
+</pre>
 
 <a id="dropdown-with-width"></a>
 <h5 class="_mtxl">Applying a specific width</h5>
@@ -294,7 +354,7 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-  {{'&lt;'}}!-- 
+  {{'&lt;'}}!--
     To mark an item and its checkbox as selected apply:
       - add selected="true" to the .item element
       - add the checked="checked" attribute to the input element
@@ -535,8 +595,8 @@
 </div>
 <pre class="code-block">
   <code class="language-markup">
-  {{'&lt;'}}!-- 
-    Component Template 
+  {{'&lt;'}}!--
+    Component Template
   -->
   {{'&lt;'}}div tabindex="0" class="dropdown-button min-fit">
     {{'&lt;'}}div class="dropdown-label">Dropdown{{'&lt;'}}/div>
@@ -557,10 +617,10 @@
   </code>
   <code class="language-typescript">
   /**
-    * Sample Component Code 
-    * 
+    * Sample Component Code
+    *
     * In a real application it is recommended that the methods and model be implemented
-    * in a service, not within the component. It is recommended that the component uses 
+    * in a service, not within the component. It is recommended that the component uses
     * unidirectional data flow.
     *
     * Also, always remember to unsubscribe all your subscriptions onDestory
@@ -572,11 +632,11 @@
 
   // private members
   private dropdown$: ReplaySubject{{'&lt;'}}any> = new ReplaySubject{{'&lt;'}}any>(1);
-  
+
 
   /**
   * Creates an instance of DropdownsComponent.
-  * 
+  *
   * @memberOf DropdownsComponent
   */
   constructor() {{'&#123;'}}
@@ -626,8 +686,8 @@
 
   /**
   * OnInit hook
-  * 
-  * 
+  *
+  *
   * @memberOf DropdownsComponent
   */
   ngOnInit() {{'&#123;'}}
@@ -637,7 +697,7 @@
       // make the button title human readable
       if (model.filter(item => item.selected).length === 0) {{'&#123;'}}
         this.dropdownSelectionText = "Select Categories";
-      } else 
+      } else
       if (model.filter(item => item.selected).length === 1) {{'&#123;'}}
         this.dropdownSelectionText = "1 Category Selected";
       } else
@@ -652,9 +712,9 @@
 
   /**
   * Toggle a single item
-  * 
+  *
   * @param {{'&#123;'}}number} itemId
-  * 
+  *
   * @memberOf DropdownsComponent
   */
   toggleItem(itemId: number) {{'&#123;'}}
@@ -688,9 +748,9 @@
 
   /**
   * Toggle all the items
-  * 
+  *
   * @param {{'&#123;'}}number} itemId
-  * 
+  *
   * @memberOf DropdownsComponent
   */
   toggleAllItem(itemId: number) {{'&#123;'}}

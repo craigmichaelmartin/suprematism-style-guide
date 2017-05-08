@@ -1,0 +1,171 @@
+<h1><a id="top"></a>Smart Text</h1>
+
+
+<a id="smart-text-install"></a>
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-smart-text --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} SmartTextModule } from 'suprematism-smart-text';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      SmartTextModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+
+<a id="smart-text-truncate-text"></a>
+<h5 class="_mtxl">Truncate Text</h5>
+<h6>Truncate one line</h6>
+<div class="example">
+  <supre-smart-text supreDisplayRows=1 [supreIsEditable]="false">
+    <div class="u-type-l color-snake-skin _plxl">
+      {{ veryLongText }}
+    </div>
+  </supre-smart-text>
+</div>
+<h6>Truncate two lines</h6>
+<div class="example">
+  <supre-smart-text supreDisplayRows=2 [supreIsEditable]="false">
+    <div class="u-type-l color-snake-skin _plxl">
+      {{ veryLongText }}
+    </div>
+  </supre-smart-text>
+</div>
+<h6>Truncate three lines</h6>
+<div class="example">
+  <supre-smart-text supreDisplayRows=3 [supreIsEditable]="false">
+    <div class="u-type-l color-snake-skin _plxl">
+      {{ veryLongText }}
+    </div>
+  </supre-smart-text>
+</div>
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-smart-text supreDisplayRows=1 [supreIsEditable]="false">
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+
+    {{'&lt;'}}supre-smart-text supreDisplayRows=2 [supreIsEditable]="false">
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+
+    {{'&lt;'}}supre-smart-text supreDisplayRows=3 [supreIsEditable]="false">
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+  </code>
+</pre>
+
+
+<a id="smart-text-edit-text"></a>
+<h5 class="_mtxl">Edit Text</h5>
+<h6>Free Height Edit</h6>
+<div class="example">
+  <supre-smart-text>
+    <div class="u-type-l color-snake-skin _plxl">
+      This will expand as you type.
+    </div>
+  </supre-smart-text>
+</div>
+<h6>Display 2 lines and Edit 2 lines</h6>
+<div class="example">
+  <supre-smart-text supreDisplayRows=2 supreEditRows=2>
+    <div class="u-type-l color-snake-skin _plxl">
+      {{ veryLongText }}
+    </div>
+  </supre-smart-text>
+</div>
+<h6>Display 2 lines and Edit 3 lines</h6>
+<div class="example">
+  <supre-smart-text supreDisplayRows=2 supreEditRows=3>
+    <div class="u-type-l color-snake-skin _plxl">
+      {{ veryLongText }}
+    </div>
+  </supre-smart-text>
+</div>
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-smart-text>
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+
+    {{'&lt;'}}supre-smart-text supreDisplayRows=2 supreEditRows=2>
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+
+    {{'&lt;'}}supre-smart-text supreDisplayRows=2 supreEditRows=3>
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+  </code>
+</pre>
+
+
+
+<a id="smart-text-edit-dialog"></a>
+<h5 class="_mtxl">Edit Text In Dialog</h5>
+<h6>Free Height Edit in a dialog</h6>
+<div class="example">
+  <supre-smart-text popout=true>
+    <div class="u-type-l color-snake-skin _plxl">
+      This will expand as you type.
+    </div>
+  </supre-smart-text>
+</div>
+<h6>Display 2 lines and Edit 2 lines in a dialog</h6>
+<div class="example">
+  <supre-smart-text supreDisplayRows=2 supreEditRows=2 popout=true>
+    <div class="u-type-l color-snake-skin _plxl">
+      {{ veryLongText }}
+    </div>
+  </supre-smart-text>
+</div>
+<h6>Display 2 lines and Edit 3 lines in a dialog</h6>
+<div class="example">
+  <supre-smart-text supreDisplayRows=2 supreEditRows=3 popout=true>
+    <div class="u-type-l color-snake-skin _plxl">
+      {{ veryLongText }}
+    </div>
+  </supre-smart-text>
+</div>
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-smart-text popout=true>
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+
+    {{'&lt;'}}supre-smart-text supreDisplayRows=2 supreEditRows=2 popout=true>
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+
+    {{'&lt;'}}supre-smart-text supreDisplayRows=2 supreEditRows=3 popout=true>
+      {{'&lt;'}}div>
+        veryLongText
+      {{'&lt;'}}/div>
+    {{'&lt;'}}/supre-smart-text>
+  </code>
+</pre>
