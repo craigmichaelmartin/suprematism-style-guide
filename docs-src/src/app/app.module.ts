@@ -25,6 +25,7 @@ import { DropdownSelectModule } from 'suprematism-dropdown-select';
 import { ClearableInputModule } from 'suprematism-clearable-input';
 import { RangeInputModule } from 'suprematism-range-input';
 import { ToggleSwitchModule } from 'suprematism-toggle-switch';
+import { SmartTextModule } from 'suprematism-smart-text';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
 import { DropdownSelectSectionComponent } from './sections/dropdown-select/dropdown-select.component';
@@ -35,6 +36,7 @@ import { ToggleSwitchSectionComponent } from './sections/toggle-switch/toggle-sw
 import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
+import { SmartTextSectionComponent } from './sections/smart-text/smart-text.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,8 @@ import { ProgressIndicatorSectionComponent } from './sections/progress-indicator
     ToggleSwitchSectionComponent,
     TypographySectionComponent,
     ModalSectionComponent,
-    ProgressIndicatorSectionComponent
+    ProgressIndicatorSectionComponent,
+    SmartTextSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +75,8 @@ import { ProgressIndicatorSectionComponent } from './sections/progress-indicator
     DropdownSelectModule,
     ClearableInputModule,
     RangeInputModule,
-    ToggleSwitchModule
+    ToggleSwitchModule,
+    SmartTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

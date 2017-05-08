@@ -111,6 +111,8 @@
         <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/dropdowns'">
           <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-no-icons">With no Icons</a></li>
           <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-icons">With Icons</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropup-no-icons">Dropup</a></li>
+          <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-disabled">Disabled</a></li>
           <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-width">Apply a Width</a></li>
           <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-checkboxes">With Checkboxes</a></li>
           <li><a [routerLink]="['section/dropdowns']" fragment="dropdown-with-checkboxes-and-icons">With Checkboxes &amp; Icons</a></li>
@@ -144,6 +146,14 @@
       <li><a [routerLink]="['section/clearable-input']" >Clearable Input</a></li>
       <li><a [routerLink]="['section/range-input']" >Range Input</a></li>
       <li><a [routerLink]="['section/toggle-switch']" >Toggle Switch</a></li>
+      <li>
+        <a [routerLink]="['section/smart-text']" fragment="top">Smart Text</a>
+        <ul class="_mt0 _pb0 _plm" *ngIf="path === 'section/smart-text'">
+          <li><a [routerLink]="['section/smart-text']" fragment="smart-text-truncate-text">Truncate Text</a></li>
+          <li><a [routerLink]="['section/smart-text']" fragment="smart-text-edit-text">Edit Text</a></li>
+          <li><a [routerLink]="['section/smart-text']" fragment="smart-text-edit-dialog">Edit in Dialog</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>

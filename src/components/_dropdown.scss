@@ -105,6 +105,29 @@ $dropdown-item-horiz-padding: $spacing-s;
 
   }
 
+  &.-disabled {
+    background: $ice;
+    &:hover, &:focus, &:active {
+      cursor: not-allowed;
+      .dropdown-label {
+        background: $ice;
+        border: 1px solid $gray;
+        &::after {
+          content: '';
+        }
+      }
+
+    }
+    .dropdown-label {
+      &::after {
+        content: '';
+      }
+    }
+    .dropdown-content {
+      display: none;
+    }
+  }
+
 
   //
   // Items container
@@ -177,4 +200,37 @@ $dropdown-item-horiz-padding: $spacing-s;
 
   }
 
+}
+
+//
+// Drop up
+//
+.dropdown-button.-top {
+  &:focus .dropdown-label,
+  &:active .dropdown-label {
+    border-bottom: 1px solid $blue-gray;
+    border-top-color: $soft-green;
+  }
+
+  //
+  // Items container
+  //
+  .dropdown-content {
+    margin-bottom: -1px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  //
+  // Rotate icon on focus
+  //
+  &:focus {
+    .dropdown-label {
+      &:after {
+        transform: rotate(-90deg);
+      }
+    }
+  }
 }
