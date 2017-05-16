@@ -2117,7 +2117,7 @@ button.-affix, input.-affix[type="submit"] {
  ******************************************************************************/
 @font-face {
   font-family: 'Audri-alpha';
-  src: url("fonts/Audri-alpha.woff2?vg46s7") format("woff2"), url("fonts/Audri-alpha.ttf?vg46s7") format("truetype"), url("fonts/Audri-alpha.woff?vg46s7") format("woff"), url("fonts/Audri-alpha.svg?vg46s7#Audri-alpha") format("svg");
+  src: url("fonts/Audri-alpha.woff2?qbsg80") format("woff2"), url("fonts/Audri-alpha.ttf?qbsg80") format("truetype"), url("fonts/Audri-alpha.woff?qbsg80") format("woff"), url("fonts/Audri-alpha.svg?qbsg80#Audri-alpha") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2190,6 +2190,9 @@ button.-affix, input.-affix[type="submit"] {
 
 .u-supre-icon--filter:before {
   content: ""; }
+
+.u-supre-icon--rem-filter:before {
+  content: ""; }
 
 .u-supre-icon--audience:before {
   content: ""; }
@@ -2274,6 +2277,9 @@ button.-affix, input.-affix[type="submit"] {
 
 .u-supre-icon--venn:before {
   content: ""; }
+
+.u-supre-icon--hide:before {
+  content: ""; }
 
 /******************************************************************************
  *
