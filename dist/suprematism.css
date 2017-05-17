@@ -1299,10 +1299,10 @@ table {
   background-color: #F17F42; }
 
 ._c-state-error {
-  color: #cf3b2c; }
+  color: #da3c3c; }
 
 ._bg-state-error {
-  background-color: #cf3b2c; }
+  background-color: #da3c3c; }
 
 ._c-blue-darker {
   color: #1573b6; }
@@ -1777,11 +1777,11 @@ table {
     .alert-box.-warning a {
       color: #bf4c0e; }
   .alert-box.-error {
-    background-color: rgba(207, 59, 44, 0.15);
-    border-color: rgba(207, 59, 44, 0.2);
-    color: #a52f23; }
+    background-color: rgba(218, 60, 60, 0.15);
+    border-color: rgba(218, 60, 60, 0.2);
+    color: #bf2424; }
     .alert-box.-error a {
-      color: #7b231a; }
+      color: #941c1c; }
 
 .breadcrumb-nav {
   background-color: #f5f5f5;
@@ -1976,8 +1976,8 @@ table {
     background-color: rgba(241, 127, 66, 0.15);
     color: #ed5f13; }
   .tag-box.-error {
-    background-color: rgba(207, 59, 44, 0.15);
-    color: #a52f23; }
+    background-color: rgba(218, 60, 60, 0.15);
+    color: #bf2424; }
 
 button.-bordered, input.-bordered[type="submit"] {
   background-color: transparent;
@@ -2024,13 +2024,13 @@ button.-bordered, input.-bordered[type="submit"] {
     button.-bordered.-warning:hover, input.-bordered.-warning[type="submit"]:hover, button.-bordered.-warning:focus, input.-bordered.-warning[type="submit"]:focus, button.-bordered.-warning:active, input.-bordered.-warning[type="submit"]:active {
       color: #ffffff; }
   button.-bordered.-error, input.-bordered.-error[type="submit"] {
-    border-color: #cf3b2c;
+    border-color: #da3c3c;
     background-color: transparent;
-    color: #cf3b2c; }
+    color: #da3c3c; }
     button.-bordered.-error:hover, input.-bordered.-error[type="submit"]:hover, button.-bordered.-error:focus, input.-bordered.-error[type="submit"]:focus {
-      background-color: #cf3b2c; }
+      background-color: #da3c3c; }
     button.-bordered.-error:active, input.-bordered.-error[type="submit"]:active {
-      background-color: ligthen(#cf3b2c, 5%); }
+      background-color: ligthen(#da3c3c, 5%); }
     button.-bordered.-error:hover, input.-bordered.-error[type="submit"]:hover, button.-bordered.-error:focus, input.-bordered.-error[type="submit"]:focus, button.-bordered.-error:active, input.-bordered.-error[type="submit"]:active {
       color: #ffffff; }
 
@@ -2059,12 +2059,12 @@ button.-warning, input.-warning[type="submit"] {
     background-color: #f59f71; }
 
 button.-error, input.-error[type="submit"] {
-  background-color: #cf3b2c;
+  background-color: #da3c3c;
   color: #ffffff; }
   button.-error:hover, input.-error[type="submit"]:hover, button.-error:focus, input.-error[type="submit"]:focus {
-    background-color: #d64c3e; }
+    background-color: #de5151; }
   button.-error:active, input.-error[type="submit"]:active {
-    background-color: #db6053; }
+    background-color: #e26767; }
 
 button.-prefix, input.-prefix[type="submit"] {
   padding-left: 0; }
@@ -2117,7 +2117,7 @@ button.-affix, input.-affix[type="submit"] {
  ******************************************************************************/
 @font-face {
   font-family: 'Audri-alpha';
-  src: url("fonts/Audri-alpha.woff2?gxw586") format("woff2"), url("fonts/Audri-alpha.ttf?gxw586") format("truetype"), url("fonts/Audri-alpha.woff?gxw586") format("woff"), url("fonts/Audri-alpha.svg?gxw586#Audri-alpha") format("svg");
+  src: url("fonts/Audri-alpha.woff2?fn2760") format("woff2"), url("fonts/Audri-alpha.ttf?fn2760") format("truetype"), url("fonts/Audri-alpha.woff?fn2760") format("woff"), url("fonts/Audri-alpha.svg?fn2760#Audri-alpha") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2292,15 +2292,6 @@ button.-affix, input.-affix[type="submit"] {
 
 .u-supre-icon--static-loader:before {
   content: ""; }
-
-.u-supre-icon--pivot:before {
-  content: ""; }
-
-.u-supre-icon--data:before {
-  content: ""; }
-
-.u-supre-icon--audcomp:before {
-  content: ""; }
 
 /******************************************************************************
  *
@@ -2748,13 +2739,13 @@ button.-affix, input.-affix[type="submit"] {
   border-color: #6f7b86; }
 
 .bg-red {
-  background-color: #cf3b2c; }
+  background-color: #b42a40; }
 
 .color-red {
-  color: #cf3b2c; }
+  color: #b42a40; }
 
 .border-red {
-  border-color: #cf3b2c; }
+  border-color: #b42a40; }
 
 .bg-sequence-1 {
   background-color: #e47a39; }
