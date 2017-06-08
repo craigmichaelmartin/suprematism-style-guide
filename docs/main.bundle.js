@@ -68,7 +68,7 @@ var AbstractSectionComponent = (function () {
     };
     return AbstractSectionComponent;
 }());
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/section.abstract.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/section.abstract.js.map
 
 /***/ }),
 
@@ -114,7 +114,7 @@ var ButtonsComponent = (function (_super) {
     return ButtonsComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/buttons.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/buttons.component.js.map
 
 /***/ }),
 
@@ -160,7 +160,7 @@ var CheckboxesComponent = (function (_super) {
     return CheckboxesComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/checkboxes.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/checkboxes.component.js.map
 
 /***/ }),
 
@@ -206,7 +206,7 @@ var ClearableInputSectionComponent = (function (_super) {
     return ClearableInputSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/clearable-input.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/clearable-input.component.js.map
 
 /***/ }),
 
@@ -252,7 +252,7 @@ var ColorsSectionComponent = (function (_super) {
     return ColorsSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/colors-section.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/colors-section.component.js.map
 
 /***/ }),
 
@@ -298,7 +298,7 @@ var DropdownMenuSectionComponent = (function (_super) {
     return DropdownMenuSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/dropdown-menu.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/dropdown-menu.component.js.map
 
 /***/ }),
 
@@ -392,7 +392,7 @@ var DropdownSelectSectionComponent = (function (_super) {
     return DropdownSelectSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/dropdown-select.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/dropdown-select.component.js.map
 
 /***/ }),
 
@@ -581,7 +581,7 @@ var DropdownsComponent = (function (_super) {
     return DropdownsComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/dropdowns.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/dropdowns.component.js.map
 
 /***/ }),
 
@@ -616,7 +616,7 @@ var HomeSectionComponent = (function () {
     ], HomeSectionComponent);
     return HomeSectionComponent;
 }());
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/home-section.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/home-section.component.js.map
 
 /***/ }),
 
@@ -662,7 +662,7 @@ var IconsComponent = (function (_super) {
     return IconsComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/icons.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/icons.component.js.map
 
 /***/ }),
 
@@ -708,7 +708,7 @@ var InlineDialogSectionComponent = (function (_super) {
     return InlineDialogSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/inline-dialog.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/inline-dialog.component.js.map
 
 /***/ }),
 
@@ -754,7 +754,7 @@ var ModalSectionComponent = (function (_super) {
     return ModalSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/modal-section.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/modal-section.component.js.map
 
 /***/ }),
 
@@ -800,7 +800,7 @@ var ProgressIndicatorSectionComponent = (function (_super) {
     return ProgressIndicatorSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/progress-indicator-section.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/progress-indicator-section.component.js.map
 
 /***/ }),
 
@@ -849,7 +849,7 @@ var RangeInputSectionComponent = (function (_super) {
     return RangeInputSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/range-input.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/range-input.component.js.map
 
 /***/ }),
 
@@ -896,7 +896,7 @@ var SmartTextSectionComponent = (function (_super) {
     return SmartTextSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/smart-text.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/smart-text.component.js.map
 
 /***/ }),
 
@@ -943,7 +943,7 @@ var ToggleSwitchSectionComponent = (function (_super) {
     return ToggleSwitchSectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/toggle-switch.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/toggle-switch.component.js.map
 
 /***/ }),
 
@@ -989,7 +989,7 @@ var TooltipComponent = (function (_super) {
     return TooltipComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/tooltip.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/tooltip.component.js.map
 
 /***/ }),
 
@@ -1035,7 +1035,7 @@ var TypographySectionComponent = (function (_super) {
     return TypographySectionComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/typography-section.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/typography-section.component.js.map
 
 /***/ }),
 
@@ -1081,7 +1081,7 @@ var BordersComponent = (function (_super) {
     return BordersComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/borders.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/borders.component.js.map
 
 /***/ }),
 
@@ -1127,7 +1127,7 @@ var FlexBoxComponent = (function (_super) {
     return FlexBoxComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/flex-box.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/flex-box.component.js.map
 
 /***/ }),
 
@@ -1173,7 +1173,7 @@ var SpacingComponent = (function (_super) {
     return SpacingComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/spacing.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/spacing.component.js.map
 
 /***/ }),
 
@@ -1219,7 +1219,7 @@ var ZIndexComponent = (function (_super) {
     return ZIndexComponent;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/z-index.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/z-index.component.js.map
 
 /***/ }),
 
@@ -1254,7 +1254,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/main.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/main.js.map
 
 /***/ }),
 
@@ -1359,7 +1359,7 @@ var AppRoutingModule = (function () {
     ], AppRoutingModule);
     return AppRoutingModule;
 }());
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/app-routing.module.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/app-routing.module.js.map
 
 /***/ }),
 
@@ -1395,7 +1395,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/app.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/app.component.js.map
 
 /***/ }),
 
@@ -1536,7 +1536,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/app.module.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/app.module.js.map
 
 /***/ }),
 
@@ -1592,7 +1592,7 @@ var MainMenuComponent = (function () {
     return MainMenuComponent;
     var _a;
 }());
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/main-menu.component.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/main-menu.component.js.map
 
 /***/ }),
 
@@ -1608,7 +1608,7 @@ var MainMenuComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=/Users/bradcandullo/dev/style-guide/docs-src/src/environment.js.map
+//# sourceMappingURL=/Users/a206525964/projects/suprematism/suprematism-style-guide/docs-src/src/environment.js.map
 
 /***/ }),
 
@@ -1846,7 +1846,7 @@ module.exports = ""
 /***/ 830:
 /***/ (function(module, exports) {
 
-module.exports = "<h1><a id=\"top\"></a>Icons</h1><div id=\"all-icons\" class=\"_pbs _pts _mtxl _mbxl flex flex-wrap\"><div class=\"u-supre-icon u-supre-icon--checked\"></div><div class=\"u-supre-icon u-supre-icon--partial-check\"></div><div class=\"u-supre-icon u-supre-icon--unchecked\"></div><div class=\"u-supre-icon u-supre-icon--add-create\"></div><div class=\"u-supre-icon u-supre-icon--library\"></div><div class=\"u-supre-icon u-supre-icon--user-menu-icon\"></div><div class=\"u-supre-icon u-supre-icon--arrow-right-stroke\"></div><div class=\"u-supre-icon u-supre-icon--arrow-down-stroke\"></div><div class=\"u-supre-icon u-supre-icon--arrow-right-filled\"></div><div class=\"u-supre-icon u-supre-icon--arrow-down-filled\"></div><div class=\"u-supre-icon u-supre-icon--more-menu-dots-only\"></div><div class=\"u-supre-icon u-supre-icon--more-menu-stoke\"></div><div class=\"u-supre-icon u-supre-icon--more-menu-fill\"></div><div class=\"u-supre-icon u-supre-icon--search\"></div><div class=\"u-supre-icon u-supre-icon--edit\"></div><div class=\"u-supre-icon u-supre-icon--snapshot\"></div><div class=\"u-supre-icon u-supre-icon--export\"></div><div class=\"u-supre-icon u-supre-icon--refresh-clear\"></div><div class=\"u-supre-icon u-supre-icon--filter\"></div><div class=\"u-supre-icon u-supre-icon--rem-filter\"></div><div class=\"u-supre-icon u-supre-icon--audience\"></div><div class=\"u-supre-icon u-supre-icon--dollar-sign\"></div><div class=\"u-supre-icon u-supre-icon--number-sign\"></div><div class=\"u-supre-icon u-supre-icon--delete-x\"></div><div class=\"u-supre-icon u-supre-icon--Auto\"></div><div class=\"u-supre-icon u-supre-icon--CPG-food\"></div><div class=\"u-supre-icon u-supre-icon--CPG-health-beauty\"></div><div class=\"u-supre-icon u-supre-icon--CPG-home\"></div><div class=\"u-supre-icon u-supre-icon--Consumer-electronics\"></div><div class=\"u-supre-icon u-supre-icon--ecommerce\"></div><div class=\"u-supre-icon u-supre-icon--entertainment\"></div><div class=\"u-supre-icon u-supre-icon--finance\"></div><div class=\"u-supre-icon u-supre-icon--insurance\"></div><div class=\"u-supre-icon u-supre-icon--pharma\"></div><div class=\"u-supre-icon u-supre-icon--QSR\"></div><div class=\"u-supre-icon u-supre-icon--retail\"></div><div class=\"u-supre-icon u-supre-icon--telco\"></div><div class=\"u-supre-icon u-supre-icon--travel\"></div><div class=\"u-supre-icon u-supre-icon--other-category\"></div><div class=\"u-supre-icon u-supre-icon--trash\"></div><div class=\"u-supre-icon u-supre-icon--sort-down\"></div><div class=\"u-supre-icon u-supre-icon--sort-up\"></div><div class=\"u-supre-icon u-supre-icon--logout\"></div><div class=\"u-supre-icon u-supre-icon--settings\"></div><div class=\"u-supre-icon u-supre-icon--clone\"></div><div class=\"u-supre-icon u-supre-icon--back-arrow\"></div><div class=\"u-supre-icon u-supre-icon--vennbox\"></div><div class=\"u-supre-icon u-supre-icon--venn\"></div><div class=\"u-supre-icon u-supre-icon--hide\"></div><div class=\"u-supre-icon u-supre-icon--exported\"></div><div class=\"u-supre-icon u-supre-icon--fail\"></div><div class=\"u-supre-icon u-supre-icon--ready-aud\"></div><div class=\"u-supre-icon u-supre-icon--static-loader\"></div></div><div id=\"all-icon-list\" class=\"_bt1 border-active-stroke flex flex-wrap _mrxl _ptl\">\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--checked\"></span>\n    &nbsp;\n    u-supre-icon--checked\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--partial-check\"></span>\n    &nbsp;\n    u-supre-icon--partial-check\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--unchecked\"></span>\n    &nbsp;\n    u-supre-icon--unchecked\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--add-create\"></span>\n    &nbsp;\n    u-supre-icon--add-create\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--library\"></span>\n    &nbsp;\n    u-supre-icon--library\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--user-menu-icon\"></span>\n    &nbsp;\n    u-supre-icon--user-menu-icon\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--arrow-right-stroke\"></span>\n    &nbsp;\n    u-supre-icon--arrow-right-stroke\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--arrow-down-stroke\"></span>\n    &nbsp;\n    u-supre-icon--arrow-down-stroke\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--arrow-right-filled\"></span>\n    &nbsp;\n    u-supre-icon--arrow-right-filled\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--arrow-down-filled\"></span>\n    &nbsp;\n    u-supre-icon--arrow-down-filled\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--more-menu-dots-only\"></span>\n    &nbsp;\n    u-supre-icon--more-menu-dots-only\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--more-menu-stoke\"></span>\n    &nbsp;\n    u-supre-icon--more-menu-stoke\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--more-menu-fill\"></span>\n    &nbsp;\n    u-supre-icon--more-menu-fill\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--search\"></span>\n    &nbsp;\n    u-supre-icon--search\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--edit\"></span>\n    &nbsp;\n    u-supre-icon--edit\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--snapshot\"></span>\n    &nbsp;\n    u-supre-icon--snapshot\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--export\"></span>\n    &nbsp;\n    u-supre-icon--export\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--refresh-clear\"></span>\n    &nbsp;\n    u-supre-icon--refresh-clear\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--filter\"></span>\n    &nbsp;\n    u-supre-icon--filter\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--rem-filter\"></span>\n    &nbsp;\n    u-supre-icon--rem-filter\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--audience\"></span>\n    &nbsp;\n    u-supre-icon--audience\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--dollar-sign\"></span>\n    &nbsp;\n    u-supre-icon--dollar-sign\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--number-sign\"></span>\n    &nbsp;\n    u-supre-icon--number-sign\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--delete-x\"></span>\n    &nbsp;\n    u-supre-icon--delete-x\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--Auto\"></span>\n    &nbsp;\n    u-supre-icon--Auto\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--CPG-food\"></span>\n    &nbsp;\n    u-supre-icon--CPG-food\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--CPG-health-beauty\"></span>\n    &nbsp;\n    u-supre-icon--CPG-health-beauty\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--CPG-home\"></span>\n    &nbsp;\n    u-supre-icon--CPG-home\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--Consumer-electronics\"></span>\n    &nbsp;\n    u-supre-icon--Consumer-electronics\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--ecommerce\"></span>\n    &nbsp;\n    u-supre-icon--ecommerce\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--entertainment\"></span>\n    &nbsp;\n    u-supre-icon--entertainment\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--finance\"></span>\n    &nbsp;\n    u-supre-icon--finance\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--insurance\"></span>\n    &nbsp;\n    u-supre-icon--insurance\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--pharma\"></span>\n    &nbsp;\n    u-supre-icon--pharma\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--QSR\"></span>\n    &nbsp;\n    u-supre-icon--QSR\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--retail\"></span>\n    &nbsp;\n    u-supre-icon--retail\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--telco\"></span>\n    &nbsp;\n    u-supre-icon--telco\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--travel\"></span>\n    &nbsp;\n    u-supre-icon--travel\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--other-category\"></span>\n    &nbsp;\n    u-supre-icon--other-category\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--trash\"></span>\n    &nbsp;\n    u-supre-icon--trash\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--sort-down\"></span>\n    &nbsp;\n    u-supre-icon--sort-down\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--sort-up\"></span>\n    &nbsp;\n    u-supre-icon--sort-up\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--logout\"></span>\n    &nbsp;\n    u-supre-icon--logout\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--settings\"></span>\n    &nbsp;\n    u-supre-icon--settings\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--clone\"></span>\n    &nbsp;\n    u-supre-icon--clone\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--back-arrow\"></span>\n    &nbsp;\n    u-supre-icon--back-arrow\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--vennbox\"></span>\n    &nbsp;\n    u-supre-icon--vennbox\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--venn\"></span>\n    &nbsp;\n    u-supre-icon--venn\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--hide\"></span>\n    &nbsp;\n    u-supre-icon--hide\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--exported\"></span>\n    &nbsp;\n    u-supre-icon--exported\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--fail\"></span>\n    &nbsp;\n    u-supre-icon--fail\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--ready-aud\"></span>\n    &nbsp;\n    u-supre-icon--ready-aud\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--static-loader\"></span>\n    &nbsp;\n    u-supre-icon--static-loader\n</div>\n</div>"
+module.exports = "<h1><a id=\"top\"></a>Icons</h1><div id=\"all-icons\" class=\"_pbs _pts _mtxl _mbxl flex flex-wrap\"><div class=\"u-supre-icon u-supre-icon--checked\"></div><div class=\"u-supre-icon u-supre-icon--partial-check\"></div><div class=\"u-supre-icon u-supre-icon--unchecked\"></div><div class=\"u-supre-icon u-supre-icon--add-create\"></div><div class=\"u-supre-icon u-supre-icon--library\"></div><div class=\"u-supre-icon u-supre-icon--user-menu-icon\"></div><div class=\"u-supre-icon u-supre-icon--arrow-right-stroke\"></div><div class=\"u-supre-icon u-supre-icon--arrow-down-stroke\"></div><div class=\"u-supre-icon u-supre-icon--arrow-right-filled\"></div><div class=\"u-supre-icon u-supre-icon--arrow-down-filled\"></div><div class=\"u-supre-icon u-supre-icon--more-menu-dots-only\"></div><div class=\"u-supre-icon u-supre-icon--more-menu-stoke\"></div><div class=\"u-supre-icon u-supre-icon--more-menu-fill\"></div><div class=\"u-supre-icon u-supre-icon--search\"></div><div class=\"u-supre-icon u-supre-icon--edit\"></div><div class=\"u-supre-icon u-supre-icon--snapshot\"></div><div class=\"u-supre-icon u-supre-icon--export\"></div><div class=\"u-supre-icon u-supre-icon--refresh-clear\"></div><div class=\"u-supre-icon u-supre-icon--filter\"></div><div class=\"u-supre-icon u-supre-icon--rem-filter\"></div><div class=\"u-supre-icon u-supre-icon--audience\"></div><div class=\"u-supre-icon u-supre-icon--dollar-sign\"></div><div class=\"u-supre-icon u-supre-icon--number-sign\"></div><div class=\"u-supre-icon u-supre-icon--delete-x\"></div><div class=\"u-supre-icon u-supre-icon--Auto\"></div><div class=\"u-supre-icon u-supre-icon--CPG-food\"></div><div class=\"u-supre-icon u-supre-icon--CPG-health-beauty\"></div><div class=\"u-supre-icon u-supre-icon--CPG-home\"></div><div class=\"u-supre-icon u-supre-icon--Consumer-electronics\"></div><div class=\"u-supre-icon u-supre-icon--ecommerce\"></div><div class=\"u-supre-icon u-supre-icon--entertainment\"></div><div class=\"u-supre-icon u-supre-icon--finance\"></div><div class=\"u-supre-icon u-supre-icon--insurance\"></div><div class=\"u-supre-icon u-supre-icon--pharma\"></div><div class=\"u-supre-icon u-supre-icon--QSR\"></div><div class=\"u-supre-icon u-supre-icon--retail\"></div><div class=\"u-supre-icon u-supre-icon--telco\"></div><div class=\"u-supre-icon u-supre-icon--travel\"></div><div class=\"u-supre-icon u-supre-icon--other-category\"></div><div class=\"u-supre-icon u-supre-icon--trash\"></div><div class=\"u-supre-icon u-supre-icon--sort-down\"></div><div class=\"u-supre-icon u-supre-icon--sort-up\"></div><div class=\"u-supre-icon u-supre-icon--logout\"></div><div class=\"u-supre-icon u-supre-icon--settings\"></div><div class=\"u-supre-icon u-supre-icon--clone\"></div><div class=\"u-supre-icon u-supre-icon--back-arrow\"></div><div class=\"u-supre-icon u-supre-icon--vennbox\"></div><div class=\"u-supre-icon u-supre-icon--venn\"></div><div class=\"u-supre-icon u-supre-icon--hide\"></div><div class=\"u-supre-icon u-supre-icon--exported\"></div><div class=\"u-supre-icon u-supre-icon--fail\"></div><div class=\"u-supre-icon u-supre-icon--ready-aud\"></div><div class=\"u-supre-icon u-supre-icon--static-loader\"></div><div class=\"u-supre-icon u-supre-icon--pivot\"></div><div class=\"u-supre-icon u-supre-icon--data\"></div></div><div id=\"all-icon-list\" class=\"_bt1 border-active-stroke flex flex-wrap _mrxl _ptl\">\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--checked\"></span>\n    &nbsp;\n    u-supre-icon--checked\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--partial-check\"></span>\n    &nbsp;\n    u-supre-icon--partial-check\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--unchecked\"></span>\n    &nbsp;\n    u-supre-icon--unchecked\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--add-create\"></span>\n    &nbsp;\n    u-supre-icon--add-create\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--library\"></span>\n    &nbsp;\n    u-supre-icon--library\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--user-menu-icon\"></span>\n    &nbsp;\n    u-supre-icon--user-menu-icon\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--arrow-right-stroke\"></span>\n    &nbsp;\n    u-supre-icon--arrow-right-stroke\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--arrow-down-stroke\"></span>\n    &nbsp;\n    u-supre-icon--arrow-down-stroke\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--arrow-right-filled\"></span>\n    &nbsp;\n    u-supre-icon--arrow-right-filled\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--arrow-down-filled\"></span>\n    &nbsp;\n    u-supre-icon--arrow-down-filled\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--more-menu-dots-only\"></span>\n    &nbsp;\n    u-supre-icon--more-menu-dots-only\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--more-menu-stoke\"></span>\n    &nbsp;\n    u-supre-icon--more-menu-stoke\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--more-menu-fill\"></span>\n    &nbsp;\n    u-supre-icon--more-menu-fill\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--search\"></span>\n    &nbsp;\n    u-supre-icon--search\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--edit\"></span>\n    &nbsp;\n    u-supre-icon--edit\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--snapshot\"></span>\n    &nbsp;\n    u-supre-icon--snapshot\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--export\"></span>\n    &nbsp;\n    u-supre-icon--export\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--refresh-clear\"></span>\n    &nbsp;\n    u-supre-icon--refresh-clear\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--filter\"></span>\n    &nbsp;\n    u-supre-icon--filter\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--rem-filter\"></span>\n    &nbsp;\n    u-supre-icon--rem-filter\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--audience\"></span>\n    &nbsp;\n    u-supre-icon--audience\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--dollar-sign\"></span>\n    &nbsp;\n    u-supre-icon--dollar-sign\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--number-sign\"></span>\n    &nbsp;\n    u-supre-icon--number-sign\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--delete-x\"></span>\n    &nbsp;\n    u-supre-icon--delete-x\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--Auto\"></span>\n    &nbsp;\n    u-supre-icon--Auto\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--CPG-food\"></span>\n    &nbsp;\n    u-supre-icon--CPG-food\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--CPG-health-beauty\"></span>\n    &nbsp;\n    u-supre-icon--CPG-health-beauty\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--CPG-home\"></span>\n    &nbsp;\n    u-supre-icon--CPG-home\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--Consumer-electronics\"></span>\n    &nbsp;\n    u-supre-icon--Consumer-electronics\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--ecommerce\"></span>\n    &nbsp;\n    u-supre-icon--ecommerce\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--entertainment\"></span>\n    &nbsp;\n    u-supre-icon--entertainment\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--finance\"></span>\n    &nbsp;\n    u-supre-icon--finance\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--insurance\"></span>\n    &nbsp;\n    u-supre-icon--insurance\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--pharma\"></span>\n    &nbsp;\n    u-supre-icon--pharma\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--QSR\"></span>\n    &nbsp;\n    u-supre-icon--QSR\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--retail\"></span>\n    &nbsp;\n    u-supre-icon--retail\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--telco\"></span>\n    &nbsp;\n    u-supre-icon--telco\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--travel\"></span>\n    &nbsp;\n    u-supre-icon--travel\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--other-category\"></span>\n    &nbsp;\n    u-supre-icon--other-category\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--trash\"></span>\n    &nbsp;\n    u-supre-icon--trash\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--sort-down\"></span>\n    &nbsp;\n    u-supre-icon--sort-down\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--sort-up\"></span>\n    &nbsp;\n    u-supre-icon--sort-up\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--logout\"></span>\n    &nbsp;\n    u-supre-icon--logout\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--settings\"></span>\n    &nbsp;\n    u-supre-icon--settings\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--clone\"></span>\n    &nbsp;\n    u-supre-icon--clone\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--back-arrow\"></span>\n    &nbsp;\n    u-supre-icon--back-arrow\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--vennbox\"></span>\n    &nbsp;\n    u-supre-icon--vennbox\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--venn\"></span>\n    &nbsp;\n    u-supre-icon--venn\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--hide\"></span>\n    &nbsp;\n    u-supre-icon--hide\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--exported\"></span>\n    &nbsp;\n    u-supre-icon--exported\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--fail\"></span>\n    &nbsp;\n    u-supre-icon--fail\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--ready-aud\"></span>\n    &nbsp;\n    u-supre-icon--ready-aud\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--static-loader\"></span>\n    &nbsp;\n    u-supre-icon--static-loader\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--pivot\"></span>\n    &nbsp;\n    u-supre-icon--pivot\n</div>\n\n<div class=\"_pbs _pts \">\n    <span class=\"u-supre-icon u-supre-icon--data\"></span>\n    &nbsp;\n    u-supre-icon--data\n</div>\n</div>"
 
 /***/ }),
 
