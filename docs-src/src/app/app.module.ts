@@ -26,6 +26,7 @@ import { ClearableInputModule } from 'suprematism-clearable-input';
 import { RangeInputModule } from 'suprematism-range-input';
 import { ToggleSwitchModule } from 'suprematism-toggle-switch';
 import { SmartTextModule } from 'suprematism-smart-text';
+import { BulletChartModule } from 'suprematism-bullet-chart';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
 import { DropdownSelectSectionComponent } from './sections/dropdown-select/dropdown-select.component';
@@ -37,6 +38,7 @@ import { TypographySectionComponent } from './sections/typography-section/typogr
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
 import { SmartTextSectionComponent } from './sections/smart-text/smart-text.component';
+import { BulletChartSectionComponent } from './sections/bullet-chart/bullet-chart.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,8 @@ import { SmartTextSectionComponent } from './sections/smart-text/smart-text.comp
     TypographySectionComponent,
     ModalSectionComponent,
     ProgressIndicatorSectionComponent,
-    SmartTextSectionComponent
+    SmartTextSectionComponent,
+    BulletChartSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +79,8 @@ import { SmartTextSectionComponent } from './sections/smart-text/smart-text.comp
     ClearableInputModule,
     RangeInputModule,
     ToggleSwitchModule,
-    SmartTextModule
+    SmartTextModule,
+    BulletChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
