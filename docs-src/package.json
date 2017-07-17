@@ -25,6 +25,7 @@
     "prismjs": "^1.6.0",
     "rxjs": "^5.0.1",
     "shave": "0.2.0",
+    "suprematism-bullet-chart": "github:cinbcuniversal/suprematism-bullet-chart",
     "suprematism-clearable-input": "github:cinbcuniversal/suprematism-clearable-input",
     "suprematism-dropdown-menu": "github:cinbcuniversal/suprematism-dropdown-menu",
     "suprematism-dropdown-select": "github:cinbcuniversal/suprematism-dropdown-select",

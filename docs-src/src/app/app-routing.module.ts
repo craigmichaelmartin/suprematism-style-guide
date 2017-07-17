@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-//components for routing
+// components for routing
 import { HomeSectionComponent } from './sections/home-section/home-section.component';
 import { ColorsSectionComponent } from './sections/colors-section/colors-section.component';
 import { ButtonsComponent } from './sections/buttons/buttons.component';
@@ -23,6 +23,7 @@ import { ModalSectionComponent } from './sections/modal-section/modal-section.co
 import { ToggleSwitchSectionComponent } from './sections/toggle-switch/toggle-switch.component';
 import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
 import { SmartTextSectionComponent } from './sections/smart-text/smart-text.component';
+import { BulletChartSectionComponent } from './sections/bullet-chart/bullet-chart.component';
 
 const routes: Routes = [
 
@@ -50,6 +51,7 @@ const routes: Routes = [
   { path: 'section/modal', component: ModalSectionComponent },
   { path: 'section/progress-indicator', component: ProgressIndicatorSectionComponent },
   { path: 'section/smart-text', component: SmartTextSectionComponent },
+  { path: 'section/bullet-chart', component: BulletChartSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },

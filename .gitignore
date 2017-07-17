@@ -1,3 +1,6 @@
 node_modules
 npm-debug.log
 *.swp
+
+# IDEs and editors
+/.idea
