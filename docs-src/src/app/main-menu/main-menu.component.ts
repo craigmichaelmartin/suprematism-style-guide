@@ -1,5 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import 'rxjs';
 
 
@@ -16,12 +16,12 @@ export class MainMenuComponent implements AfterViewInit {
   constructor(
     private router: Router
   ) {
-    
+
   }
 
   ngAfterViewInit() {
     this.router.events
-      .map(event => event.url)
+      .map(event => (event as NavigationEnd).url)
       .distinctUntilChanged()
       .subscribe((url: string) => this.setUrl = url);
   }

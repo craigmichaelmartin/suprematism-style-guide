@@ -7,15 +7,18 @@
   <code class="language-javascript">
   // install the repo
   npm install CINBCUniversal/suprematism-popover --save
-  
+
+  // add style dependency (.angular-cli.json)
+  includePaths: ["../node_modules/bootstrap-sass/assets/stylesheets/"]
+
   // add it to a module (app.module.ts)
-  import {{'&#123;'}} PopoverModule } from 'suprematism-popover';
+  import {{'&#123;'}} SuprePopoverModule } from 'suprematism-popover';
 
   @NgModule({{'&#123;'}}
     ...
     imports: [
       ...
-      PopoverModule
+      SuprePopoverModule
     ],
     ...
   })
@@ -99,7 +102,7 @@
 <a id="inline-dialog-placement"></a>
 <h5 class="_mtxl">Placement</h5>
 <div>
-  Popovers can be positioned on the : 
+  Popovers can be positioned on the :
   <button class="-action" [supreInlineDialog]="dialogInstanceTop">Top</button>
   <button class="-action" [supreInlineDialog]="dialogInstanceRight">Right</button>
   <button class="-action" [supreInlineDialog]="dialogInstanceBottom">Bottom</button>

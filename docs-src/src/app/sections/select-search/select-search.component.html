@@ -1,0 +1,196 @@
+<h1><a id="top"></a>Select Search</h1>
+
+
+<a id="select-search-install"></a>
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-select-search --save
+
+  // install dependencies
+  npm install ag-grid ag-grid-angular ag-grid-enterprise --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} SelectSearchModule } from 'suprematism-select-search';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      SelectSearchModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+<a id="select-search-simple"></a>
+<h5 class="_mtxl">This is a select search.</h5>
+<div class="example">
+  <supre-select-search [data]="data1"
+                       unselectedText="SELECT AN AUDIENCE"
+                       [filterFunc]="stringFilter"
+                       [displayFormat]="displayFormat1">
+  </supre-select-search>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-select-search [data]="data1"
+                         unselectedText="SELECT AN AUDIENCE"
+                         [filterFunc]="stringFilter"
+                         [displayFormat]="displayFormat1">
+    {{'&lt;'}}/supre-select-search>
+  </code>
+</pre>
+
+<a id="select-search-openWhileInputFocused-false"></a>
+<h5 class="_mtxl">This select seach will still close if the input is focused.</h5>
+<div class="example">
+  <supre-select-search [data]="data1"
+                       unselectedText="SELECT AN AUDIENCE"
+                       [filterFunc]="stringFilter"
+                       [displayFormat]="displayFormat1"
+                       [openWhileInputFocused]="false">
+  </supre-select-search>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    <{{'&lt;'}}supre-select-search [data]="data1"
+                         unselectedText="SELECT AN AUDIENCE"
+                         [filterFunc]="stringFilter"
+                         [displayFormat]="displayFormat1"
+                         [openWhileInputFocused]="false">
+    {{'&lt;'}}/supre-select-search>
+  </code>
+</pre>
+
+
+<a id="select-search-filter-on-id"></a>
+<h5 class="_mtxl">This select seach filters on id.</h5>
+<div class="example">
+  <supre-select-search [data]="data1"
+                       unselectedText="SELECT AN AUDIENCE"
+                       [filterFunc]="idFilter"
+                       [displayFormat]="displayFormat1">
+  </supre-select-search>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-select-search [data]="data1"
+                         unselectedText="SELECT AN AUDIENCE"
+                         [filterFunc]="idFilter"
+                         [displayFormat]="displayFormat1">
+    {{'&lt;'}}/supre-select-search>
+  </code>
+</pre>
+
+
+<a id="select-search-custom-placeholder"></a>
+<h5 class="_mtxl">This select seach has a custom placeholder.</h5>
+<div class="example">
+  <supre-select-search [data]="data1"
+                       unselectedText="SELECT AN AUDIENCE"
+                       [filterFunc]="stringFilter"
+                       placeholder="Filter by name"
+                       [displayFormat]="displayFormat1">
+  </supre-select-search>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-select-search [data]="data1"
+                         unselectedText="SELECT AN AUDIENCE"
+                         [filterFunc]="stringFilter"
+                         placeholder="Filter by name"
+                         [displayFormat]="displayFormat1">
+    {{'&lt;'}}/supre-select-search>
+  </code>
+</pre>
+
+
+<a id="select-search-long-searchDebounce"></a>
+<h5 class="_mtxl">This select seach has a longer searchDebounce.</h5>
+<div class="example">
+  <supre-select-search [data]="data1"
+                       unselectedText="SELECT AN AUDIENCE"
+                       [filterFunc]="stringFilter"
+                       searchDebounce=2000
+                       [displayFormat]="displayFormat1">
+  </supre-select-search>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-select-search [data]="data1"
+                         unselectedText="SELECT AN AUDIENCE"
+                         [filterFunc]="stringFilter"
+                         searchDebounce=2000
+                         [displayFormat]="displayFormat1">
+    {{'&lt;'}}/supre-select-search>
+  </code>
+</pre>
+
+
+<a id="select-search-short-searchDebounce"></a>
+<h5 class="_mtxl">This select seach has a shorter searchDebounce.</h5>
+<div class="example">
+  <supre-select-search [data]="data1"
+                       unselectedText="SELECT AN AUDIENCE"
+                       [filterFunc]="stringFilter"
+                       searchDebounce=10
+                       [displayFormat]="displayFormat1">
+  </supre-select-search>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-select-search [data]="data1"
+                         unselectedText="SELECT AN AUDIENCE"
+                         [filterFunc]="stringFilter"
+                         searchDebounce=10
+                         [displayFormat]="displayFormat1">
+    {{'&lt;'}}/supre-select-search>
+  </code>
+</pre>
+
+
+<a id="select-search-autoFocusOnInput-false"></a>
+<h5 class="_mtxl">This select seach doesn't automatically focus on the search input.</h5>
+<div class="example">
+  <supre-select-search [data]="data1"
+                       unselectedText="SELECT AN AUDIENCE"
+                       [filterFunc]="stringFilter"
+                       [autoFocusOnInput]="false"
+                       [displayFormat]="displayFormat1">
+  </supre-select-search>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-select-search [data]="data1"
+                         unselectedText="SELECT AN AUDIENCE"
+                         [filterFunc]="stringFilter"
+                         [autoFocusOnInput]="false"
+                         [displayFormat]="displayFormat1">
+    {{'&lt;'}}/supre-select-search>
+  </code>
+</pre>
+
+
+<a id="select-search-item-selected"></a>
+<h5 class="_mtxl">This select seach has an inital selection.</h5>
+<div class="example">
+  <supre-select-search [data]="data1"
+                       [selectedDatum]="data1[0]"
+                       unselectedText="SELECT AN AUDIENCE"
+                       [filterFunc]="stringFilter"
+                       [displayFormat]="displayFormat1">
+  </supre-select-search>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-select-search [data]="data1"
+                         [selectedDatum]="data1[0]"
+                         unselectedText="SELECT AN AUDIENCE"
+                         [filterFunc]="stringFilter"
+                         [displayFormat]="displayFormat1">
+    {{'&lt;'}}/supre-select-search>
+  </code>
+</pre>

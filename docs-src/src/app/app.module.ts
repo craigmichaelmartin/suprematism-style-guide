@@ -25,8 +25,10 @@ import { DropdownSelectModule } from 'suprematism-dropdown-select';
 import { ClearableInputModule } from 'suprematism-clearable-input';
 import { RangeInputModule } from 'suprematism-range-input';
 import { ToggleSwitchModule } from 'suprematism-toggle-switch';
-import { SmartTextModule } from 'suprematism-smart-text';
 import { BulletChartModule } from 'suprematism-bullet-chart';
+import { TruncateTextModule } from 'suprematism-truncate-text';
+import { SelectSearchModule } from 'suprematism-select-search';
+import { MultiSelectSearchModule } from 'suprematism-multi-select-search';
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
 import { DropdownSelectSectionComponent } from './sections/dropdown-select/dropdown-select.component';
@@ -37,8 +39,10 @@ import { ToggleSwitchSectionComponent } from './sections/toggle-switch/toggle-sw
 import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
-import { SmartTextSectionComponent } from './sections/smart-text/smart-text.component';
 import { BulletChartSectionComponent } from './sections/bullet-chart/bullet-chart.component';
+import { TruncateTextSectionComponent } from './sections/truncate-text/truncate-text.component';
+import { SelectSearchSectionComponent } from './sections/select-search/select-search.component';
+import { MultiSelectSearchSectionComponent } from './sections/multi-select-search/multi-select-search.component';
 
 @NgModule({
   declarations: [
@@ -64,8 +68,10 @@ import { BulletChartSectionComponent } from './sections/bullet-chart/bullet-char
     TypographySectionComponent,
     ModalSectionComponent,
     ProgressIndicatorSectionComponent,
-    SmartTextSectionComponent,
-    BulletChartSectionComponent
+    BulletChartSectionComponent,
+    TruncateTextSectionComponent,
+    SelectSearchSectionComponent,
+    MultiSelectSearchSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -76,11 +82,12 @@ import { BulletChartSectionComponent } from './sections/bullet-chart/bullet-char
     ModalModule,
     DropdownMenuModule,
     DropdownSelectModule,
-    ClearableInputModule,
     RangeInputModule,
     ToggleSwitchModule,
-    SmartTextModule,
-    BulletChartModule
+    BulletChartModule,
+    TruncateTextModule,
+    SelectSearchModule,
+    MultiSelectSearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
