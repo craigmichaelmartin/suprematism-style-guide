@@ -1,0 +1,85 @@
+<h1><a id="top"></a>Truncate Text</h1>
+
+
+<a id="truncate-text-install"></a>
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-truncate-text --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} TruncateTextModule } from 'suprematism-truncate-text';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      TruncateTextModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+<a id="truncate-text-untruncated"></a>
+<h5 class="_mtxl">Untruncated Text</h5>
+<div class="example">
+  <supre-truncate-text [maxLines]="2" [text]="'short text'">
+  </supre-truncate-text>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-truncate-text [maxLines]="2" [text]="'short text'">{{'&lt;'}}/supre-truncate-text>
+  </code>
+</pre>
+<a id="truncate-text-one-line"></a>
+<h5 class="_mtxl">Truncate at 1 line.</h5>
+<div class="example">
+  <supre-truncate-text [maxLines]="1" [text]="longText"></supre-truncate-text>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-truncate-text [maxLines]="1" [text]="longText">{{'&lt;'}}/supre-truncate-text>
+  </code>
+</pre>
+<a id="truncate-text-two-lines"></a>
+<h5 class="_mtxl">Truncate at 2 lines.</h5>
+<div class="example">
+  <supre-truncate-text [maxLines]="2" [text]="longText"></supre-truncate-text>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-truncate-text [maxLines]="2" [text]="longText">{{'&lt;'}}/supre-truncate-text>
+  </code>
+</pre>
+<a id="truncate-text-five-lines"></a>
+<h5 class="_mtxl">Truncate at 5 lines.</h5>
+<div class="example">
+  <supre-truncate-text [maxLines]="5" [text]="longText"></supre-truncate-text>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-truncate-text [maxLines]="5" [text]="longText">{{'&lt;'}}/supre-truncate-text>
+  </code>
+</pre>
+<a id="truncate-text-popover-right"></a>
+<h5 class="_mtxl">Popover right.</h5>
+<div class="example">
+  <supre-truncate-text [maxLines]="2" [text]="longText" [popoverPlacement]="'right'"></supre-truncate-text>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-truncate-text [maxLines]="2" [text]="longText" [popoverPlacement]="'right'">{{'&lt;'}}/supre-truncate-text>
+  </code>
+</pre>
+<a id="truncate-text-combined"></a>
+<h5 class="_mtxl">Truncated to 2 lines, popover right, and styled.</h5>
+<div class="example">
+  <supre-truncate-text [maxLines]="2" [text]="longText" [popoverPlacement]="'top'"></supre-truncate-text>
+</div>
+<pre class="code-block">
+  <code class="language-markup">
+    {{'&lt;'}}supre-truncate-text [maxLines]="2" [text]="longText" [popoverPlacement]="'top'">{{'&lt;'}}/supre-truncate-text>
+  </code>
+</pre>

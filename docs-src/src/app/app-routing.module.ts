@@ -21,9 +21,11 @@ import { DropdownMenuSectionComponent } from './sections/dropdown-menu/dropdown-
 import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 import { ToggleSwitchSectionComponent } from './sections/toggle-switch/toggle-switch.component';
-import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
-import { SmartTextSectionComponent } from './sections/smart-text/smart-text.component';
+import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component'
 import { BulletChartSectionComponent } from './sections/bullet-chart/bullet-chart.component';
+import { TruncateTextSectionComponent } from './sections/truncate-text/truncate-text.component';
+import { SelectSearchSectionComponent } from './sections/select-search/select-search.component';
+import { MultiSelectSearchSectionComponent } from './sections/multi-select-search/multi-select-search.component';
 
 const routes: Routes = [
 
@@ -50,8 +52,10 @@ const routes: Routes = [
   { path: 'section/dropdown-menu', component: DropdownMenuSectionComponent },
   { path: 'section/modal', component: ModalSectionComponent },
   { path: 'section/progress-indicator', component: ProgressIndicatorSectionComponent },
-  { path: 'section/smart-text', component: SmartTextSectionComponent },
   { path: 'section/bullet-chart', component: BulletChartSectionComponent },
+  { path: 'section/truncate-text', component: TruncateTextSectionComponent },
+  { path: 'section/select-search', component: SelectSearchSectionComponent },
+  { path: 'section/multi-select-search', component: MultiSelectSearchSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },

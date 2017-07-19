@@ -7,15 +7,15 @@
   <code class="language-javascript">
   // install the repo
   npm install CINBCUniversal/suprematism-popover --save
-  
+
   // add it to a module (app.module.ts)
-  import {{'&#123;'}} PopoverModule } from 'suprematism-popover';
+  import {{'&#123;'}} SuprePopoverModule } from 'suprematism-popover';
 
   @NgModule({{'&#123;'}}
     ...
     imports: [
       ...
-      PopoverModule
+      SuprePopoverModule
     ],
     ...
   })
@@ -50,32 +50,32 @@
 <a id="tooltips-title-with-icon-and-description"></a>
 <h5 class="_mtxl">Title with a Description Tooltip</h5>
 <div>
-  Some text to<strong 
-    class="color-aqua" 
-    supreTooltip="Title Goes Here" 
+  Some text to<strong
+    class="color-aqua"
+    supreTooltip="Title Goes Here"
     icon="u-supre-icon--QSR"
     content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit id nunc blandit varius. Quisque malesuada nunc enim, in feugiat dolor porta in.">
     test
-  </strong>with. 
-  And some more <strong 
-    class="color-aqua" 
-    supreTooltip="Title Goes Here" 
+  </strong>with.
+  And some more <strong
+    class="color-aqua"
+    supreTooltip="Title Goes Here"
     content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit id nunc blandit varius. Quisque malesuada nunc enim, in feugiat dolor porta in.">
     text
   </strong>to test with.
 </div>
 <pre class="code-block">
   <code class="language-markup">
-  Some text to{{'&lt;'}}strong 
-    class="color-aqua" 
-    supreTooltip="Title Goes Here" 
+  Some text to{{'&lt;'}}strong
+    class="color-aqua"
+    supreTooltip="Title Goes Here"
     icon="u-supre-icon--QSR"
     content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit id nunc blandit varius. Quisque malesuada nunc enim, in feugiat dolor porta in.">
     test
-  {{'&lt;'}}/strong>with. 
-  And some more {{'&lt;'}}strong 
-    class="color-aqua" 
-    supreTooltip="Title Goes Here" 
+  {{'&lt;'}}/strong>with.
+  And some more {{'&lt;'}}strong
+    class="color-aqua"
+    supreTooltip="Title Goes Here"
     content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit id nunc blandit varius. Quisque malesuada nunc enim, in feugiat dolor porta in.">
     text
   {{'&lt;'}}/strong>to test with.
@@ -86,10 +86,10 @@
 <a id="tooltips-placement"></a>
 <h5 class="_mtxl">Placement</h5>
 <div>
-  Popovers can be positioned on the: 
-  <strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="top"> top </strong>, 
-  <strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="right"> right </strong>, 
-  <strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="bottom"> bottom </strong>, and 
+  Popovers can be positioned on the:
+  <strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="top"> top </strong>,
+  <strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="right"> right </strong>,
+  <strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="bottom"> bottom </strong>, and
   <strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="left"> left </strong>.
 </div>
 <pre class="code-block">
@@ -97,10 +97,10 @@
   {{'&lt;'}}!--
     Valid settings are: "top", "bottom", "left", "right", "auto", "auto top", "auto bottom", "auto left", "auto right"
   -->
-  Popovers can be positioned on the: 
-  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="top"> top {{'&lt;'}}/strong>, 
-  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="right"> right {{'&lt;'}}/strong>, 
-  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="bottom"> bottom {{'&lt;'}}/strong>, and 
+  Popovers can be positioned on the:
+  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="top"> top {{'&lt;'}}/strong>,
+  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="right"> right {{'&lt;'}}/strong>,
+  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="bottom"> bottom {{'&lt;'}}/strong>, and
   {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here" popoverPlacement="left"> left {{'&lt;'}}/strong>
   </code>
 </pre>
@@ -109,14 +109,14 @@
 <a id="tooltips-disabled"></a>
 <h5 class="_mtxl">Disable</h5>
 <div>
-  Popovers can be disabled/enabled: 
-  <strong class="color-aqua" [disabled]="false" supreTooltip="Title Goes Here Enabled"> Enabled</strong>, 
+  Popovers can be disabled/enabled:
+  <strong class="color-aqua" [disabled]="false" supreTooltip="Title Goes Here Enabled"> Enabled</strong>,
   <strong class="color-aqua" [disabled]="true" supreTooltip="Title Goes Here Disabled"> Disabled</strong>.
 </div>
 <pre class="code-block">
   <code class="language-markup">
   {{'&lt;'}}!-- disabled is optional, it defaults to 'false' -->
-  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here Enabled"> Enabled {{'&lt;'}}/strong>, 
+  {{'&lt;'}}strong class="color-aqua" supreTooltip="Title Goes Here Enabled"> Enabled {{'&lt;'}}/strong>,
   {{'&lt;'}}strong class="color-aqua" [disabled]="true" supreTooltip="Title Goes Here Disabled"> Disabled {{'&lt;'}}/strong>.
   </code>
 </pre>
