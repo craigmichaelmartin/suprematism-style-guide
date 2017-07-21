@@ -29,6 +29,8 @@ import { BulletChartModule } from 'suprematism-bullet-chart';
 import { TruncateTextModule } from 'suprematism-truncate-text';
 import { SelectSearchModule } from 'suprematism-select-search';
 import { MultiSelectSearchModule } from 'suprematism-multi-select-search';
+import { BadgeModule } from 'suprematism-badge';
+
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
 import { DropdownSelectSectionComponent } from './sections/dropdown-select/dropdown-select.component';
@@ -43,6 +45,7 @@ import { BulletChartSectionComponent } from './sections/bullet-chart/bullet-char
 import { TruncateTextSectionComponent } from './sections/truncate-text/truncate-text.component';
 import { SelectSearchSectionComponent } from './sections/select-search/select-search.component';
 import { MultiSelectSearchSectionComponent } from './sections/multi-select-search/multi-select-search.component';
+import { BadgeSectionComponent } from './sections/badge/badge.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +74,8 @@ import { MultiSelectSearchSectionComponent } from './sections/multi-select-searc
     BulletChartSectionComponent,
     TruncateTextSectionComponent,
     SelectSearchSectionComponent,
-    MultiSelectSearchSectionComponent
+    MultiSelectSearchSectionComponent,
+    BadgeSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +91,8 @@ import { MultiSelectSearchSectionComponent } from './sections/multi-select-searc
     BulletChartModule,
     TruncateTextModule,
     SelectSearchModule,
-    MultiSelectSearchModule
+    MultiSelectSearchModule,
+    BadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

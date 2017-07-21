@@ -21,11 +21,12 @@ import { DropdownMenuSectionComponent } from './sections/dropdown-menu/dropdown-
 import { TypographySectionComponent } from './sections/typography-section/typography-section.component';
 import { ModalSectionComponent } from './sections/modal-section/modal-section.component';
 import { ToggleSwitchSectionComponent } from './sections/toggle-switch/toggle-switch.component';
-import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component'
+import { ProgressIndicatorSectionComponent } from './sections/progress-indicator-section/progress-indicator-section.component';
 import { BulletChartSectionComponent } from './sections/bullet-chart/bullet-chart.component';
 import { TruncateTextSectionComponent } from './sections/truncate-text/truncate-text.component';
 import { SelectSearchSectionComponent } from './sections/select-search/select-search.component';
 import { MultiSelectSearchSectionComponent } from './sections/multi-select-search/multi-select-search.component';
+import { BadgeSectionComponent } from './sections/badge/badge.component';
 
 const routes: Routes = [
 
@@ -56,6 +57,7 @@ const routes: Routes = [
   { path: 'section/truncate-text', component: TruncateTextSectionComponent },
   { path: 'section/select-search', component: SelectSearchSectionComponent },
   { path: 'section/multi-select-search', component: MultiSelectSearchSectionComponent },
+  { path: 'section/badge', component: BadgeSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },

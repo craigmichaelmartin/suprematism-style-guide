@@ -87,7 +87,7 @@ __webpack_require__("../../../../script-loader/addScript.js")(__webpack_require_
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("../../../../script-loader/index.js!../../../../prismjs/prism.js");
@@ -99,5 +99,5 @@ module.exports = __webpack_require__("../../../../script-loader/index.js!../../.
 
 /***/ })
 
-},[3]);
+},[2]);
 //# sourceMappingURL=scripts.bundle.js.map
