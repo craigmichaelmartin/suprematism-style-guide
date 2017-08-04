@@ -1,15 +1,15 @@
 webpackJsonp([1],{
 
-/***/ "../../../../../src lazy recursive":
+/***/ "../../../../../src async recursive":
 /***/ (function(module, exports) {
 
-function webpackEmptyAsyncContext(req) {
-	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
 }
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "../../../../../src lazy recursive";
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = "../../../../../src async recursive";
 
 /***/ }),
 
@@ -17,7 +17,6 @@ webpackEmptyAsyncContext.id = "../../../../../src lazy recursive";
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sections_home_section_home_section_component__ = __webpack_require__("../../../../../src/app/sections/home-section/home-section.component.ts");
@@ -45,6 +44,8 @@ webpackEmptyAsyncContext.id = "../../../../../src lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__sections_select_search_select_search_component__ = __webpack_require__("../../../../../src/app/sections/select-search/select-search.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__sections_multi_select_search_multi_select_search_component__ = __webpack_require__("../../../../../src/app/sections/multi-select-search/multi-select-search.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__sections_badge_badge_component__ = __webpack_require__("../../../../../src/app/sections/badge/badge.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__sections_donut_chart_donut_chart_component__ = __webpack_require__("../../../../../src/app/sections/donut-chart/donut-chart.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -54,6 +55,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 // components for routing
+
 
 
 
@@ -105,6 +107,7 @@ var routes = [
     { path: 'section/select-search', component: __WEBPACK_IMPORTED_MODULE_24__sections_select_search_select_search_component__["a" /* SelectSearchSectionComponent */] },
     { path: 'section/multi-select-search', component: __WEBPACK_IMPORTED_MODULE_25__sections_multi_select_search_multi_select_search_component__["a" /* MultiSelectSearchSectionComponent */] },
     { path: 'section/badge', component: __WEBPACK_IMPORTED_MODULE_26__sections_badge_badge_component__["a" /* BadgeSectionComponent */] },
+    { path: 'section/donut-chart', component: __WEBPACK_IMPORTED_MODULE_27__sections_donut_chart_donut_chart_component__["a" /* DonutChartSectionComponent */] },
     // Utilities
     { path: 'section/utilities/borders', component: __WEBPACK_IMPORTED_MODULE_8__sections_utilities_borders_borders_component__["a" /* BordersComponent */] },
     { path: 'section/utilities/spacing', component: __WEBPACK_IMPORTED_MODULE_9__sections_utilities_spacing_spacing_component__["a" /* SpacingComponent */] },
@@ -117,9 +120,9 @@ var AppRoutingModule = (function () {
     return AppRoutingModule;
 }());
 AppRoutingModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */].forRoot(routes)],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */]],
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(routes)],
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]],
         providers: []
     })
 ], AppRoutingModule);
@@ -157,8 +160,8 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -175,7 +178,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.scss")]
@@ -190,7 +193,6 @@ AppComponent = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
@@ -219,21 +221,24 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_suprematism_select_search__ = __webpack_require__("../../../../suprematism-select-search/src/index.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_suprematism_multi_select_search__ = __webpack_require__("../../../../suprematism-multi-select-search/src/index.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27_suprematism_badge__ = __webpack_require__("../../../../suprematism-badge/src/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__sections_tooltip_tooltip_component__ = __webpack_require__("../../../../../src/app/sections/tooltip/tooltip.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__sections_inline_dialog_inline_dialog_component__ = __webpack_require__("../../../../../src/app/sections/inline-dialog/inline-dialog.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__sections_dropdown_select_dropdown_select_component__ = __webpack_require__("../../../../../src/app/sections/dropdown-select/dropdown-select.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__sections_clearable_input_clearable_input_component__ = __webpack_require__("../../../../../src/app/sections/clearable-input/clearable-input.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__sections_range_input_range_input_component__ = __webpack_require__("../../../../../src/app/sections/range-input/range-input.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__sections_dropdown_menu_dropdown_menu_component__ = __webpack_require__("../../../../../src/app/sections/dropdown-menu/dropdown-menu.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__sections_toggle_switch_toggle_switch_component__ = __webpack_require__("../../../../../src/app/sections/toggle-switch/toggle-switch.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__sections_typography_section_typography_section_component__ = __webpack_require__("../../../../../src/app/sections/typography-section/typography-section.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__sections_modal_section_modal_section_component__ = __webpack_require__("../../../../../src/app/sections/modal-section/modal-section.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__sections_progress_indicator_section_progress_indicator_section_component__ = __webpack_require__("../../../../../src/app/sections/progress-indicator-section/progress-indicator-section.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__sections_bullet_chart_bullet_chart_component__ = __webpack_require__("../../../../../src/app/sections/bullet-chart/bullet-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__sections_truncate_text_truncate_text_component__ = __webpack_require__("../../../../../src/app/sections/truncate-text/truncate-text.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__sections_select_search_select_search_component__ = __webpack_require__("../../../../../src/app/sections/select-search/select-search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__sections_multi_select_search_multi_select_search_component__ = __webpack_require__("../../../../../src/app/sections/multi-select-search/multi-select-search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__sections_badge_badge_component__ = __webpack_require__("../../../../../src/app/sections/badge/badge.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28_suprematism_donut_chart__ = __webpack_require__("../../../../suprematism-donut-chart/src/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__sections_tooltip_tooltip_component__ = __webpack_require__("../../../../../src/app/sections/tooltip/tooltip.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__sections_inline_dialog_inline_dialog_component__ = __webpack_require__("../../../../../src/app/sections/inline-dialog/inline-dialog.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__sections_dropdown_select_dropdown_select_component__ = __webpack_require__("../../../../../src/app/sections/dropdown-select/dropdown-select.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__sections_clearable_input_clearable_input_component__ = __webpack_require__("../../../../../src/app/sections/clearable-input/clearable-input.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__sections_range_input_range_input_component__ = __webpack_require__("../../../../../src/app/sections/range-input/range-input.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__sections_dropdown_menu_dropdown_menu_component__ = __webpack_require__("../../../../../src/app/sections/dropdown-menu/dropdown-menu.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__sections_toggle_switch_toggle_switch_component__ = __webpack_require__("../../../../../src/app/sections/toggle-switch/toggle-switch.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__sections_typography_section_typography_section_component__ = __webpack_require__("../../../../../src/app/sections/typography-section/typography-section.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__sections_modal_section_modal_section_component__ = __webpack_require__("../../../../../src/app/sections/modal-section/modal-section.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__sections_progress_indicator_section_progress_indicator_section_component__ = __webpack_require__("../../../../../src/app/sections/progress-indicator-section/progress-indicator-section.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__sections_bullet_chart_bullet_chart_component__ = __webpack_require__("../../../../../src/app/sections/bullet-chart/bullet-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__sections_truncate_text_truncate_text_component__ = __webpack_require__("../../../../../src/app/sections/truncate-text/truncate-text.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__sections_select_search_select_search_component__ = __webpack_require__("../../../../../src/app/sections/select-search/select-search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__sections_multi_select_search_multi_select_search_component__ = __webpack_require__("../../../../../src/app/sections/multi-select-search/multi-select-search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__sections_badge_badge_component__ = __webpack_require__("../../../../../src/app/sections/badge/badge.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__sections_donut_chart_donut_chart_component__ = __webpack_require__("../../../../../src/app/sections/donut-chart/donut-chart.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -284,13 +289,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
     return AppModule;
 }());
 AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_6__main_menu_main_menu_component__["a" /* MainMenuComponent */],
@@ -304,21 +311,22 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_14__sections_utilities_spacing_spacing_component__["a" /* SpacingComponent */],
             __WEBPACK_IMPORTED_MODULE_15__sections_utilities_z_index_z_index_component__["a" /* ZIndexComponent */],
             __WEBPACK_IMPORTED_MODULE_16__sections_utilities_flex_box_flex_box_component__["a" /* FlexBoxComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__sections_tooltip_tooltip_component__["a" /* TooltipComponent */],
-            __WEBPACK_IMPORTED_MODULE_29__sections_inline_dialog_inline_dialog_component__["a" /* InlineDialogSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_30__sections_dropdown_select_dropdown_select_component__["a" /* DropdownSelectSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_31__sections_clearable_input_clearable_input_component__["a" /* ClearableInputSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_32__sections_range_input_range_input_component__["a" /* RangeInputSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_33__sections_dropdown_menu_dropdown_menu_component__["a" /* DropdownMenuSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_34__sections_toggle_switch_toggle_switch_component__["a" /* ToggleSwitchSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_35__sections_typography_section_typography_section_component__["a" /* TypographySectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_36__sections_modal_section_modal_section_component__["a" /* ModalSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_37__sections_progress_indicator_section_progress_indicator_section_component__["a" /* ProgressIndicatorSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_38__sections_bullet_chart_bullet_chart_component__["a" /* BulletChartSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_39__sections_truncate_text_truncate_text_component__["a" /* TruncateTextSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_40__sections_select_search_select_search_component__["a" /* SelectSearchSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_41__sections_multi_select_search_multi_select_search_component__["a" /* MultiSelectSearchSectionComponent */],
-            __WEBPACK_IMPORTED_MODULE_42__sections_badge_badge_component__["a" /* BadgeSectionComponent */]
+            __WEBPACK_IMPORTED_MODULE_29__sections_tooltip_tooltip_component__["a" /* TooltipComponent */],
+            __WEBPACK_IMPORTED_MODULE_30__sections_inline_dialog_inline_dialog_component__["a" /* InlineDialogSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_31__sections_dropdown_select_dropdown_select_component__["a" /* DropdownSelectSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_32__sections_clearable_input_clearable_input_component__["a" /* ClearableInputSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_33__sections_range_input_range_input_component__["a" /* RangeInputSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_34__sections_dropdown_menu_dropdown_menu_component__["a" /* DropdownMenuSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_35__sections_toggle_switch_toggle_switch_component__["a" /* ToggleSwitchSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_36__sections_typography_section_typography_section_component__["a" /* TypographySectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_37__sections_modal_section_modal_section_component__["a" /* ModalSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_38__sections_progress_indicator_section_progress_indicator_section_component__["a" /* ProgressIndicatorSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_39__sections_bullet_chart_bullet_chart_component__["a" /* BulletChartSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_40__sections_truncate_text_truncate_text_component__["a" /* TruncateTextSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_41__sections_select_search_select_search_component__["a" /* SelectSearchSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_42__sections_multi_select_search_multi_select_search_component__["a" /* MultiSelectSearchSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_43__sections_badge_badge_component__["a" /* BadgeSectionComponent */],
+            __WEBPACK_IMPORTED_MODULE_44__sections_donut_chart_donut_chart_component__["a" /* DonutChartSectionComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -335,7 +343,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_24_suprematism_truncate_text__["a" /* TruncateTextModule */],
             __WEBPACK_IMPORTED_MODULE_25_suprematism_select_search__["a" /* SelectSearchModule */],
             __WEBPACK_IMPORTED_MODULE_26_suprematism_multi_select_search__["a" /* MultiSelectSearchModule */],
-            __WEBPACK_IMPORTED_MODULE_27_suprematism_badge__["BadgeModule"]
+            __WEBPACK_IMPORTED_MODULE_27_suprematism_badge__["BadgeModule"],
+            __WEBPACK_IMPORTED_MODULE_28_suprematism_donut_chart__["a" /* DonutChartModule */]
         ],
         providers: [],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
@@ -349,7 +358,7 @@ AppModule = __decorate([
 /***/ "../../../../../src/app/main-menu/main-menu.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"_ptxs\">\n  <li>\n    <h5 class=\"_mt0 _pts _pbxs\">\n      <a [routerLink]=\"['']\">Main Page</a>\n    </h5>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0\">Styles / Esthetics</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>\n        <a [routerLink]=\"['section/colors']\" fragment=\"top\">Colors List</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/colors'\">\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-installation\">Installation</a></li>\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-list\">List of Colors</a></li>\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-classes\">Color Classes</a></li>\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-placeholders\">Color Place Holders</a></li>\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-list-mixins\">Color List &amp; Mixins</a></li>\n        </ul>\n      </li>\n      <li>Colors Guide</li>\n      <li>Visual Rules &amp; Considerations</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Typography</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>\n        <a [routerLink]=\"['section/typography']\" fragment=\"top\">Typography</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/typography'\">\n          <li><a [routerLink]=\"['section/typography']\" fragment=\"type-classes\">Classes</a></li>\n          <li><a [routerLink]=\"['section/typography']\" fragment=\"type-variables\">Size Variables</a></li>\n          <li><a [routerLink]=\"['section/typography']\" fragment=\"type-placeholders\">Placeholders</a></li>\n          <li><a [routerLink]=\"['section/typography']\" fragment=\"type-samples\">Samples</a></li>\n        </ul>\n      </li>\n      <li><a [routerLink]=\"['section/icons']\" fragment=\"top\">Icons</a></li>\n      <li>Lists</li>\n      <li>Tabular Data (Tables)</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Inputs</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>Text, Numbers, etc</li>\n      <li>Select</li>\n      <li>Textarea</li>\n      <li>Radio Groups</li>\n      <li>\n        <a [routerLink]=\"['section/checkboxes']\" fragment=\"top\">Checkboxes</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/checkboxes'\">\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-inline-active\">Inline &amp; Active</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-stacked-active\">Stacked &amp; Active</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-stacked-active-columns\">Stacked, Multi-column, &amp; Active</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-disabled\">Disabled</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-select-all-active\">Select All &amp; Active</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-select-all-disabled\">Select All &amp; Disabled</a></li>\n        </ul>\n      </li>\n      <li>Forms</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Page Layouts</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>Grid System</li>\n      <li>Layouts</li>\n      <li>Breakpoints</li>\n      <li>Scrolling / Scrollbars</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Components</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>Data Grid</li>\n      <li>\n        <a [routerLink]=\"['section/tooltips']\" fragment=\"top\">Tooltips</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/tooltips'\">\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-install\">Installation</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-title-only\">Title Only</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-title-with-icon\">Title with Icon</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-title-with-icon-and-description\">Title with a Description</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-placement\">Placement</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-disabled\">Disable/Enable</a></li>\n        </ul>\n      </li>\n      <li>\n        <a [routerLink]=\"['section/inline-dialogs']\" fragment=\"top\">Inline Dialog</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/inline-dialogs'\">\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-install\">Installation</a></li>\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-simple-example\">Simple Example</a></li>\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-with-tooltip\">Combined with a Tooltip</a></li>\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-placement\">Placement</a></li>\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-disabled\">Disable/Enable</a></li>\n        </ul>\n      </li>\n      <li>\n        <a [routerLink]=\"['section/modal']\" fragment=\"top\">Modal</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/modal'\">\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-install\">Installation</a></li>\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-simple-example\">Simple Example</a></li>\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-sizing\">Sizing</a></li>\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-without-close\">Without Close</a></li>\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-api\">API</a></li>\n        </ul>\n      </li>\n      <li>Navigation</li>\n      <li>Navigation Tiles</li>\n      <li>Dialogs / User Feedback</li>\n      <li>\n        <a [routerLink]=\"['section/dropdowns']\" fragment=\"top\">Dropdown Menus</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/dropdowns'\">\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-no-icons\">With no Icons</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-icons\">With Icons</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropup-no-icons\">Dropup</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-disabled\">Disabled</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-width\">Apply a Width</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-checkboxes\">With Checkboxes</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-checkboxes-and-icons\">With Checkboxes &amp; Icons</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-mark-item-and-checkbox-selected\">Mark Item &amp; Checkbox Selected</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-select-all\">With a Select All</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-partial-select-all-status\">With a Select All Partially Selected</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-angular-sample\">Angular Component</a></li>\n        </ul>\n      </li>\n      <li>\n        <a [routerLink]=\"['section/buttons']\" fragment=\"top\">Buttons</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/buttons'\">\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-actions\">Action Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-dialog-confirm\">Dialog/Confirm Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-toolbar\">Toolbar Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-conditions\">Condition Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-toggle\">Toggle Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-toggle-actions\">Toggle Action Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-cancel\">Cancel Buttons</a></li>\n        </ul>\n      </li>\n      <li>Breadcrumbs</li>\n      <li>\n        <a [routerLink]=\"['section/progress-indicator']\" fragment=\"top\">Progress Indicator</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/progress-indicator'\">\n          <li><a [routerLink]=\"['section/progress-indicator']\" fragment=\"indeterminate-progress-bar\">Indeterminate Progress Indicator</a></li>\n        </ul>\n      </li>\n      <li><a [routerLink]=\"['section/dropdown-menu']\" >Dropdown Menu</a></li>\n      <li><a [routerLink]=\"['section/dropdown-select']\" >Dropdown Select</a></li>\n      <li><a [routerLink]=\"['section/clearable-input']\" >Clearable Input</a></li>\n      <li><a [routerLink]=\"['section/range-input']\" >Range Input</a></li>\n      <li><a [routerLink]=\"['section/toggle-switch']\" >Toggle Switch</a></li>\n      <li><a [routerLink]=\"['section/truncate-text']\" >Truncate Text</a></li>\n      <li><a [routerLink]=\"['section/select-search']\" >Select Search</a></li>\n      <li><a [routerLink]=\"['section/multi-select-search']\" >Multi Select Search</a></li>\n      <li><a [routerLink]=\"['section/bullet-chart']\" >Bullet Chart</a></li>\n      <li><a [routerLink]=\"['section/badge']\" >Badge</a></li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Utilities</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li><a [routerLink]=\"['section/colors']\" fragment=\"top\">Colors</a></li>\n      <li>\n        <a [routerLink]=\"['section/utilities/spacing']\" fragment=\"top\">Spacing</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/utilities/spacing'\">\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-xs\">Margin 'xs' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-s\">Margin 's' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-m\">Margin 'm' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-l\">Margin 'l' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-xl\">Margin 'xl' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-placeholders\">Margins SCSS Placeholders</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-xs\">Padding 'xs' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-s\">Padding 's' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-m\">Padding 'm' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-l\">Padding 'l' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-xl\">Padding 'xl' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-placeholders\">Paddings SCSS Placeholders</a></li>\n        </ul>\n      </li>\n      <li>\n        <a [routerLink]=\"['section/utilities/borders']\" fragment=\"top\">Borders</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/utilities/borders'\">\n          <li><a [routerLink]=\"['section/utilities/borders']\" fragment=\"borders-adding\">Adding Borders</a></li>\n          <li><a [routerLink]=\"['section/utilities/borders']\" fragment=\"borders-clearing\">Clearing Borders</a></li>\n          <li><a [routerLink]=\"['section/utilities/borders']\" fragment=\"borders-placeholders\">Border SCSS Placeholders</a></li>\n        </ul>\n      </li>\n      <li><a [routerLink]=\"['section/utilities/z-indexes']\" fragment=\"top\">Z-Indexes</a></li>\n      <li>\n        <a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"top\">Flexbox</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/utilities/flexbox'\">\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex\">Row Layout</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-column\">Column Layout</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-wrap\">Wrap Layout</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-fill-width\">Stretch Cells to Fit</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-horiz-align\">Horizontal Justification</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-vert-align\">Vertical Justification</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-align-items\">Align Items (Vertical)</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-self-align\">Self Align (Vertical)</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-sizes\">Cell Sizes</a></li>\n        </ul>\n      </li>\n      <li>Breakpoint Mixins</li>\n      <li>Alignment</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Standards</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>Using SuitCSS</li>\n      <li>SASS guidelines</li>\n      <li>Including Third Party Libraries</li>\n      <li>JavaScript Linting</li>\n      <li>HTML compliance</li>\n      <li>General Page setup</li>\n      <li>Building a new component (extending)</li>\n      <li>Browser Support</li>\n      <li>Concsie CSS</li>\n      <li>Angular 2.0</li>\n      <li>D3.js</li>\n    </ul>\n  </li>\n</ul>\n"
+module.exports = "<ul class=\"_ptxs\">\n  <li>\n    <h5 class=\"_mt0 _pts _pbxs\">\n      <a [routerLink]=\"['']\">Main Page</a>\n    </h5>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0\">Styles / Esthetics</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>\n        <a [routerLink]=\"['section/colors']\" fragment=\"top\">Colors List</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/colors'\">\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-installation\">Installation</a></li>\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-list\">List of Colors</a></li>\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-classes\">Color Classes</a></li>\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-placeholders\">Color Place Holders</a></li>\n          <li><a [routerLink]=\"['section/colors']\" fragment=\"colors-list-mixins\">Color List &amp; Mixins</a></li>\n        </ul>\n      </li>\n      <li>Colors Guide</li>\n      <li>Visual Rules &amp; Considerations</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Typography</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>\n        <a [routerLink]=\"['section/typography']\" fragment=\"top\">Typography</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/typography'\">\n          <li><a [routerLink]=\"['section/typography']\" fragment=\"type-classes\">Classes</a></li>\n          <li><a [routerLink]=\"['section/typography']\" fragment=\"type-variables\">Size Variables</a></li>\n          <li><a [routerLink]=\"['section/typography']\" fragment=\"type-placeholders\">Placeholders</a></li>\n          <li><a [routerLink]=\"['section/typography']\" fragment=\"type-samples\">Samples</a></li>\n        </ul>\n      </li>\n      <li><a [routerLink]=\"['section/icons']\" fragment=\"top\">Icons</a></li>\n      <li>Lists</li>\n      <li>Tabular Data (Tables)</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Inputs</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>Text, Numbers, etc</li>\n      <li>Select</li>\n      <li>Textarea</li>\n      <li>Radio Groups</li>\n      <li>\n        <a [routerLink]=\"['section/checkboxes']\" fragment=\"top\">Checkboxes</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/checkboxes'\">\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-inline-active\">Inline &amp; Active</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-stacked-active\">Stacked &amp; Active</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-stacked-active-columns\">Stacked, Multi-column, &amp; Active</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-disabled\">Disabled</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-select-all-active\">Select All &amp; Active</a></li>\n          <li><a [routerLink]=\"['section/checkboxes']\" fragment=\"checkbox-select-all-disabled\">Select All &amp; Disabled</a></li>\n        </ul>\n      </li>\n      <li>Forms</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Page Layouts</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>Grid System</li>\n      <li>Layouts</li>\n      <li>Breakpoints</li>\n      <li>Scrolling / Scrollbars</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Components</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>Data Grid</li>\n      <li>\n        <a [routerLink]=\"['section/tooltips']\" fragment=\"top\">Tooltips</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/tooltips'\">\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-install\">Installation</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-title-only\">Title Only</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-title-with-icon\">Title with Icon</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-title-with-icon-and-description\">Title with a Description</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-placement\">Placement</a></li>\n          <li><a [routerLink]=\"['section/tooltips']\" fragment=\"tooltips-disabled\">Disable/Enable</a></li>\n        </ul>\n      </li>\n      <li>\n        <a [routerLink]=\"['section/inline-dialogs']\" fragment=\"top\">Inline Dialog</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/inline-dialogs'\">\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-install\">Installation</a></li>\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-simple-example\">Simple Example</a></li>\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-with-tooltip\">Combined with a Tooltip</a></li>\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-placement\">Placement</a></li>\n          <li><a [routerLink]=\"['section/inline-dialogs']\" fragment=\"inline-dialog-disabled\">Disable/Enable</a></li>\n        </ul>\n      </li>\n      <li>\n        <a [routerLink]=\"['section/modal']\" fragment=\"top\">Modal</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/modal'\">\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-install\">Installation</a></li>\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-simple-example\">Simple Example</a></li>\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-sizing\">Sizing</a></li>\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-without-close\">Without Close</a></li>\n          <li><a [routerLink]=\"['section/modal']\" fragment=\"modal-api\">API</a></li>\n        </ul>\n      </li>\n      <li>Navigation</li>\n      <li>Navigation Tiles</li>\n      <li>Dialogs / User Feedback</li>\n      <li>\n        <a [routerLink]=\"['section/dropdowns']\" fragment=\"top\">Dropdown Menus</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/dropdowns'\">\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-no-icons\">With no Icons</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-icons\">With Icons</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropup-no-icons\">Dropup</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-disabled\">Disabled</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-width\">Apply a Width</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-checkboxes\">With Checkboxes</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-checkboxes-and-icons\">With Checkboxes &amp; Icons</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-mark-item-and-checkbox-selected\">Mark Item &amp; Checkbox Selected</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-select-all\">With a Select All</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-with-partial-select-all-status\">With a Select All Partially Selected</a></li>\n          <li><a [routerLink]=\"['section/dropdowns']\" fragment=\"dropdown-angular-sample\">Angular Component</a></li>\n        </ul>\n      </li>\n      <li>\n        <a [routerLink]=\"['section/buttons']\" fragment=\"top\">Buttons</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/buttons'\">\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-actions\">Action Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-dialog-confirm\">Dialog/Confirm Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-toolbar\">Toolbar Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-conditions\">Condition Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-toggle\">Toggle Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-toggle-actions\">Toggle Action Buttons</a></li>\n          <li><a [routerLink]=\"['section/buttons']\" fragment=\"buttons-cancel\">Cancel Buttons</a></li>\n        </ul>\n      </li>\n      <li>Breadcrumbs</li>\n      <li>\n        <a [routerLink]=\"['section/progress-indicator']\" fragment=\"top\">Progress Indicator</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/progress-indicator'\">\n          <li><a [routerLink]=\"['section/progress-indicator']\" fragment=\"indeterminate-progress-bar\">Indeterminate Progress Indicator</a></li>\n        </ul>\n      </li>\n      <li><a [routerLink]=\"['section/dropdown-menu']\" >Dropdown Menu</a></li>\n      <li><a [routerLink]=\"['section/dropdown-select']\" >Dropdown Select</a></li>\n      <li><a [routerLink]=\"['section/clearable-input']\" >Clearable Input</a></li>\n      <li><a [routerLink]=\"['section/range-input']\" >Range Input</a></li>\n      <li><a [routerLink]=\"['section/toggle-switch']\" >Toggle Switch</a></li>\n      <li><a [routerLink]=\"['section/truncate-text']\" >Truncate Text</a></li>\n      <li><a [routerLink]=\"['section/select-search']\" >Select Search</a></li>\n      <li><a [routerLink]=\"['section/multi-select-search']\" >Multi Select Search</a></li>\n      <li><a [routerLink]=\"['section/bullet-chart']\" >Bullet Chart</a></li>\n      <li><a [routerLink]=\"['section/badge']\" >Badge</a></li>\n      <li><a [routerLink]=\"['section/donut-chart']\" >Donut Chart</a></li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Utilities</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li><a [routerLink]=\"['section/colors']\" fragment=\"top\">Colors</a></li>\n      <li>\n        <a [routerLink]=\"['section/utilities/spacing']\" fragment=\"top\">Spacing</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/utilities/spacing'\">\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-xs\">Margin 'xs' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-s\">Margin 's' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-m\">Margin 'm' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-l\">Margin 'l' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-xl\">Margin 'xl' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-margin-placeholders\">Margins SCSS Placeholders</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-xs\">Padding 'xs' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-s\">Padding 's' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-m\">Padding 'm' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-l\">Padding 'l' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-xl\">Padding 'xl' Classes</a></li>\n          <li><a [routerLink]=\"['section/utilities/spacing']\" fragment=\"spacing-padding-placeholders\">Paddings SCSS Placeholders</a></li>\n        </ul>\n      </li>\n      <li>\n        <a [routerLink]=\"['section/utilities/borders']\" fragment=\"top\">Borders</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/utilities/borders'\">\n          <li><a [routerLink]=\"['section/utilities/borders']\" fragment=\"borders-adding\">Adding Borders</a></li>\n          <li><a [routerLink]=\"['section/utilities/borders']\" fragment=\"borders-clearing\">Clearing Borders</a></li>\n          <li><a [routerLink]=\"['section/utilities/borders']\" fragment=\"borders-placeholders\">Border SCSS Placeholders</a></li>\n        </ul>\n      </li>\n      <li><a [routerLink]=\"['section/utilities/z-indexes']\" fragment=\"top\">Z-Indexes</a></li>\n      <li>\n        <a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"top\">Flexbox</a>\n        <ul class=\"_mt0 _pb0 _plm\" *ngIf=\"path === 'section/utilities/flexbox'\">\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex\">Row Layout</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-column\">Column Layout</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-wrap\">Wrap Layout</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-fill-width\">Stretch Cells to Fit</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-horiz-align\">Horizontal Justification</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-vert-align\">Vertical Justification</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-align-items\">Align Items (Vertical)</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-self-align\">Self Align (Vertical)</a></li>\n          <li><a [routerLink]=\"['section/utilities/flexbox']\" fragment=\"flexbox-flex-sizes\">Cell Sizes</a></li>\n        </ul>\n      </li>\n      <li>Breakpoint Mixins</li>\n      <li>Alignment</li>\n    </ul>\n  </li>\n  <li>\n    <h5 class=\"_mt0 _mb0 _mtm\">Standards</h5>\n    <ul class=\"_mt0 _pbxs _pls\">\n      <li>Using SuitCSS</li>\n      <li>SASS guidelines</li>\n      <li>Including Third Party Libraries</li>\n      <li>JavaScript Linting</li>\n      <li>HTML compliance</li>\n      <li>General Page setup</li>\n      <li>Building a new component (extending)</li>\n      <li>Browser Support</li>\n      <li>Concsie CSS</li>\n      <li>Angular 2.0</li>\n      <li>D3.js</li>\n    </ul>\n  </li>\n</ul>\n"
 
 /***/ }),
 
@@ -375,11 +384,11 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainMenuComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__("../../../../rxjs/Rx.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainMenuComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -415,12 +424,12 @@ var MainMenuComponent = (function () {
     return MainMenuComponent;
 }());
 MainMenuComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-main-menu',
         template: __webpack_require__("../../../../../src/app/main-menu/main-menu.component.html"),
         styles: [__webpack_require__("../../../../../src/app/main-menu/main-menu.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _a || Object])
 ], MainMenuComponent);
 
 var _a;
@@ -431,7 +440,7 @@ var _a;
 /***/ "../../../../../src/app/sections/badge/badge.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1><a id=\"top\"></a>Badge</h1>\n\n\n<a id=\"badge-install\"></a>\n<h5 class=\"_mtxl\">Installation</h5>\n<pre class=\"code-block\">\n  <code class=\"language-javascript\">\n  // install the repo\n  npm install CINBCUniversal/suprematism-badge --save\n\n  // add it to a module (app.module.ts)\n  import {{'&#123;'}} BadgeModule } from 'suprematism-badge';\n\n  @NgModule({{'&#123;'}}\n    ...\n    imports: [\n      ...\n      BadgeModule\n    ],\n    ...\n  })\n  </code>\n</pre>\n\n\n<h5 class=\"_mtxl\">Simple Example</h5>\n\n<supre-badge\n  positionY=\"top\"\n  positionX=\"right\"\n  text=\"6\">\n  <button class=\"-toolbar\"><div class=\"u-supre-icon u-supre-icon--entertainment\"></div></button>\n</supre-badge>\n\n<pre class=\"code-block\">\n  <code class=\"language-javascript\">\n    {{'&lt;'}}supre-badge\n      positionY=\"top\"\n      positionX=\"right\"\n      text=\"6\"\n    >\n        {{'&lt;'}}button class=\"-toolbar\">\n          {{'&lt;'}}div class=\"u-supre-icon u-supre-icon--entertainment\">{{'&lt;'}}/div>\n        {{'&lt;'}}button>\n    {{'&lt;'}}/supre-badge>\n  </code>\n</pre>\n"
+module.exports = "<h1><a id=\"top\"></a>Badge</h1>\n\n\n<a id=\"badge-install\"></a>\n<h5 class=\"_mtxl\">Installation</h5>\n<pre class=\"code-block\">\n  <code class=\"language-javascript\">\n  // install the repo\n  npm install CINBCUniversal/suprematism-badge\n\n  // add it to a module (app.module.ts)\n  import {{'&#123;'}} BadgeModule } from 'suprematism-badge';\n\n  @NgModule({{'&#123;'}}\n    ...\n    imports: [\n      ...\n      BadgeModule\n    ],\n    ...\n  })\n  </code>\n</pre>\n\n\n<h5 class=\"_mtxl\">Simple Example</h5>\n\n<supre-badge\n  positionY=\"top\"\n  positionX=\"right\"\n  text=\"6\">\n  <button class=\"-toolbar\"><div class=\"u-supre-icon u-supre-icon--entertainment\"></div></button>\n</supre-badge>\n\n<pre class=\"code-block\">\n  <code class=\"language-javascript\">\n    {{'&lt;'}}supre-badge\n      positionY=\"top\"\n      positionX=\"right\"\n      text=\"6\"\n    >\n        {{'&lt;'}}button class=\"-toolbar\">\n          {{'&lt;'}}div class=\"u-supre-icon u-supre-icon--entertainment\">{{'&lt;'}}/div>\n        {{'&lt;'}}button>\n    {{'&lt;'}}/supre-badge>\n  </code>\n</pre>\n"
 
 /***/ }),
 
@@ -457,10 +466,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BadgeSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BadgeSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -493,12 +502,12 @@ var BadgeSectionComponent = (function (_super) {
     return BadgeSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 BadgeSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-badge',
         template: __webpack_require__("../../../../../src/app/sections/badge/badge.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/badge/badge.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], BadgeSectionComponent);
 
 var _a;
@@ -535,10 +544,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BulletChartSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BulletChartSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -571,12 +580,12 @@ var BulletChartSectionComponent = (function (_super) {
     return BulletChartSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 BulletChartSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-bullet-chart',
         template: __webpack_require__("../../../../../src/app/sections/bullet-chart/bullet-chart.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/bullet-chart/bullet-chart.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], BulletChartSectionComponent);
 
 var _a;
@@ -613,10 +622,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonsComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -649,12 +658,12 @@ var ButtonsComponent = (function (_super) {
     return ButtonsComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 ButtonsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-buttons',
         template: __webpack_require__("../../../../../src/app/sections/buttons/buttons.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/buttons/buttons.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], ButtonsComponent);
 
 var _a;
@@ -691,10 +700,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxesComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -727,12 +736,12 @@ var CheckboxesComponent = (function (_super) {
     return CheckboxesComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 CheckboxesComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-checkboxes',
         template: __webpack_require__("../../../../../src/app/sections/checkboxes/checkboxes.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/checkboxes/checkboxes.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], CheckboxesComponent);
 
 var _a;
@@ -769,10 +778,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClearableInputSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClearableInputSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -805,12 +814,12 @@ var ClearableInputSectionComponent = (function (_super) {
     return ClearableInputSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 ClearableInputSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-clearable-input',
         template: __webpack_require__("../../../../../src/app/sections/clearable-input/clearable-input.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/clearable-input/clearable-input.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], ClearableInputSectionComponent);
 
 var _a;
@@ -847,10 +856,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColorsSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColorsSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -883,16 +892,94 @@ var ColorsSectionComponent = (function (_super) {
     return ColorsSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 ColorsSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-colors-section',
         template: __webpack_require__("../../../../../src/app/sections/colors-section/colors-section.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/colors-section/colors-section.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], ColorsSectionComponent);
 
 var _a;
 //# sourceMappingURL=colors-section.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/sections/donut-chart/donut-chart.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1><a id=\"top\"></a>Donut Chart</h1>\n\n\n<a id=\"donut-chart-install\"></a>\n<h5 class=\"_mtxl\">Installation</h5>\n<pre class=\"code-block\">\n  <code class=\"language-javascript\">\n  // install the repo\n  npm install CINBCUniversal/suprematism-donut-chart --save\n\n  // add it to a module (app.module.ts)\n  import {{'&#123;'}} DonutChartModule } from 'suprematism-donut-chart';\n\n  @NgModule({{'&#123;'}}\n    ...\n    imports: [\n      ...\n      DonutChartModule\n    ],\n    ...\n  })\n  </code>\n</pre>\n\n\n<h5 class=\"_mtxl\">Simple Example</h5>\n\n<supre-donut-chart\n  [values]=\"[80]\"\n  [thicknessPct]=\"20\">\n  80%\n</supre-donut-chart>\n\n<pre class=\"code-block\">\n  <code class=\"language-javascript\">\n    {{'&lt;'}}supre-donut-chart\n      [values]=\"[80]\"\n      [thicknessPct]=\"20\"\n      >\n    80%\n    {{'&lt;'}}/supre-donut-chart>\n  </code>\n</pre>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/sections/donut-chart/donut-chart.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".example {\n  width: 50%; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/sections/donut-chart/donut-chart.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DonutChartSectionComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var DonutChartSectionComponent = (function (_super) {
+    __extends(DonutChartSectionComponent, _super);
+    function DonutChartSectionComponent(route) {
+        var _this = _super.call(this, route) || this;
+        _this.route = route;
+        return _this;
+    }
+    return DonutChartSectionComponent;
+}(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
+DonutChartSectionComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'docs-donut-chart',
+        template: __webpack_require__("../../../../../src/app/sections/donut-chart/donut-chart.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/sections/donut-chart/donut-chart.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
+], DonutChartSectionComponent);
+
+var _a;
+//# sourceMappingURL=donut-chart.component.js.map
 
 /***/ }),
 
@@ -925,10 +1012,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DropdownMenuSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DropdownMenuSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -961,12 +1048,12 @@ var DropdownMenuSectionComponent = (function (_super) {
     return DropdownMenuSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 DropdownMenuSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-dropdown-menu',
         template: __webpack_require__("../../../../../src/app/sections/dropdown-menu/dropdown-menu.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/dropdown-menu/dropdown-menu.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], DropdownMenuSectionComponent);
 
 var _a;
@@ -1003,10 +1090,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DropdownSelectSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DropdownSelectSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1087,12 +1174,12 @@ var DropdownSelectSectionComponent = (function (_super) {
     return DropdownSelectSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 DropdownSelectSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-dropdown-select',
         template: __webpack_require__("../../../../../src/app/sections/dropdown-select/dropdown-select.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/dropdown-select/dropdown-select.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], DropdownSelectSectionComponent);
 
 var _a;
@@ -1129,12 +1216,12 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DropdownsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__("../../../../rxjs/Rx.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DropdownsComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1308,12 +1395,12 @@ var DropdownsComponent = (function (_super) {
     return DropdownsComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 DropdownsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-dropdowns',
         template: __webpack_require__("../../../../../src/app/sections/dropdowns/dropdowns.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/dropdowns/dropdowns.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], DropdownsComponent);
 
 var _a;
@@ -1350,8 +1437,8 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeSectionComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1370,7 +1457,7 @@ var HomeSectionComponent = (function () {
     return HomeSectionComponent;
 }());
 HomeSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-home-section',
         template: __webpack_require__("../../../../../src/app/sections/home-section/home-section.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/home-section/home-section.component.scss")]
@@ -1411,10 +1498,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IconsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IconsComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1447,12 +1534,12 @@ var IconsComponent = (function (_super) {
     return IconsComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 IconsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-icons',
         template: __webpack_require__("../../../../../src/app/sections/icons/icons.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/icons/icons.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], IconsComponent);
 
 var _a;
@@ -1489,10 +1576,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InlineDialogSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InlineDialogSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1525,12 +1612,12 @@ var InlineDialogSectionComponent = (function (_super) {
     return InlineDialogSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 InlineDialogSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-inline-dialog',
         template: __webpack_require__("../../../../../src/app/sections/inline-dialog/inline-dialog.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/inline-dialog/inline-dialog.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], InlineDialogSectionComponent);
 
 var _a;
@@ -1567,10 +1654,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1603,12 +1690,12 @@ var ModalSectionComponent = (function (_super) {
     return ModalSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 ModalSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-modal-section',
         template: __webpack_require__("../../../../../src/app/sections/modal-section/modal-section.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/modal-section/modal-section.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], ModalSectionComponent);
 
 var _a;
@@ -1645,10 +1732,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MultiSelectSearchSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MultiSelectSearchSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1817,12 +1904,12 @@ var MultiSelectSearchSectionComponent = (function (_super) {
     return MultiSelectSearchSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 MultiSelectSearchSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-multi-select-search',
         template: __webpack_require__("../../../../../src/app/sections/multi-select-search/multi-select-search.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/multi-select-search/multi-select-search.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], MultiSelectSearchSectionComponent);
 
 var _a;
@@ -1859,10 +1946,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgressIndicatorSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgressIndicatorSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1895,12 +1982,12 @@ var ProgressIndicatorSectionComponent = (function (_super) {
     return ProgressIndicatorSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 ProgressIndicatorSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-progress-indicator-section',
         template: __webpack_require__("../../../../../src/app/sections/progress-indicator-section/progress-indicator-section.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/progress-indicator-section/progress-indicator-section.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], ProgressIndicatorSectionComponent);
 
 var _a;
@@ -1937,10 +2024,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RangeInputSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RangeInputSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1976,12 +2063,12 @@ var RangeInputSectionComponent = (function (_super) {
     return RangeInputSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 RangeInputSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-range-input',
         template: __webpack_require__("../../../../../src/app/sections/range-input/range-input.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/range-input/range-input.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], RangeInputSectionComponent);
 
 var _a;
@@ -1993,9 +2080,9 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AbstractSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prismjs__ = __webpack_require__("../../../../prismjs/prism.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prismjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prismjs__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AbstractSectionComponent; });
 
 var AbstractSectionComponent = (function () {
     function AbstractSectionComponent(route) {
@@ -2083,10 +2170,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectSearchSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectSearchSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2624,12 +2711,12 @@ var SelectSearchSectionComponent = (function (_super) {
     return SelectSearchSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 SelectSearchSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-select-search',
         template: __webpack_require__("../../../../../src/app/sections/select-search/select-search.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/select-search/select-search.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], SelectSearchSectionComponent);
 
 var _a;
@@ -2666,10 +2753,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToggleSwitchSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToggleSwitchSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2703,12 +2790,12 @@ var ToggleSwitchSectionComponent = (function (_super) {
     return ToggleSwitchSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 ToggleSwitchSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-range-input',
         template: __webpack_require__("../../../../../src/app/sections/toggle-switch/toggle-switch.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/toggle-switch/toggle-switch.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], ToggleSwitchSectionComponent);
 
 var _a;
@@ -2745,10 +2832,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TooltipComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TooltipComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2781,12 +2868,12 @@ var TooltipComponent = (function (_super) {
     return TooltipComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 TooltipComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-tooltip',
         template: __webpack_require__("../../../../../src/app/sections/tooltip/tooltip.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/tooltip/tooltip.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], TooltipComponent);
 
 var _a;
@@ -2823,10 +2910,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TruncateTextSectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TruncateTextSectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2860,12 +2947,12 @@ var TruncateTextSectionComponent = (function (_super) {
     return TruncateTextSectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 TruncateTextSectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-truncate-text',
         template: __webpack_require__("../../../../../src/app/sections/truncate-text/truncate-text.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/truncate-text/truncate-text.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], TruncateTextSectionComponent);
 
 var _a;
@@ -2902,10 +2989,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TypographySectionComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TypographySectionComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2938,12 +3025,12 @@ var TypographySectionComponent = (function (_super) {
     return TypographySectionComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 TypographySectionComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-typography-section',
         template: __webpack_require__("../../../../../src/app/sections/typography-section/typography-section.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/typography-section/typography-section.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], TypographySectionComponent);
 
 var _a;
@@ -2980,10 +3067,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BordersComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BordersComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3016,12 +3103,12 @@ var BordersComponent = (function (_super) {
     return BordersComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 BordersComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-borders',
         template: __webpack_require__("../../../../../src/app/sections/utilities/borders/borders.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/utilities/borders/borders.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], BordersComponent);
 
 var _a;
@@ -3058,10 +3145,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlexBoxComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlexBoxComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3094,12 +3181,12 @@ var FlexBoxComponent = (function (_super) {
     return FlexBoxComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 FlexBoxComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-flex-box',
         template: __webpack_require__("../../../../../src/app/sections/utilities/flex-box/flex-box.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/utilities/flex-box/flex-box.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], FlexBoxComponent);
 
 var _a;
@@ -3136,10 +3223,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpacingComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpacingComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3172,12 +3259,12 @@ var SpacingComponent = (function (_super) {
     return SpacingComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 SpacingComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-spacing',
         template: __webpack_require__("../../../../../src/app/sections/utilities/spacing/spacing.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/utilities/spacing/spacing.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], SpacingComponent);
 
 var _a;
@@ -3214,10 +3301,10 @@ module.exports = module.exports.toString();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZIndexComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_abstract__ = __webpack_require__("../../../../../src/app/sections/section.abstract.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZIndexComponent; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3250,12 +3337,12 @@ var ZIndexComponent = (function (_super) {
     return ZIndexComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__section_abstract__["a" /* AbstractSectionComponent */]));
 ZIndexComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'docs-z-index',
         template: __webpack_require__("../../../../../src/app/sections/utilities/z-index/z-index.component.html"),
         styles: [__webpack_require__("../../../../../src/app/sections/utilities/z-index/z-index.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object])
 ], ZIndexComponent);
 
 var _a;
@@ -3294,9 +3381,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
-Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),

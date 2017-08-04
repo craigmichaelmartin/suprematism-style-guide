@@ -1,0 +1,43 @@
+<h1><a id="top"></a>Donut Chart</h1>
+
+
+<a id="donut-chart-install"></a>
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-donut-chart --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} DonutChartModule } from 'suprematism-donut-chart';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      DonutChartModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+
+<h5 class="_mtxl">Simple Example</h5>
+
+<supre-donut-chart
+  [values]="[80]"
+  [thicknessPct]="20">
+  80%
+</supre-donut-chart>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-donut-chart
+      [values]="[80]"
+      [thicknessPct]="20"
+      >
+    80%
+    {{'&lt;'}}/supre-donut-chart>
+  </code>
+</pre>

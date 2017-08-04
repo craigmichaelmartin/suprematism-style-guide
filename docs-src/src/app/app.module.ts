@@ -30,6 +30,7 @@ import { TruncateTextModule } from 'suprematism-truncate-text';
 import { SelectSearchModule } from 'suprematism-select-search';
 import { MultiSelectSearchModule } from 'suprematism-multi-select-search';
 import { BadgeModule } from 'suprematism-badge';
+import { DonutChartModule } from 'suprematism-donut-chart';
 
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
@@ -46,6 +47,7 @@ import { TruncateTextSectionComponent } from './sections/truncate-text/truncate-
 import { SelectSearchSectionComponent } from './sections/select-search/select-search.component';
 import { MultiSelectSearchSectionComponent } from './sections/multi-select-search/multi-select-search.component';
 import { BadgeSectionComponent } from './sections/badge/badge.component';
+import { DonutChartSectionComponent } from './sections/donut-chart/donut-chart.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +77,8 @@ import { BadgeSectionComponent } from './sections/badge/badge.component';
     TruncateTextSectionComponent,
     SelectSearchSectionComponent,
     MultiSelectSearchSectionComponent,
-    BadgeSectionComponent
+    BadgeSectionComponent,
+    DonutChartSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -92,7 +95,8 @@ import { BadgeSectionComponent } from './sections/badge/badge.component';
     TruncateTextModule,
     SelectSearchModule,
     MultiSelectSearchModule,
-    BadgeModule
+    BadgeModule,
+    DonutChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
