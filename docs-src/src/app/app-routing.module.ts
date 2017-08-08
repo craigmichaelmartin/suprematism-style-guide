@@ -27,6 +27,7 @@ import { TruncateTextSectionComponent } from './sections/truncate-text/truncate-
 import { SelectSearchSectionComponent } from './sections/select-search/select-search.component';
 import { MultiSelectSearchSectionComponent } from './sections/multi-select-search/multi-select-search.component';
 import { BadgeSectionComponent } from './sections/badge/badge.component';
+import { DonutChartSectionComponent } from './sections/donut-chart/donut-chart.component';
 
 const routes: Routes = [
 
@@ -58,6 +59,7 @@ const routes: Routes = [
   { path: 'section/select-search', component: SelectSearchSectionComponent },
   { path: 'section/multi-select-search', component: MultiSelectSearchSectionComponent },
   { path: 'section/badge', component: BadgeSectionComponent },
+  { path: 'section/donut-chart', component: DonutChartSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },
