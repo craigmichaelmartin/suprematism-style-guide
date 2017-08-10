@@ -1,0 +1,76 @@
+{
+  "project": {
+    "name": "suprematism-guide-docs"
+  },
+  "apps": [
+    {
+      "root": "src/docs",
+      "outDir": "docs",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "../../dist/fonts",
+        "404.html"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "docs",
+      "styles": [
+        "styles.scss",
+        "../../dist/suprematism.css",
+        "../../node_modules/prismjs/themes/prism.css",
+        "../../node_modules/ag-grid/dist/styles/ag-grid.css"
+      ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "../../dist",
+          "../../node_modules/bootstrap-sass/assets/stylesheets/"
+        ]
+      },
+      "scripts": [
+        "../../node_modules/prismjs/prism.js",
+        "../../node_modules/prismjs/components/prism-typescript.min.js",
+        "../../node_modules/prismjs/components/prism-javascript.min.js",
+        "../../node_modules/prismjs/components/prism-sass.min.js",
+        "../../node_modules/shave/dist/shave.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+       "environments": {
+         "dev": "environments/environment.ts",
+         "prod": "environments/environment.prod.ts"
+       }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/docs/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/docs/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "component": {}
+  }
+}
