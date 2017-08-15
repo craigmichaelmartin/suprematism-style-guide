@@ -1,0 +1,309 @@
+@import '../utils/colors';
+
+$button-horiz-padding: 15px;
+$cancel-horiz-padding: 10px;
+
+$lg-button-height: 36px;
+$lg-button-text-size: 12px;
+
+$md-button-height: 32px;
+$md-button-text-size: 11px;
+
+$sm-text-size: 10px;
+$xs-text-size: 9px;
+
+$disabled-bkg-color: $ice;
+$disabled-text-color: $lite-gray;
+
+$icon-size: 20px;
+
+$shadow-color: #4e4e4e;
+
+
+
+//
+// Mixin:
+// Create the main changing attributes for a pseduo class
+//
+@mixin button-states($classes, $text-color: inherit, $bg-color: inherit, $shadow: inherit, $border-color: inherit){
+
+  @each $class in $classes {
+    &#{$class} {
+      background-color: $bg-color;
+      border-color: $border-color;
+      color: $text-color;
+      box-shadow: $shadow;
+    }
+  }
+
+}
+
+
+button {
+
+  // make sure they're clean
+  margin: 0px;
+  padding: 0px;
+
+  //
+  // Nested Icons
+  //
+  .#{$icon-class} {
+    padding: 0 5px 0 0;
+    font-size: $icon-size;
+    position: relative;
+    line-height:inherit;
+    display:inline-block;
+    vertical-align:top;
+  }
+
+
+
+  //
+  // Action buttons
+  //
+  &.-action {
+    color: $white;
+    line-height: $lg-button-height;
+    padding: 0 $button-horiz-padding;
+    font-size: $lg-button-text-size;
+    border-radius: $button-radius;
+    background: $lite-green;
+    text-transform: uppercase;
+    font-weight: bold;
+    @include button-states((':hover', ':focus'), $white, $green);
+    @include button-states(':active', $white, $green, 2px 2px 7px 0px $shadow-color inset);
+
+
+    //
+    // Disabled when present
+    //
+    &[disabled]{
+      background:  $disabled-bkg-color;
+      color: $disabled-text-color;
+      @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $bg-color: $disabled-bkg-color);
+      cursor: default;
+    }
+
+  }
+
+
+
+  //
+  // Confirm / Dialog Buttons
+  //
+  &.-dialog {
+    color: $white;
+    line-height: $md-button-height;
+    padding: 0 $button-horiz-padding;
+    font-size: $md-button-text-size;
+    border-radius: $button-radius;
+    background: $aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+  }
+  &.-dialog-reverse {
+    color: $aqua;
+    line-height: $md-button-height;
+    padding: 0 $button-horiz-padding;
+    font-size: $md-button-text-size;
+    border-radius: $button-radius;
+    background: $white !important;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 0px 1px $aqua inset;
+    font-weight: bold;
+
+
+  }
+
+
+
+  //
+  // Toolbar Buttons
+  //
+  &.-toolbar {
+    color: $white;
+    line-height: $md-button-height;
+    padding: 0 $button-horiz-padding;
+    font-size: $md-button-text-size;
+    background: $aqua;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include button-states((':hover', ':focus'), $white, $blue);
+    @include button-states(':active', $white, $blue, 2px 2px 7px 0px $shadow-color inset);
+
+
+    //
+    // Disabled when present
+    //
+    &[disabled]{
+      background:  $disabled-bkg-color;
+      color: $disabled-text-color;
+      @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $border-color: $white, $bg-color: $disabled-bkg-color);
+      cursor: default;
+    }
+
+    // the next tool bar button should add a border to the left to seperate like the mock
+    + .-toolbar {
+      border-left: 1px solid white;
+    }
+
+  }
+
+
+
+  //
+  // Cancel
+  //
+  &.-cancel-lg {
+    color: $mid-gray;
+    line-height: $lg-button-height;
+    padding: 0 $cancel-horiz-padding;
+    font-size: $sm-text-size;
+    background: transparent;
+    text-transform: uppercase;
+    @include button-states((':hover', ':focus', ':active'), $mid-gray, transparent);
+  }
+  &.-cancel-md {
+    color: $mid-gray;
+    line-height: $md-button-height;
+    padding: 0 $cancel-horiz-padding;
+    font-size: $sm-text-size;
+    background: transparent;
+    text-transform: uppercase;
+    @include button-states((':hover', ':focus', ':active'), $mid-gray, transparent);
+  }
+
+
+
+  //
+  // Conditions
+  //
+  &.-condition {
+    color: $white;
+    line-height: $md-button-height;
+    padding: 0 $button-horiz-padding;
+    font-size: $sm-text-size;
+    background: $aqua;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include button-states((':hover', ':focus'), $white, $blue);
+    @include button-states(':active', $white, $blue, 2px 2px 7px 0px $shadow-color inset);
+
+
+    //
+    // Disabled when present
+    //
+    &[disabled] {
+      background:  $disabled-bkg-color;
+      color: $disabled-text-color;
+      @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $border-color: $white, $bg-color: $disabled-bkg-color);
+      cursor: default;
+    }
+
+    // the next tool bar button should add a border to the left to seperate like the mock
+    + .-condition {
+      border-left: 3px solid white;
+    }
+
+  }
+
+
+
+  //
+  // Purple Toggles
+  //
+  &.-toggle {
+    color: $purple;
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+    text-align: center;
+    font-size: $xs-text-size;
+    background: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid $active-stroke;
+    @include button-states((':hover'), $purple, rgba($purple, .25), $border-color: $active-stroke);
+    @include button-states(('.is-active', ':active'), $white, $purple, $border-color: $purple);
+
+    //
+    // apply this class to the parent containter when at least one element is selected
+    //
+    .has-selection & {
+      color: lighten($purple, 26%);
+      @include button-states((':hover'), $purple, rgba($purple, .25), $border-color: $active-stroke);
+      @include button-states(('.is-active', ':active'), $white, $purple, $border-color: $purple);
+    }
+
+    //
+    // Disabled when present
+    //
+    &[disabled] {
+      background: $white !important;
+      color: $disabled-text-color;
+      border: 1px solid $disabled-stroke;
+      @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $bg-color: $white, $border-color: $disabled-stroke);
+      cursor: default;
+    }
+
+    // the next tool bar button should add a border to the left to seperate like the mock
+    + .-toggle {
+      margin-left: -1px;
+    }
+
+  }
+
+
+
+  //
+  // Action Toggles (they use an icon...)
+  //
+  &.-toggle-action {
+    color: $blue-gray;
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+    text-align: center;
+    font-size: $icon-size;
+    background: $white;
+    border: 1px solid $active-stroke;
+    @include button-states((':hover'), $aqua, $white, $border-color: $active-stroke);
+    @include button-states(('.is-active', ':active'), $aqua, $white, $border-color: $active-stroke);
+
+    &.background {
+      background: $soft-green;
+    }
+    &.open-bottom {
+      border-bottom: none;
+    }
+
+    //
+    // Disabled when present
+    //
+    &[disabled] {
+      background:  $white;
+      color: rgba($blue-gray, .3);
+      border: 1px solid $disabled-stroke;
+      @include button-states((':hover', ':focus', ':active'), rgba($blue-gray, .3), $border-color: $disabled-stroke, $bg-color: $white);
+      cursor: default;
+    }
+
+    // the next tool bar button should add a border to the left to seperate like the mock
+    + .-toggle-action {
+      margin-left: -1px;
+    }
+
+    //
+    // Icon Rules
+    //
+    .#{$icon-class} {
+      font-size: 17px;
+      padding:0px;
+    }
+
+  }
+
+}
