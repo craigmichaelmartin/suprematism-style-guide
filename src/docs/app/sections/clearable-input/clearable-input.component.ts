@@ -8,6 +8,9 @@ import { AbstractSectionComponent } from '../section.abstract';
   styleUrls: ['./clearable-input.component.scss']
 })
 export class ClearableInputSectionComponent extends AbstractSectionComponent {
+  value = '';
+  value2 = 1;
+  value3 = 3;
   constructor(protected route: ActivatedRoute) {
     super(route);
   }
