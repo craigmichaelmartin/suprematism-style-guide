@@ -61,7 +61,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[\"/Users/brandoneleuterio/dev/suprematism-style-guide/dist\",\"/Users/brandoneleuterio/dev/suprematism-style-guide/node_modules/bootstrap-sass/assets/stylesheets\"]}!../../../../../src/docs/styles.scss");
+var content = __webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[\"/Users/jacobstewart/src/suprematism-style-guide/dist\",\"/Users/jacobstewart/src/suprematism-style-guide/node_modules/bootstrap-sass/assets/stylesheets\"]}!../../../../../src/docs/styles.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__("../../../../style-loader/addStyles.js")(content, {});
@@ -154,7 +154,7 @@ exports.push([module.i, "/**\n * prism.js default theme for JavaScript, CSS and 
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[\"/Users/brandoneleuterio/dev/suprematism-style-guide/dist\",\"/Users/brandoneleuterio/dev/suprematism-style-guide/node_modules/bootstrap-sass/assets/stylesheets\"]}!../../../../../src/docs/styles.scss":
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[\"/Users/jacobstewart/src/suprematism-style-guide/dist\",\"/Users/jacobstewart/src/suprematism-style-guide/node_modules/bootstrap-sass/assets/stylesheets\"]}!../../../../../src/docs/styles.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
