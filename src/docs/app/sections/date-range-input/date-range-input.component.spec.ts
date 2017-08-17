@@ -3,6 +3,7 @@ import { DateRangeInputModule } from 'suprematism-date-range-input';
 
 import { DateRangeInputSectionComponent } from './date-range-input.component';
 import { RouterTestingModule } from '@angular/router/testing';
+import { FormsModule } from '@angular/forms';
 
 describe('DateRangeInputSectionComponent', () => {
   let component: DateRangeInputSectionComponent;
@@ -11,7 +12,7 @@ describe('DateRangeInputSectionComponent', () => {
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        imports: [DateRangeInputModule, RouterTestingModule],
+        imports: [DateRangeInputModule, RouterTestingModule, FormsModule],
         declarations: [DateRangeInputSectionComponent]
       }).compileComponents();
     })
