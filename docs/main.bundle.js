@@ -829,6 +829,9 @@ var ClearableInputSectionComponent = (function (_super) {
     function ClearableInputSectionComponent(route) {
         var _this = _super.call(this, route) || this;
         _this.route = route;
+        _this.value = '';
+        _this.value2 = 1;
+        _this.value3 = 3;
         return _this;
     }
     return ClearableInputSectionComponent;
@@ -2261,7 +2264,11 @@ var AbstractSectionComponent = (function () {
             this.addSubscription = this.route.fragment.subscribe(function (fragment) {
                 var element = document.querySelector('#' + fragment);
                 if (element) {
-                    element.scrollIntoView(element);
+                    element.scrollIntoView({
+                        behavior: 'instant',
+                        block: 'start',
+                        inline: 'start'
+                    });
                 }
             });
         }

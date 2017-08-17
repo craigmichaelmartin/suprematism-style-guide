@@ -1,0 +1,9 @@
+language: node_js
+node_js: '7'
+script:
+- npm run test:ci
+addons:
+  sauce_connect:
+    username: xerona
+    access_key:
+      secure: NE1vwSdol4wc0Pq+wOcJuKXsudHZjJuWTC3OPSTZcsh7hzLUAiCVet4a3wnlD4k/fbZGlRKm+ZTxuOhKGLPrZIBkX9aLQpeqb61GA9bpWf0GS3lzhBJJe1rVoGvIwYXuERug+/Lly8FTXXvQJs5V9okttilkA1F3EQ8oUgkuN+oHUfyA6Rs6l0nM3AZPoSJkHXI99a/AsAoVOosTzEMVWb2DBQL2GlmnrJ6u9udNtqZUiPGtGzEssRtZDfPNlkGi4jePTB9qfc2oyps4vtVPkuZKE3WdBVVMBegBJXGAC9+n4WLaBZ/N6dYJQQq+aGqVUGCjx6OU76ZD4ehuy07Ro2QEPDNTvYD4eJxPfMopZJGqqNsPbP2o6ZDAuPJwVqUVttMZ6/tM5SZHJcj7k6l1ZC19CKPVYqaGcfq/PNhLuwQXATcVjfby1dkRbThE7N37tjPutOYMXtj6tnq4RaXeybOA+nJNgXcS8s5t0t4GWjZfrf6QHGJVMXY5VirnlX4OvTFYq7S+DwvHsqyhkeZzgdvRwjZ/Cber5ZZ+AeFYdRxS1C34+i9N7Ri8IGdwreoIEUqr81nAvUBVZTaKKqzFV4FylbA5NhVrxEiqGBM0xIDxM9Dm3PNK3Td3jwAy5b8Kxi/foPEW7FK/l6lyqCpSaM0pP2X10vg8We9vK9RX4tQ=

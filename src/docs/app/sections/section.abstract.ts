@@ -29,7 +29,13 @@ export abstract class AbstractSectionComponent
     if (this.route) {
       this.addSubscription = this.route.fragment.subscribe(fragment => {
         const element = document.querySelector('#' + fragment);
-        if (element) { element.scrollIntoView(element); }
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'instant',
+            block: 'start',
+            inline: 'start'
+          });
+        }
       });
     }
   }
