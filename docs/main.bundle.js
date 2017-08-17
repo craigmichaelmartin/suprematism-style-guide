@@ -122,7 +122,10 @@ var routes = [
     },
     { path: 'section/badge', component: __WEBPACK_IMPORTED_MODULE_26__sections_badge_badge_component__["a" /* BadgeSectionComponent */] },
     { path: 'section/donut-chart', component: __WEBPACK_IMPORTED_MODULE_27__sections_donut_chart_donut_chart_component__["a" /* DonutChartSectionComponent */] },
-    { path: 'section/date-range-input', component: __WEBPACK_IMPORTED_MODULE_28__sections_date_range_input_date_range_input_component__["a" /* DateRangeInputSectionComponent */] },
+    {
+        path: 'section/date-range-input',
+        component: __WEBPACK_IMPORTED_MODULE_28__sections_date_range_input_date_range_input_component__["a" /* DateRangeInputSectionComponent */]
+    },
     // Utilities
     { path: 'section/utilities/borders', component: __WEBPACK_IMPORTED_MODULE_8__sections_utilities_borders_borders_component__["a" /* BordersComponent */] },
     { path: 'section/utilities/spacing', component: __WEBPACK_IMPORTED_MODULE_9__sections_utilities_spacing_spacing_component__["a" /* SpacingComponent */] },
