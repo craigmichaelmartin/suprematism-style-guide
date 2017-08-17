@@ -72,7 +72,10 @@ const routes: Routes = [
   },
   { path: 'section/badge', component: BadgeSectionComponent },
   { path: 'section/donut-chart', component: DonutChartSectionComponent },
-  { path: 'section/date-range-input', component: DateRangeInputSectionComponent },
+  {
+    path: 'section/date-range-input',
+    component: DateRangeInputSectionComponent
+  },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },
