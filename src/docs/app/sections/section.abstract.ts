@@ -30,7 +30,11 @@ export abstract class AbstractSectionComponent
       this.addSubscription = this.route.fragment.subscribe(fragment => {
         const element = document.querySelector('#' + fragment);
         if (element) {
-          element.scrollIntoView({behavior: 'instant', block: 'start', inline: 'start'});
+          element.scrollIntoView({
+            behavior: 'instant',
+            block: 'start',
+            inline: 'start'
+          });
         }
       });
     }
