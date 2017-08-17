@@ -28,6 +28,7 @@ import { SelectSearchSectionComponent } from './sections/select-search/select-se
 import { MultiSelectSearchSectionComponent } from './sections/multi-select-search/multi-select-search.component';
 import { BadgeSectionComponent } from './sections/badge/badge.component';
 import { DonutChartSectionComponent } from './sections/donut-chart/donut-chart.component';
+import { DateRangeInputSectionComponent } from './sections/date-range-input/date-range-input.component';
 
 const routes: Routes = [
   // main/home page
@@ -71,6 +72,7 @@ const routes: Routes = [
   },
   { path: 'section/badge', component: BadgeSectionComponent },
   { path: 'section/donut-chart', component: DonutChartSectionComponent },
+  { path: 'section/date-range-input', component: DateRangeInputSectionComponent },
 
   // Utilities
   { path: 'section/utilities/borders', component: BordersComponent },
