@@ -1,0 +1,70 @@
+<h1><a id="top"></a>Date Range Input</h1>
+
+<h5 class="_mtxl">Installation</h5>
+<pre class="code-block">
+  <code class="language-javascript">
+  // install the repo
+  npm install CINBCUniversal/suprematism-date-range-input --save
+
+  // add it to a module (app.module.ts)
+  import {{'&#123;'}} DateRangeInputModule } from 'suprematism-date-range-input';
+
+  @NgModule({{'&#123;'}}
+    ...
+    imports: [
+      ...
+      DateRangeInputModule
+    ],
+    ...
+  })
+  </code>
+</pre>
+
+<h5 class="_mtxl">Pick a Range</h5>
+<supre-date-range-input
+  [value]="value"
+  [min]="minDate"
+  [max]="maxDate"
+  [minDisplayWeeks]="minDisplayWeeks"
+  [startDayOfWeek]="startDayOfWeek"
+  (valueChange)="value = $event">
+</supre-date-range-input>
+
+<div class="_mls">
+  <label>min date:
+    <input placeholder="min date" [ngModel]="minDate | date:'yyyy-MM-dd'" (ngModelChange)="onMinDateChange($event)"
+           type="date">
+  </label>
+  <label>max date:
+    <input placeholder="max date" [ngModel]="maxDate | date:'yyyy-MM-dd'" (ngModelChange)="onMaxDateChange($event)"
+           type="date">
+  </label>
+  <label>minimum number of weeks to display on each calendar:
+    <input placeholder="min display weeks" [(ngModel)]="minDisplayWeeks">
+  </label>
+  <label>start day of week:</label>
+  <div>
+    <label>
+      <input type="radio" [(ngModel)]="startDayOfWeek" name="start" [value]="startDayOfWeekEnum.sunday">&nbsp;Sunday
+    </label>
+    <label>
+      <input type="radio" [(ngModel)]="startDayOfWeek" name="start" [value]="startDayOfWeekEnum.monday">&nbsp;Monday
+    </label>
+  </div>
+</div>
+<hr>
+<label>value:{{value}}</label>
+
+<pre class="code-block">
+  <code class="language-javascript">
+    {{'&lt;'}}supre-date-range-input
+      [value]="value"
+      [min]="minDate"
+      [max]="maxDate"
+      [minDisplayWeeks]="minDisplayWeeks"
+      [startDayOfWeek]="startDayOfWeek"
+      (valueChange)="value = $event"
+      >
+    {{'&lt;'}}/supre-date-range-input>
+  </code>
+</pre>
