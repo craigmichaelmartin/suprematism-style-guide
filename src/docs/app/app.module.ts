@@ -30,6 +30,7 @@ import { MultiSelectSearchModule } from 'suprematism-multi-select-search';
 import { BadgeModule } from 'suprematism-badge';
 import { DonutChartModule } from 'suprematism-donut-chart';
 import { DateRangeInputModule } from 'suprematism-date-range-input';
+import { SliderModule } from 'suprematism-slider';
 
 import { TooltipComponent } from './sections/tooltip/tooltip.component';
 import { InlineDialogSectionComponent } from './sections/inline-dialog/inline-dialog.component';
@@ -48,6 +49,7 @@ import { MultiSelectSearchSectionComponent } from './sections/multi-select-searc
 import { BadgeSectionComponent } from './sections/badge/badge.component';
 import { DonutChartSectionComponent } from './sections/donut-chart/donut-chart.component';
 import { DateRangeInputSectionComponent } from './sections/date-range-input/date-range-input.component';
+import { SliderSectionComponent } from './sections/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +81,8 @@ import { DateRangeInputSectionComponent } from './sections/date-range-input/date
     MultiSelectSearchSectionComponent,
     BadgeSectionComponent,
     DonutChartSectionComponent,
-    DateRangeInputSectionComponent
+    DateRangeInputSectionComponent,
+    SliderSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -98,7 +101,8 @@ import { DateRangeInputSectionComponent } from './sections/date-range-input/date
     MultiSelectSearchModule,
     BadgeModule,
     DonutChartModule,
-    DateRangeInputModule
+    DateRangeInputModule,
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

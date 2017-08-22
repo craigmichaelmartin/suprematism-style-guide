@@ -29,6 +29,7 @@ import { MultiSelectSearchSectionComponent } from './sections/multi-select-searc
 import { BadgeSectionComponent } from './sections/badge/badge.component';
 import { DonutChartSectionComponent } from './sections/donut-chart/donut-chart.component';
 import { DateRangeInputSectionComponent } from './sections/date-range-input/date-range-input.component';
+import { SliderSectionComponent } from './sections/slider/slider.component';
 
 const routes: Routes = [
   // main/home page
@@ -75,6 +76,10 @@ const routes: Routes = [
   {
     path: 'section/date-range-input',
     component: DateRangeInputSectionComponent
+  },
+  {
+    path: 'section/slider',
+    component: SliderSectionComponent
   },
 
   // Utilities

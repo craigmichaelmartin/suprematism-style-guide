@@ -23,7 +23,8 @@
         "styles.scss",
         "../../dist/suprematism.css",
         "../../node_modules/prismjs/themes/prism.css",
-        "../../node_modules/ag-grid/dist/styles/ag-grid.css"
+        "../../node_modules/ag-grid/dist/styles/ag-grid.css",
+        "../../node_modules/nouislider/distribute/nouislider.min.css"
       ],
       "stylePreprocessorOptions": {
         "includePaths": [
