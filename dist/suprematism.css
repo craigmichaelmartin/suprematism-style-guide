@@ -2117,7 +2117,7 @@ button.-affix, input.-affix[type="submit"] {
  ******************************************************************************/
 @font-face {
   font-family: 'Audri-alpha';
-  src: url("fonts/Audri-alpha.woff2?ksia6b") format("woff2"), url("fonts/Audri-alpha.ttf?ksia6b") format("truetype"), url("fonts/Audri-alpha.woff?ksia6b") format("woff"), url("fonts/Audri-alpha.svg?ksia6b#Audri-alpha") format("svg");
+  src: url("fonts/Audri-alpha.woff2?liwhjw") format("woff2"), url("fonts/Audri-alpha.ttf?liwhjw") format("truetype"), url("fonts/Audri-alpha.woff?liwhjw") format("woff"), url("fonts/Audri-alpha.svg?liwhjw#Audri-alpha") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2134,35 +2134,20 @@ button.-affix, input.-affix[type="submit"] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.u-supre-icon--checked:before {
-  content: ""; }
-
-.u-supre-icon--partial-check:before {
-  content: ""; }
-
-.u-supre-icon--unchecked:before {
-  content: ""; }
-
-.u-supre-icon--add-create:before {
-  content: ""; }
-
-.u-supre-icon--library:before {
-  content: ""; }
-
-.u-supre-icon--user-menu-icon:before {
-  content: ""; }
+.u-supre-icon--arrow-down-stroke:before {
+  content: ""; }
 
 .u-supre-icon--arrow-right-stroke:before {
   content: ""; }
-
-.u-supre-icon--arrow-down-stroke:before {
-  content: ""; }
 
 .u-supre-icon--arrow-right-filled:before {
   content: ""; }
 
 .u-supre-icon--arrow-down-filled:before {
   content: ""; }
+
+.u-supre-icon--add-create:before {
+  content: ""; }
 
 .u-supre-icon--more-menu-dots-only:before {
   content: ""; }
@@ -2176,23 +2161,11 @@ button.-affix, input.-affix[type="submit"] {
 .u-supre-icon--search:before {
   content: ""; }
 
-.u-supre-icon--edit:before {
-  content: ""; }
-
-.u-supre-icon--snapshot:before {
-  content: ""; }
-
-.u-supre-icon--export:before {
-  content: ""; }
-
 .u-supre-icon--refresh-clear:before {
   content: ""; }
 
 .u-supre-icon--filter:before {
   content: ""; }
-
-.u-supre-icon--rem-filter:before {
-  content: ""; }
 
 .u-supre-icon--audience:before {
   content: ""; }
@@ -2205,6 +2178,12 @@ button.-affix, input.-affix[type="submit"] {
 
 .u-supre-icon--delete-x:before {
   content: ""; }
+
+.u-supre-icon--library:before {
+  content: ""; }
+
+.u-supre-icon--user-menu-icon:before {
+  content: ""; }
 
 .u-supre-icon--Auto:before {
   content: ""; }
@@ -2251,14 +2230,32 @@ button.-affix, input.-affix[type="submit"] {
 .u-supre-icon--other-category:before {
   content: ""; }
 
+.u-supre-icon--checked:before {
+  content: ""; }
+
+.u-supre-icon--partial-check:before {
+  content: ""; }
+
+.u-supre-icon--unchecked:before {
+  content: ""; }
+
+.u-supre-icon--edit:before {
+  content: ""; }
+
+.u-supre-icon--snapshot:before {
+  content: ""; }
+
+.u-supre-icon--export:before {
+  content: ""; }
+
 .u-supre-icon--trash:before {
   content: ""; }
 
-.u-supre-icon--sort-down:before {
-  content: ""; }
-
 .u-supre-icon--sort-up:before {
   content: ""; }
+
+.u-supre-icon--sort-down:before {
+  content: ""; }
 
 .u-supre-icon--logout:before {
   content: ""; }
@@ -2277,6 +2274,9 @@ button.-affix, input.-affix[type="submit"] {
 
 .u-supre-icon--venn:before {
   content: ""; }
+
+.u-supre-icon--rem-filter:before {
+  content: ""; }
 
 .u-supre-icon--hide:before {
   content: ""; }
@@ -2304,6 +2304,24 @@ button.-affix, input.-affix[type="submit"] {
 
 .u-supre-icon--calendar:before {
   content: ""; }
+
+.u-supre-icon--drag-move:before {
+  content: ""; }
+
+.u-supre-icon--drag-select:before {
+  content: ""; }
+
+.u-supre-icon--link:before {
+  content: ""; }
+
+.u-supre-icon--chart:before {
+  content: ""; }
+
+.u-supre-icon--benchmark:before {
+  content: ""; }
+
+.u-supre-icon--document:before {
+  content: ""; }
 
 /******************************************************************************
  *
