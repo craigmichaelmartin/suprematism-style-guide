@@ -4,3 +4,6 @@
 
 [travis-badge]: https://travis-ci.org/CINBCUniversal/suprematism-style-guide.svg?branch=master
 [travis-badge-url]: https://travis-ci.org/CINBCUniversal/suprematism-style-guide
+
+
+# DEPRECATED - Please use the [suprematism library](https://github.com/CINBCUniversal/suprematism)
