@@ -38,6 +38,13 @@ $shadow-color: #4e4e4e;
 
 }
 
+// base rules for abstract disabled button
+@mixin disabled-button() {
+  background: $disabled-bkg-color;
+  color: $disabled-text-color;
+  cursor: default;
+}
+
 
 button {
 
@@ -79,10 +86,8 @@ button {
     // Disabled when present
     //
     &[disabled]{
-      background:  $disabled-bkg-color;
-      color: $disabled-text-color;
+      @include disabled-button();
       @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $bg-color: $disabled-bkg-color);
-      cursor: default;
     }
 
   }
@@ -101,8 +106,10 @@ button {
     background: $aqua;
     text-transform: uppercase;
     font-weight: bold;
-
-
+    &[disabled]{
+      @include disabled-button();
+      @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $bg-color: $disabled-bkg-color);
+    }
   }
   &.-dialog-reverse {
     color: $aqua;
@@ -114,8 +121,10 @@ button {
     text-transform: uppercase;
     box-shadow: 0px 0px 0px 1px $aqua inset;
     font-weight: bold;
-
-
+    &[disabled]{
+      @include disabled-button();
+      @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $bg-color: $disabled-bkg-color);
+    }
   }
 
 
@@ -139,10 +148,8 @@ button {
     // Disabled when present
     //
     &[disabled]{
-      background:  $disabled-bkg-color;
-      color: $disabled-text-color;
+      @include disabled-button();
       @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $border-color: $white, $bg-color: $disabled-bkg-color);
-      cursor: default;
     }
 
     // the next tool bar button should add a border to the left to seperate like the mock
@@ -197,10 +204,8 @@ button {
     // Disabled when present
     //
     &[disabled] {
-      background:  $disabled-bkg-color;
-      color: $disabled-text-color;
+      @include disabled-button();
       @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $border-color: $white, $bg-color: $disabled-bkg-color);
-      cursor: default;
     }
 
     // the next tool bar button should add a border to the left to seperate like the mock
@@ -242,11 +247,10 @@ button {
     // Disabled when present
     //
     &[disabled] {
+      @include disabled-button();
       background: $white !important;
-      color: $disabled-text-color;
       border: 1px solid $disabled-stroke;
       @include button-states((':hover', ':focus', ':active'), $disabled-text-color, $bg-color: $white, $border-color: $disabled-stroke);
-      cursor: default;
     }
 
     // the next tool bar button should add a border to the left to seperate like the mock
@@ -284,11 +288,11 @@ button {
     // Disabled when present
     //
     &[disabled] {
+      @include disabled-button();
       background:  $white;
       color: rgba($blue-gray, .3);
       border: 1px solid $disabled-stroke;
       @include button-states((':hover', ':focus', ':active'), rgba($blue-gray, .3), $border-color: $disabled-stroke, $bg-color: $white);
-      cursor: default;
     }
 
     // the next tool bar button should add a border to the left to seperate like the mock
