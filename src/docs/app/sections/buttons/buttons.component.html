@@ -102,7 +102,7 @@
   {{'&lt;'}}!-- Unselected, enabled toggles -->
   {{'&lt;'}}button class="-toggle">AND{{'&lt;'}}/button>
   {{'&lt;'}}button class="-toggle">OR{{'&lt;'}}/button>
-  
+
   {{'&lt;'}}!-- One selected, enabled toggles -->
   {{'&lt;'}}!-- Add the has-selection class to the parent container -->
   {{'&lt;'}}span class="has-selection">
@@ -162,16 +162,18 @@
 
 
 <a id="buttons-cancel"></a>
-<h5 class="_mtxl">Cancel Button</h5>
+<h5 class="_mtxl">Dialog Buttons</h5>
 <div>
   <button class="-cancel-lg">Cancel</button>
-  <button class="-action">Press Me</button>
-  <button class="-action">Press Me Too</button>
+  <button class="-action">Submit</button>
+  <button class="-action">Submit</button>
+  <button class="-action" disabled>Submit</button>
 </div>
 <div class="_pts">
   <button class="-cancel-md">Cancel</button>
-  <button class="-dialog">Press Me</button>
-  <button class="-dialog-reverse">Press Me Too</button>
+  <button class="-dialog">Submit</button>
+  <button class="-dialog-reverse">Submit</button>
+  <button class="-dialog" disabled>Submit</button>
 </div>
 <pre class="code-block">
   <code class="language-markup">
@@ -186,4 +188,3 @@
   {{'&lt;'}}button class="-dialog-reverse">Press Me Too{{'&lt;'}}/button>
   </code>
 </pre>
-
